@@ -1,7 +1,7 @@
 <div align="center">
 
   
-  <img src="public/logo.png" alt="InfoPR Logo" width="280" />
+  <img src="public/logo.jpg" alt="InfoPR Logo" width="280" />
 
   # 🚀 InfoPR - Web Platform
 
