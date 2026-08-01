@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="space-y-3">
             <Link href="/" className="inline-block">
               <img 
-                src="/logo.png" 
+                src="/logo.jpg" 
                 alt="INFOPRBD Logo" 
                 className="h-8 sm:h-9 w-auto object-contain brightness-200" 
               />

@@ -36,6 +36,121 @@ export const translations = {
       img_alt: "Professional PR Agency Team Working in Office"
     },
 
+    About: {
+      badge: "About InfoPR",
+      heading_part1: "We Help Brands Tell Their Story to the",
+      heading_highlight: "Right Audience",
+      description_1: "InfoPR is a senior-led public relations and communication agency. We specialize in high-impact media relations, crisis management, and digital PR strategies that build trust and elevate brand reputation on both local and global stages.",
+      description_2: "Our associate-driven model ensures every project gets direct strategic insight from experienced industry practitioners, delivering measurable impact and long-term credibility.",
+      
+      
+      feature_1_title: "14+ Years Experience",
+      feature_1_desc: "Over a decade of strategic PR execution across diverse industries.",
+      feature_2_title: "Media Network",
+      feature_2_desc: "Direct access to top national, international, and online portals.",
+      feature_3_title: "Crisis Management",
+      feature_3_desc: "Proactive communication solutions to safeguard your brand value.",
+      
+      btn_text: "Learn More About Us"
+    },
+
+    MediaPlatforms: {
+      badge: "Media Network",
+      title_part1: "Get Featured on Bangladesh's",
+      title_highlight: "Top News Platforms",
+      subtitle: "Click on any news platform to explore their official portal. We help your brand get published across all major media outlets.",
+      visit_site: "Visit Portal"
+    },
+
+    WhyChooseUs: {
+      badge: "Why InfoPR",
+      title_part1: "Why Choose Our PR Firm in",
+      title_highlight: "Bangladesh?",
+      subtitle: "Before selecting a PR agency, it's important to know how strategic experts can elevate your brand. Here is why industry leaders trust us:",
+      
+      card1_title: "Experienced PR Professionals",
+      card1_desc: "Our team has skilled professionals with years of proven PR experience. We create powerful stories, manage brand image, and deliver impactful results.",
+
+      card2_title: "Local Market Expertise",
+      card2_desc: "As a leading PR agency, we deeply understand local culture, media dynamics, and trends to build strong campaigns that connect with your audience.",
+
+      card3_title: "Trusted by Top Brands",
+      card3_desc: "Trusted by well-known local and international brands. Our track record shows how we help businesses grow and maintain a stellar reputation.",
+
+      card4_title: "Strategic Communication Approach",
+      card4_desc: "We follow a smart communication framework aligned with your brand's voice. Clear planning ensures your message reaches the right audience."
+    },
+
+    TopPR: {
+      badge: "Why InfoPR Stands Out",
+      title_part1: "What Makes InfoPR a Top PR",
+      title_highlight: "Agency in Bangladesh?",
+      subtitle: "InfoPR stands out because of our proven expertise, consistent results, and professional approach. Here is what makes us the preferred PR partner:",
+      
+      card1_title: "14+ Years of Experience",
+      card1_desc: "Our PR company in Bangladesh has managed numerous campaigns across various industries over the past decade. We bring strategies, deep knowledge, and reliable expertise to handle press activities.",
+
+      card2_title: "Results That Speak for Themselves",
+      card2_desc: "We believe in achieving outcomes through effective campaigns that increase brand reach, build credibility, and drive business growth. Our projects are measured by real impact and lasting results.",
+
+      card3_title: "Media Connections That Work",
+      card3_desc: "In the PR world, strong relationships are paramount. We establish trusted connections with local and global media outlets to ensure your brand's story is published, amplified, and respected.",
+
+      card4_title: "Transparent & Ethical Practices",
+      card4_desc: "Our agency works with complete transparency and clear communication. We maintain high ethical standards with honesty—whether managing a crisis or releasing press statements."
+    },
+
+    Services: {
+      badge: "What We Offer",
+      title_part1: "Our PR Services in",
+      title_highlight: "Bangladesh",
+      subtitle: "As a leading PR agency in Bangladesh, we provide end-to-end communication solutions—covering traditional, digital, and crisis PR. Each service is designed to build trust, increase visibility, and strengthen your brand reputation.",
+      btn_details: "View Details",
+
+      s1_title: "Press Conference",
+      s1_desc: "We design and manage events or press conferences to show your brand effectively. With in-depth planning and execution, our team handles all with care to ensure clear communication and strong media presence.",
+
+      s2_title: "International Public Relations",
+      s2_desc: "Our team helps your brand connect with global audiences by making strong media ties. This plan secures valuable press coverage on top platforms, adding widespread awareness and credibility.",
+
+      s3_title: "Digital PR",
+      s3_desc: "Our PR company uses digital channels and influencers to spread your message with precision. We design each campaign to increase conversation, build credibility, and connect with modern audiences.",
+
+      s4_title: "Content Consultancy",
+      s4_desc: "Our team creates press releases, articles, and digital content that reflect your brand's identity. We focus on telling your story in a memorable way to help your brand stand out and gain attention.",
+
+      s5_title: "Crisis Management",
+      s5_desc: "We give quick and effective solutions during crisis management situations. Our team works to lessen negative publicity, protect your reputation, and guide transparent public communication.",
+
+      s6_title: "Brand Launch",
+      s6_desc: "Our team organizes and helps brands make stunning launches to create excitement and awareness. We ensure your brand is presented successfully to establish a lasting influence in the market."
+    },
+    Industries: {
+      badge: "Industries We Serve",
+      title_part1: "PR Solutions for Diverse",
+      title_highlight: "Industries in Bangladesh",
+      subtitle: "With over a decade of experience, Times PR has worked across multiple sectors—helping both local and global brands build reputation, manage communication, and stay in the spotlight.",
+
+      i1_title: "Corporates & Startups",
+      i1_desc: "Our PR firm in Bangladesh helps both large companies and startups grow. We also manage their media press and ensure their voice is heard in the right places.",
+
+      i2_title: "NGOs & Development Sector",
+      i2_desc: "We support NGOs and development organizations by spreading their messages. Plus, our PR firm helps them raise brand awareness and strengthen trust with the public.",
+
+      i3_title: "Government & Public Sector",
+      i3_desc: "Our PR agency works with government projects and public institutions. Besides, we manage communication to build strong public trust and smooth information flow.",
+
+      i4_title: "International Organizations",
+      i4_desc: "We assist international groups working in Bangladesh. Our PR team also gives full support on International Public Relations that meets global standards."
+    },
+
+    ClientLogos: {
+      badge: "Trusted Partners",
+      title_part1: "Brands That Rely on Our",
+      title_highlight: "PR Expertise",
+      subtitle: "From global corporations to fast-growing local businesses, Times PR is trusted by top brands across industries to manage reputation and long-term success."
+    },
+
     
     Footer: {
       about_desc: "InfoPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
@@ -86,6 +201,121 @@ export const translations = {
       img_alt: "প্রফেশনাল পিআর টিম অফিসে কাজ করছে"
     },
     
+    About: {
+      badge: "আমাদের সম্পর্কে",
+      heading_part1: "আমরা ব্র্যান্ডের গল্প পৌঁছে দেই সঠিক",
+      heading_highlight: "দর্শকের কাছে",
+      description_1: "ইনফোপিআর হলো একটি শীর্ষস্থানীয় পাবলিক রিলেশনস এবং ব্র্যান্ড কমিউনিকেশন এজেন্সি। আমরা প্রফেশনাল মিডিয়া রিলেশনস, ক্রাইসিস ম্যানেজমেন্ট এবং ডিজিটাল পিআর স্ট্র্যাটেজির মাধ্যমে দেশীয় ও আন্তর্জাতিক পরিমণ্ডলে ব্র্যান্ডের গ্রহণযোগ্যতা তৈরি করি।",
+      description_2: "আমাদের অভিজ্ঞ টিমের প্রত্যক্ষ দিকনির্দেশনায় প্রতিটি প্রজেক্ট সফলভাবে পরিচালিত হয়, যা ব্র্যান্ডকে দীর্ঘমেয়াদী সাফল্য ও আস্থা প্রদান করে।",
+      
+      
+      feature_1_title: "১৪+ বছরের অভিজ্ঞতা",
+      feature_1_desc: "বিভিন্ন শিল্পে সফল পিআর ক্যাম্পেইন পরিচালনার এক যুগেরও বেশি অভিজ্ঞতা।",
+      feature_2_title: "বিশাল মিডিয়া নেটওয়ার্ক",
+      feature_2_desc: "শীর্ষস্থানীয় জাতীয়, আন্তর্জাতিক এবং অনলাইন নিউজ পোর্টালে সরাসরি অ্যাক্সেস।",
+      feature_3_title: "ক্রাইসিস ম্যানেজমেন্ট",
+      feature_3_desc: "আপনার ব্র্যান্ড রেপুটেশন সুরক্ষায় দ্রুত ও কার্যকরী যোগাযোগ ব্যবস্থা।",
+      
+      btn_text: "আমাদের সম্পর্কে আরও জানুন"
+    },
+
+    MediaPlatforms: {
+      badge: "মিডিয়া নেটওয়ার্ক",
+      title_part1: "দেশের শীর্ষস্থানীয়",
+      title_highlight: "পত্রিকা ও সংবাদ মাধ্যমে কভারেজ",
+      subtitle: "সরাসরি অফিসিয়াল পোর্টাল দেখতে যেকোনো সংবাদ মাধ্যমের লোগোতে ক্লিক করুন। আমরা আপনার ব্র্যান্ডকে এসব সেরা প্ল্যাটফর্মে তুলে ধরি।",
+      visit_site: "ওয়েবসাইট দেখুন"
+    },
+
+    WhyChooseUs: {
+      badge: "কেন ইনফোপিআর",
+      title_part1: "কেন বেছে নেবেন আমাদের",
+      title_highlight: "পিআর এজেন্সি?",
+      subtitle: "একটি পিআর এজেন্সি নির্বাচনের আগে জানা প্রয়োজন কেন অভিজ্ঞ বিশেষজ্ঞরা আপনার ব্র্যান্ডের জন্য সেরা। যে কারণে শীর্ষ ব্র্যান্ডগুলো আমাদের ওপর আস্থা রাখে:",
+      
+      card1_title: "অভিজ্ঞ পিআর প্রফেশনালস",
+      card1_desc: "আমাদের টিমে রয়েছেন বছরের পর বছর সফল পিআর পরিচালনার অভিজ্ঞতাসম্পন্ন দক্ষ পেশাদার, যারা আপনার ব্র্যান্ডের গল্পকে সঠিক উপায়ে তুলে ধরেন।",
+
+      card2_title: "লোকাল মার্কেট এক্সপার্টাইজ",
+      card2_desc: "বাংলাদেশী মিডিয়া, স্থানীয় কালচার এবং ট্রেন্ড সম্পর্কে গভীর জ্ঞানের মাধ্যমে আমরা এমন ক্যাম্পেইন তৈরি করি যা সরাসরি আপনার টার্গেট দর্শকদের সাথে যুক্ত হয়।",
+
+      card3_title: "শীর্ষ ব্র্যান্ডগুলোর আস্থা",
+      card3_desc: "দেশি-বিদেশি সুনামধন্য ব্র্যান্ডগুলোর সাথে কাজ করার অভিজ্ঞতা নিয়ে আমরা ব্যবসা বৃদ্ধিতে এবং ইতিবাচক ব্র্যান্ড ভাবমূর্তি বজায় রাখতে প্রতিশ্রুতিবদ্ধ।",
+
+      card4_title: "স্ট্র্যাটেজিক কমিউনিকেশন অ্যাপ্রোচ",
+      card4_desc: "আমরা ব্র্যান্ডের লক্ষ্যের সাথে সামঞ্জস্য রেখে সঠিক পরিকল্পনার মাধ্যমে সংবাদ ও বার্তা পৌঁছে দেই একদম সঠিক টার্গেট অডিয়েন্সের কাছে।"
+    },
+
+    TopPR: {
+      badge: "কেন ইনফোপিআর সবার চেয়ে আলাদা",
+      title_part1: "কেন ইনফোপিআর বাংলাদেশের শীর্ষ",
+      title_highlight: "পিআর এজেন্সি?",
+      subtitle: "ইনফোপিআর আলাদা তার প্রমাণিত অভিজ্ঞতা, ধারাবাহিক ফলাফল এবং পেশাদার দৃষ্টিভঙ্গির জন্য। যেসব কারণে শীর্ষ ব্র্যান্ডগুলো আমাদের বেছে নেয়:",
+      
+      card1_title: "১৪+ বছরের অভিজ্ঞতা",
+      card1_desc: "বিগত এক দশক ধরে আমরা দেশের বিভিন্ন ইন্ডাস্ট্রির বহু সফল পিআর ক্যাম্পেইন পরিচালনা করেছি। আমাদের রয়েছে প্রেস এবং মিডিয়া অ্যাক্টিভিটি সামলানোর বাস্তবভিত্তিক জ্ঞান ও দক্ষতা।",
+
+      card2_title: "কার্যকর ও পরিমাপযোগ্য ফলাফল",
+      card2_desc: "আমরা এমন ক্যাম্পেইনে বিশ্বাস করি যা সরাসরি ব্র্যান্ডের রিচ বাড়ায় এবং ব্যবসায়িক প্রবৃদ্ধি আনে। আমাদের প্রতিটি প্রজেক্টের সফলতা মাপা হয় তার বাস্তব প্রভাব এবং দীর্ঘস্থায়ী ফলাফলের ভিত্তিতে।",
+
+      card3_title: "শক্তিশালী মিডিয়া নেটওয়ার্ক",
+      card3_desc: "পিআর জগতে সম্পর্কের জোরই আসল। দেশি-বিদেশি প্রথম সারির মিডিয়াগুলোর সাথে আমাদের রয়েছে বিশ্বাসযোগ্য সুসম্পর্ক, যা আপনার ব্র্যান্ডের সংবাদকে দ্রুত ও ব্যাপকভাবে ছড়িয়ে দিতে সাহায্য করে।",
+
+      card4_title: "স্বচ্ছতা ও নীতিগত সততা",
+      card4_desc: "আমরা শতভাগ স্বচ্ছতা ও সরাসরি যোগাযোগের মাধ্যমে কাজ করি। ক্রাইসিস ম্যানেজমেন্ট হোক কিংবা প্রেস রিলিজ—প্রতিটি পদক্ষেপে আমরা বজায় রাখি উচ্চ নীতিগত মান এবং পেশাদার সততা।"
+    },
+
+    Services: {
+      badge: "আমাদের সেবাসমূহ",
+      title_part1: "বাংলাদেশের বিশ্বস্ত",
+      title_highlight: "পিআর সার্ভিস",
+      subtitle: "বাংলাদেশের শীর্ষস্থানীয় পিআর এজেন্সি হিসেবে আমরা ট্রেডিশনাল, ডিজিটাল এবং ক্রাইসিস পিআর সহ সমস্ত মিডিয়া সলিউশন প্রদান করি। প্রতিটি সেবা আপনার ব্র্যান্ডের ট্রাস্ট ও পরিচিতি বাড়াতে বিশেষভাবে তৈরিকৃত।",
+      btn_details: "বিস্তারিত দেখুন",
+
+      s1_title: "প্রেস কনফারেন্স",
+      s1_desc: "আমরা নিখুঁত পরিকল্পনার মাধ্যমে প্রেস কনফারেন্স ও ইভেন্ট আয়োজন করি। প্রফেশনাল এক্সিকিউশনের মাধ্যমে মিডিয়া প্রতিনিধি ও সাংবাদিকদের কাছে আপনার মূল বার্তা সঠিকভাবে পৌঁছে দেওয়া আমাদের লক্ষ্য।",
+
+      s2_title: "আন্তর্জাতিক পাবলিক রিলেশনস",
+      s2_desc: "আন্তর্জাতিক মিডিয়া নেটওয়ার্কের সাহায্যে আপনার ব্র্যান্ডকে গ্লোবাল অডিয়েন্সের কাছে পরিচিত করি। বিশ্বখ্যাত সংবাদ মাধ্যমে কাভারেজ নিশ্চিত করে আপনার ব্র্যান্ডের গ্রহণযোগ্যতা আন্তর্জাতিক মানে উন্নীত করি।",
+
+      s3_title: "ডিজিটাল পিআর",
+      s3_desc: "ডিজিটাল চ্যানেল ও সোশ্যাল ইনফ্লুয়েন্সারদের কাজে লাগিয়ে আপনার ব্র্যান্ডের বার্তা দ্রুত পৌঁছে দেই আধুনিক দর্শকদের কাছে। ট্রেন্ডি কনটেন্ট ও ডেটা-ড্রাইভেন ক্যাম্পেইনের মাধ্যমে এনগেজমেন্ট নিশ্চিত করা হয়।",
+
+      s4_title: "কনটেন্ট কনসালটেন্সি",
+      s4_desc: "প্রেস রিলিজ, ফিচার আর্টিকেল এবং ডিজিটাল কনটেন্ট রাইটিংয়ের মাধ্যমে আপনার ব্র্যান্ডের গল্পকে আকর্ষনীয়ভাবে ফুটিয়ে তুলি। আমাদের কনটেন্ট স্ট্র্যাটেজি ব্র্যান্ডের ভ্যালু বাড়াতে সাহায্য করে।",
+
+      s5_title: "ক্রাইসিস ম্যানেজমেন্ট",
+      s5_desc: "যেকোনো জরুরি পরিস্থিতি বা নেতিবাচক প্রচারণায় আমরা দ্রুত ও কার্যকর সমাধান দেই। ব্র্যান্ডের দীর্ঘদিনের সুনাম বজায় রাখা এবং জনসমক্ষে ইতিবাচক ভাবমূর্তি ধরে রাখতে আমরা প্রতিশ্রুতিবদ্ধ।",
+
+      s6_title: "ব্র্যান্ড লঞ্চিং",
+      s6_desc: "নতুন প্রোডাক্ট বা ব্র্যান্ডের বাজারজাতকরণে জমকালো লঞ্চিং ইভেন্ট ও পিআর ক্যাম্পেইন ডেকোরেশন করি, যা মার্কেটে শুরুতেই বিশাল সাড়া ফেলে এবং দীর্ঘস্থায়ী প্রভাব তৈরি করে।"
+    },
+
+    Industries: {
+      badge: "আমাদের কাজের ক্ষেত্র",
+      title_part1: "বাংলাদেশের বিভিন্ন ইন্ডাস্ট্রিজ-এ",
+      title_highlight: "পিআর সলিউশন",
+      subtitle: "এক দশকেরও বেশি অভিজ্ঞতার সাথে টাইমস পিআর একাধিক সেক্টরে কাজ করেছে—যা স্থানীয় এবং বৈশ্বিক উভয় ব্র্যান্ডকে তাদের সুনাম তৈরি করতে, যোগাযোগ পরিচালনা করতে এবং আলোচনার শীর্ষে থাকতে সাহায্য করে।",
+
+      i1_title: "করপোরেট ও স্টার্টআপ",
+      i1_desc: "আমাদের পিআর এজেন্সি বড় বড় করপোরেট প্রতিষ্ঠান এবং উদীয়মান স্টার্টআপগুলোর দ্রুত বৃদ্ধিতে কাজ করে। আমরা তাদের মিডিয়া কাভারেজ ও মিডিয়া রিলেশন নিশ্চিত করি।",
+
+      i2_title: "এনজিও ও ডেভলপমেন্ট সেক্টর",
+      i2_desc: "আমরা অলাভজনক প্রতিষ্ঠান ও সামাজিক উন্নয়নমূলক সংস্থার লক্ষ্য ও বার্তা সুশীল সমাজ ও জনসাধারণের কাছে কার্যকরভাবে পৌঁছে দিতে সাহায্য করি।",
+
+      i3_title: "সরকারি ও পাবলিক সেক্টর",
+      i3_desc: "আমরা সরকারি মেগা প্রজেক্ট এবং রাষ্ট্রীয় প্রতিষ্ঠানের জন্য কৌশলগত পিআর পরিচালনা করি, যা সাধারণ মানুষের আস্থা বৃদ্ধি ও তথ্যের সঠিক প্রবাহ নিশ্চিত করে।",
+
+      i4_title: "আন্তর্জাতিক সংস্থা",
+      i4_desc: "বাংলাদেশে কর্মরত আন্তর্জাতিক সংস্থাসমূহের জন্য গ্লোবাল স্ট্যান্ডার্ড পিআর সার্ভিস প্রদান করি, যা আন্তর্জাতিক নিয়মকানুন বজায় রেখে সর্বোচ্চ ফলাফল এনে দেয়।"
+    },
+    ClientLogos: {
+      badge: "আমাদের ক্লায়েন্টসমূহ",
+      title_part1: "যাদের সাথে আমরা কাজ করেছি সেই বিখ্যাত",
+      title_highlight: "ব্র্যান্ডসমূহ",
+      subtitle: "গ্লোবাল মাল্টিন্যাশনাল কোম্পানি থেকে শুরু করে দেশের শীর্ষস্থানীয় ব্র্যান্ডগুলোর ডিজিটাল ও পিআর পার্টনার হিসেবে আমরা সফলতার সাথে কাজ করে যাচ্ছি।"
+    },
+
     Footer: {
       about_desc: "InfoPR হলো একটি শীর্ষস্থানীয় ডিজিটাল পিআর এবং প্রেস রিলিজ পোর্টাল যা বৈশ্বিক মিডিয়া চ্যানেলের সাথে ব্র্যান্ডকে যুক্ত করে।",
       quick_links: "গুরুত্বপূর্ণ লিঙ্ক",

@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+  
+  <img src="public/logo.png" alt="InfoPR Logo" width="280" />
 
-First, run the development server:
+  # 🚀 InfoPR - Web Platform
+
+  **Public Relations & Media Consultancy Platform**  
+  *Research | Investigation | Communication*
+
+  [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+  [![Deployed on Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
+
+</div>
+
+---
+
+## 📌 About InfoPR
+
+**InfoPR** is a premier Public Relations & Media Consultancy web application built with **Next.js**. It empowers brands, corporates, NGOs, and public sector institutions in Bangladesh to build authority, manage crisis communications, and secure high-impact features across top national and international news outlets.
+
+### ✨ Key Features
+- **🌐 Dual Language Support (i18n):** Seamless dynamic language switching (English & Bangla).
+- **📰 Clickable News Media Grid:** Direct link-outs to major Bangladeshi news portals for instant validation.
+- **💼 Interactive Industry Solutions:** Filterable showcase for Corporates, NGOs, Government, and International sector PR.
+- **📱 Fully Responsive:** Clean, modern UX optimized for Desktop, Tablet, and Mobile devices.
+- **⚡ Fast & SEO Optimized:** Built using Next.js App Router for high-speed performance and search visibility.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **UI Library:** [React](https://react.js.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+## 🚀 Getting Started
+
+First, clone the repository and install dependencies:
 
 ```bash
-npm run dev
+# Clone the repository
+git clone [https://github.com/your-username/info-pr.git](https://github.com/your-username/info-pr.git)
+
+# Navigate to the project directory
+cd info-pr
+
+# Install dependencies
+npm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+pnpm install
