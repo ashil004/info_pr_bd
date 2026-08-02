@@ -7,17 +7,17 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 pt-10 pb-6 border-t border-gray-800 mt-16">
       {/* Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main Grid: Mobile-এ 1 Column, Tablet-এ 2 Column, Desktop-এ 4 Column */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-gray-800">
-          
+
           {/* 1. Brand Info */}
           <div className="space-y-3">
-            <Link href="/" className="inline-block">
-              <img 
-                src="/logo.jpg" 
-                alt="INFOPRBD Logo" 
-                className="h-8 sm:h-9 w-auto object-contain brightness-200" 
+            <Link href="/" className="inline-block shrink-0">
+              <img
+                src="/logo.jpg"
+                alt="INFOPRBD Logo"
+                className="h-12 sm:h-16 w-auto object-contain brightness-200"
               />
             </Link>
             <p className="text-xs text-gray-400 leading-relaxed pr-2">
@@ -59,21 +59,21 @@ export default function Footer() {
             </h3>
             <div className="space-y-2 text-xs text-gray-400 mb-4">
               <p className="flex items-center gap-2">
-                <Mail size={14} className="text-[#a4223a] shrink-0" /> 
+                <Mail size={14} className="text-[#a4223a] shrink-0" />
                 <span className="truncate">info@infoprbd.com</span>
               </p>
               <p className="flex items-center gap-2">
-                <Phone size={14} className="text-[#a4223a] shrink-0" /> 
+                <Phone size={14} className="text-[#a4223a] shrink-0" />
                 <span>+880 1700-000000</span>
               </p>
               <p className="flex items-center gap-2">
-                <MapPin size={14} className="text-[#a4223a] shrink-0" /> 
+                <MapPin size={14} className="text-[#a4223a] shrink-0" />
                 <span>Dhaka, Bangladesh</span>
               </p>
             </div>
 
-            <Link 
-              href="/submit-pr" 
+            <Link
+              href="/submit-pr"
               className="inline-flex items-center gap-1.5 bg-[#a4223a] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#851b2e] transition shadow-sm"
             >
               <Send size={12} />

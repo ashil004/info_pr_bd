@@ -6,12 +6,12 @@ import { Send, Globe, ChevronDown, Menu, X } from 'lucide-react';
 import { useLanguage } from '@/app/context/LanguageContext';
 
 
-// Extracted Sub-component to optimize renders
+
 const LanguageSelect = ({ lang, onChange }) => (
   <div className="flex items-center space-x-1.5 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full px-2.5 py-1 text-gray-700 dark:text-gray-200 hover:border-gray-300 dark:hover:border-gray-600 transition-colors">
     <Globe size={14} className="text-[#a4223a] shrink-0" />
-    <select 
-      value={lang} 
+    <select
+      value={lang}
       onChange={onChange}
       className="bg-transparent text-xs font-bold focus:outline-none cursor-pointer text-gray-800 dark:text-white border-none outline-none"
       aria-label="Select Language"
@@ -38,29 +38,29 @@ export default function Navbar() {
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        
-       
-        <Link href="/" className="flex items-center gap-2 focus:outline-none">
-          <img 
-            src="/logo.jpg" 
-            alt="InfoPR Logo" 
-            className="h-8 sm:h-9 w-auto object-contain" 
+
+
+        <Link href="/" className="flex items-center gap-2 focus:outline-none flex-shrink-0">
+          <img
+            src="/logo.jpg"
+            alt="InfoPR Logo"
+            className="h-16 w-auto object-contain max-h-none shrink-0"
           />
         </Link>
 
-       
+
         <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700 dark:text-gray-200">
           <Link href="/" className="hover:text-[#a4223a] transition-colors">
             {t('Header.home')}
           </Link>
-          
-          
+
+
           <div className="relative group">
-            <button 
+            <button
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
               aria-haspopup="true"
             >
-              <span>{t('Header.about')}</span>
+              <Link href="/about" className="focus:outline-none">{t('Header.about')}</Link>
               <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
             </button>
             <div className="absolute left-0 top-full hidden group-hover:block w-52 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 py-2 z-50">
@@ -72,9 +72,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          
+
           <div className="relative group">
-            <button 
+            <button
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
               aria-haspopup="true"
             >
@@ -95,24 +95,24 @@ export default function Navbar() {
           <Link href="/contact" className="hover:text-[#a4223a] transition-colors">{t('Header.contact')}</Link>
         </nav>
 
-        
+
         <div className="flex items-center gap-2 sm:gap-3">
-          
-          
+
+
           <LanguageSelect lang={lang} onChange={handleLanguageChange} />
 
-          
-          <Link 
-            href="/submit-pr" 
+
+          <Link
+            href="/submit-pr"
             className="hidden sm:flex items-center gap-1.5 bg-[#a4223a] hover:bg-[#851b2e] text-white text-xs font-bold px-4 py-2 rounded-full transition-all shadow-sm active:scale-95"
           >
             <Send size={12} />
             <span>{t('Header.submitPR')}</span>
           </Link>
 
-          
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2 text-gray-700 dark:text-gray-200 hover:text-[#a4223a] focus:outline-none"
             aria-label="Toggle navigation menu"
           >
@@ -123,21 +123,21 @@ export default function Navbar() {
 
       </div>
 
-      
+
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 pt-3 pb-6 space-y-3 animate-in slide-in-from-top-2 duration-200">
-          <Link 
-            href="/" 
-            onClick={() => setMobileMenuOpen(false)} 
+          <Link
+            href="/"
+            onClick={() => setMobileMenuOpen(false)}
             className="block text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a]"
           >
             {t('Header.home')}
           </Link>
 
-          
+
           <div>
-            <button 
-              onClick={() => toggleDropdown('about')} 
+            <button
+              onClick={() => toggleDropdown('about')}
               className="flex items-center justify-between w-full text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a] py-1"
             >
               <span>{t('Header.about')}</span>
@@ -154,10 +154,10 @@ export default function Navbar() {
             )}
           </div>
 
-          
+
           <div>
-            <button 
-              onClick={() => toggleDropdown('services')} 
+            <button
+              onClick={() => toggleDropdown('services')}
               className="flex items-center justify-between w-full text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a] py-1"
             >
               <span>{t('Header.services')}</span>
@@ -184,9 +184,9 @@ export default function Navbar() {
             {t('Header.contact')}
           </Link>
 
-          
-          <Link 
-            href="/submit-pr" 
+
+          <Link
+            href="/submit-pr"
             onClick={() => setMobileMenuOpen(false)}
             className="flex sm:hidden items-center justify-center gap-1.5 bg-[#a4223a] text-white text-xs font-bold px-4 py-2.5 rounded-full transition w-full mt-3 active:scale-98"
           >

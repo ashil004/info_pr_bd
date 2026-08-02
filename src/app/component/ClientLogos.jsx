@@ -19,6 +19,7 @@ export default function ClientLogos() {
     { name: "CGTN", src: "/cgtn.png" },
     { name: "Al Jazeera", src: "/Al-Jazeera-Logo.png" },
     { name: "British Council", src: "/british-council-logo.png" },
+    { name: " Shyamoli Engineering College", src: "/Shamoli.jpg" },
     { name: "Akij Air", src: "/akij.jpg" },
     
   ];
@@ -30,7 +31,7 @@ export default function ClientLogos() {
     <section className="py-16 lg:py-20 bg-slate-50/60 border-b border-slate-200/80 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         
-        {/* Section Header */}
+       
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-50 border border-red-100 shadow-sm" style={{ color: '#a4223a' }}>
             {t('ClientLogos.badge')}
@@ -48,14 +49,14 @@ export default function ClientLogos() {
 
       </div>
 
-      {/* Infinite Auto-Scrolling Marquee Track */}
+      
       <div className="relative w-full flex overflow-hidden py-4 mask-gradient">
         
-        {/* Left & Right Smooth Edge Fade Effects */}
+        
         <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
 
-        {/* Animated Row */}
+        
         <motion.div
           className="flex items-center gap-12 sm:gap-16 whitespace-nowrap min-w-max"
           animate={{ x: ['0%', '-50%'] }}
@@ -68,12 +69,12 @@ export default function ClientLogos() {
           {duplicatedLogos.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-center h-16 w-36 sm:w-44 px-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-110 cursor-pointer"
+              className="flex items-center justify-center h-24 w-36 sm:w-44 px-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-110 cursor-pointer"
             >
               <img
                 src={item.src}
                 alt={item.name}
-                className="max-h-12 w-auto object-contain"
+                className="max-h-24 w-auto object-contain"
               />
             </div>
           ))}

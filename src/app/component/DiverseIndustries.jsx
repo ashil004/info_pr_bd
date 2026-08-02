@@ -93,7 +93,7 @@ export default function DiverseIndustries() {
                 whileHover={{ y: -5 }}
                 className="group relative bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
               >
-                {/* Accent Left Border Indicator */}
+                
                 <div 
                   className="absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 group-hover:w-2"
                   style={{ backgroundColor: '#a4223a' }}
