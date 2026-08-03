@@ -151,16 +151,140 @@ export const translations = {
       subtitle: "From global corporations to fast-growing local businesses, Times PR is trusted by top brands across industries to manage reputation and long-term success."
     },
 
-    
-    Footer: {
-      about_desc: "InfoPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
-      quick_links: "Quick Links",
-      company: "Company",
-      get_in_touch: "Get In Touch",
-      privacy_policy: "Privacy Policy",
-      terms: "Terms & Conditions",
-      submit_your_pr: "Submit Your PR",
-      rights_reserved: "All rights reserved."
+    //  about pages
+
+    AboutHero: {
+      badge: "About Info PR",
+      headline_part1: "Connecting Your Brand with",
+      headline_highlight: "Nationwide Media Reach",
+      description: "At Info PR, we bridge the gap between your brand and high-authority journalism. We empower organizations across Bangladesh and internationally with strategic public relations, high-impact media coverage, and digital visibility.",
+      solutions_title: "Specialized Solutions We Offer:",
+      services: [
+        "Press Conference",
+        "International PR",
+        "Digital PR",
+        "Crisis Management",
+        "Brand Launch",
+        "Content Consultancy"
+      ],
+      btn_consultation: "Get Free Consultation",
+      btn_submit_pr: "Submit Press Release",
+      img_alt: "Info PR Team Working Together"
+    },
+
+    AboutClient: {
+      badge: "Trusted Partners & Clients",
+      headline_part1: "Trusted by",
+      headline_highlight: "Industry Leaders",
+      headline_part2: "Worldwide",
+      description: "As a leading PR agency in BD, Info PR proudly delivers strategic coverage across diverse sectors—from global tech giants and news networks to top corporate conglomerates.",
+      categories: {
+        All: "All",
+        Tech: "Tech",
+        Corporate: "Corporate",
+        Media: "Media",
+        Education: "Education"
+      },
+      cta_title: "Reach Out to Us",
+      cta_description: "Your brand could be next on this list—backed by our strong media network and senior PR expertise.",
+      cta_btn: "CONTACT US"
+    },
+    // about sub-page mission 
+    Mission: {
+      badge: "Our Driving Force",
+      headline_main: "Our",
+      headline_highlight: "Mission",
+      description: "At Info PR, we believe every brand deserves a plan that truly works. As a leading PR agency in Bangladesh, our goals are given below:",
+      card_footer_badge: "Info PR Standard",
+      card_footer_action: "Details →",
+      items: [
+        {
+          id: "01",
+          badge: "Phase 01",
+          title: "Analyze & Study Project",
+          description: "We review each campaign, select the best platforms, and measure impact step by step. Our team tracks results and continuously optimizes for maximum ROI."
+        },
+        {
+          id: "02",
+          badge: "Phase 02",
+          title: "Grant Smart Solutions",
+          description: "Our expert team designs creative and effective PR strategies to elevate your brand reputation with tailored, unique plans that stand out in the market."
+        },
+        {
+          id: "03",
+          badge: "Phase 03",
+          title: "Reach Your Audience",
+          description: "With focused PR campaigns, we connect you directly with the right target audience, ensuring your message reaches authority media outlets to build visibility."
+        }
+      ]
+    },
+    // about sub-page who-we-are
+   WhoWeAre: {
+      badge: "Get To Know Us",
+      title_part1: "Bridging the Gap Between",
+      title_highlight: "Success & Value",
+      paragraph1: "Info PR is a premier professional PR agency in Bangladesh. We drive impactful communication through strategic tactics and dedicated expertise.",
+      paragraph2: "Our 360-degree PR approach strengthens brand credibility across all physical and digital touchpoints. Here is how we elevate your presence:",
+      services: [
+        "UI/UX Design",
+        "Software Development",
+        "Digital Marketing",
+        "Social Media Management",
+        "E-commerce Solutions",
+        "24/7 Tech Support"
+      ],
+      img_alt: "Info PR Team Collaboration"
+    },
+    // About Sub Page how we work
+    HowWeWork: {
+      badge: "OUR PROCESS",
+      title_part1: "How We",
+      title_highlight: "Work",
+      subtitle: "Our approach is simple yet powerful to work on your PR activities and market your brand to the targeted people. Here's how we operate:",
+      steps: [
+        {
+          step: "01",
+          title: "Understanding Needs",
+          description: "We listen closely to identify your challenges and goals."
+        },
+        {
+          step: "02",
+          title: "Crafting Strategies",
+          description: "We make tailored, data-driven, and innovative plans to match your needs."
+        },
+        {
+          step: "03",
+          title: "Transparent Relations",
+          description: "We foster open communication and long-term partnership built on trust."
+        },
+        {
+          step: "04",
+          title: "Driving Success Together",
+          description: "We execute seamlessly to scale your brand reach and measure tangible impact."
+        }
+      ]
+    },
+   Footer: {
+      about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
+      quick_links_title: "Quick Links",
+      links: {
+        home: "Home",
+        press_releases: "Press Releases",
+        pr_insights: "PR Insights",
+        tech_pr: "Tech PR",
+        business: "Business"
+      },
+      company_title: "Company",
+      company_links: {
+        about: "About Us",
+        contact: "Contact Us",
+        privacy: "Privacy Policy",
+        terms: "Terms & Conditions"
+      },
+      contact_title: "Get In Touch",
+      submit_btn: "Submit Your PR",
+      rights_reserved: "INFOPR. All rights reserved.",
+      footer_tagline: "Designed for Digital Media & PR"
     }
   },
 
@@ -316,15 +440,145 @@ export const translations = {
       subtitle: "গ্লোবাল মাল্টিন্যাশনাল কোম্পানি থেকে শুরু করে দেশের শীর্ষস্থানীয় ব্র্যান্ডগুলোর ডিজিটাল ও পিআর পার্টনার হিসেবে আমরা সফলতার সাথে কাজ করে যাচ্ছি।"
     },
 
-    Footer: {
-      about_desc: "InfoPR হলো একটি শীর্ষস্থানীয় ডিজিটাল পিআর এবং প্রেস রিলিজ পোর্টাল যা বৈশ্বিক মিডিয়া চ্যানেলের সাথে ব্র্যান্ডকে যুক্ত করে।",
-      quick_links: "গুরুত্বপূর্ণ লিঙ্ক",
-      company: "প্রতিষ্ঠান",
-      get_in_touch: "যোগাযোগ করুন",
-      privacy_policy: "প্রাইভেসি পলিসি",
-      terms: "শর্তাবলী",
-      submit_your_pr: "আপনার PR সাবমিট করুন",
-      rights_reserved: "সর্বস্বত্ব সংরক্ষিত।"
+    // Bangla about pages
+    AboutHero: {
+      badge: "ইনফো পিআর সম্পর্কে",
+      headline_part1: "আপনার ব্র্যান্ডকে যুক্ত করুন",
+      headline_highlight: "দেশব্যাপী মিডিয়া পৌঁছানোর সাথে",
+      description: "ইনফো পিআর-এ, আমরা আপনার ব্র্যান্ড এবং উচ্চ-মানের সাংবাদিকতার মধ্যে সেতু বন্ধন তৈরি করি। কৌশলগত জনসংযোগ, প্রভাবশালী মিডিয়া কাভারেজ এবং ডিজিটাল ভিজিবিলিটির মাধ্যমে আমরা দেশি ও আন্তর্জাতিক প্রতিষ্ঠানগুলোকে ক্ষমতায়ন করি।",
+      solutions_title: "আমাদের বিশেষায়িত সেবাসমূহ:",
+      services: [
+        "প্রেস কনফারেন্স",
+        "আন্তর্জাতিক পিআর",
+        "ডিজিটাল পিআর",
+        "ক্রাইসিস ম্যানেজমেন্ট",
+        "ব্র্যান্ড লঞ্চ",
+        "কনটেন্ট কনসালটেন্সি"
+      ],
+      btn_consultation: "ফ্রি পরামর্শ নিন",
+      btn_submit_pr: "প্রেস রিলিজ জমা দিন",
+      img_alt: "ইনফো পিআর টিমের যৌথ কাজ"
+    },
+
+    AboutClient: {
+      badge: "বিশ্বস্ত পার্টনার ও ক্লায়েন্ট",
+      headline_part1: "বিশ্বজুড়ে",
+      headline_highlight: "শীর্ষস্থানীয় প্রতিষ্ঠানের",
+      headline_part2: "আস্থাভাজন",
+      description: "বাংলাদেশের শীর্ষস্থানীয় পিআর এজেন্সি হিসেবে, ইনফো পিআর গ্লোবাল টেক জায়ান্ট, নিউজরুম এবং কর্পোরেট ব্র্যান্ডগুলোর সাথে অত্যন্ত সফলতার সাথে কাজ করে আসছে।",
+      categories: {
+        All: "সবগুলো",
+        Tech: "টেকনোলজি",
+        Corporate: "কর্পোরেট",
+        Media: "মিডিয়া",
+        Education: "শিক্ষা"
+      },
+      cta_title: "আমাদের সাথে যোগাযোগ করুন",
+      cta_description: "আমাদের শক্তিশালী মিডিয়া নেটওয়ার্ক ও অভিজ্ঞ পিআর টিমের সহায়তায় পরবর্তী ব্র্যান্ড হতে পারেন আপনিও।",
+      cta_btn: "যোগাযোগ করুন"
+    },
+
+    // Bangla about sub-page mission
+    Mission: {
+      badge: "আমাদের মূল চালিকাশক্তি",
+      headline_main: "আমাদের",
+      headline_highlight: "লক্ষ্য ও উদ্দেশ্য",
+      description: "ইনফো পিআর-এ আমরা বিশ্বাস করি প্রতিটি ব্র্যান্ডের জন্য একটি কার্যকর কৌশল থাকা প্রয়োজন। বাংলাদেশের শীর্ষস্থানীয় পিআর এজেন্সি হিসেবে আমাদের প্রধান লক্ষ্যগুলো নিচে দেওয়া হলো:",
+      card_footer_badge: "ইনফো পিআর স্ট্যান্ডার্ড",
+      card_footer_action: "বিস্তারিত →",
+      items: [
+        {
+          id: "01",
+          badge: "ধাপ ০১",
+          title: "প্রজেক্ট অ্যানালিসিস ও স্টাডি",
+          description: "আমরা প্রতিটি ক্যাম্পেইন পুঙ্খানুপুঙ্খভাবে পর্যালোচনা করি, উপযুক্ত প্ল্যাটফর্ম নির্বাচন করি এবং ধাপে ধাপে এর প্রভাব পরিমাপ করে সর্বোচ্চ ROI নিশ্চিত করি।"
+        },
+        {
+          id: "02",
+          badge: "ধাপ ০২",
+          title: "স্মার্ট সমাধান প্রদান",
+          description: "আমাদের বিশেষজ্ঞ দল আপনার ব্র্যান্ডের সুনাম বৃদ্ধি করতে কাস্টমাইজড এবং আকর্ষণীয় পিআর কৌশল ডিজাইন করে, যা আপনাকে বাজারে অনন্য করে তোলে।"
+        },
+        {
+          id: "03",
+          badge: "ধাপ ০৩",
+          title: "টার্গেট অডিয়েন্সের কাছে পৌঁছানো",
+          description: "সুনির্দিষ্ট পিআর ক্যাম্পেইনের মাধ্যমে আমরা আপনাকে সঠিক লক্ষ্যভিত্তিক অডিয়েন্সের সাথে সংযুক্ত করি এবং শীর্ষস্থানীয় মিডিয়ায় কাভারেজ নিশ্চিত করি।"
+        }
+      ]
+    },
+
+    //  Bangla about sub-page who we are 
+
+    WhoWeAre: {
+      badge: "আমাদের জানুন",
+      title_part1: "সাফল্য ও ব্র্যান্ড ভ্যালুর সংযোগস্থলে",
+      title_highlight: "ইনফো পিআর",
+      paragraph1: "ইনফো পিআর বাংলাদেশের অন্যতম শীর্ষস্থানীয় পেশাদার জনসংযোগ (PR) এজেন্সি। আমরা কৌশলগত পরিকল্পনা ও নিবেদিত টিমের মাধ্যমে ব্রান্ডিং সুদৃঢ় করি।",
+      paragraph2: "আমাদের ৩৬০-ডিগ্রি পিআর সার্ভিস আপনার ব্র্যান্ডের সার্বিক বিশ্বাসযোগ্যতা বৃদ্ধি করে। নিচে আমাদের সেবাসমূহ দেওয়া হলো:",
+      services: [
+        "ইউআই/ইউএক্স ডিজাইন",
+        "সফটওয়্যার ডেভেলপমেন্ট",
+        "ডিজিটাল মার্কেটিং",
+        "সোশ্যাল মিডিয়া ম্যানেজমেন্ট",
+        "ই-কমার্স সলিউশন",
+        "২৪/৭ টেক সাপোর্ট"
+      ],
+      img_alt: "ইনফো পিআর টিমের যৌথ কাজ"
+    },
+
+    // Bangla About sub page how we work 
+    "HowWeWork": {
+    "badge": "আওয়ার প্রসেস",
+    "title_part1": "যেভাবে আমরা",
+    "title_highlight": "কাজ করি",
+    "subtitle": "আপনার ব্র্যান্ডের পিআর কার্যক্রম পরিচালনা এবং টার্গেটেড অডিয়েন্সের কাছে পৌঁছানোর জন্য আমাদের প্রক্রিয়া অত্যন্ত সহজ কিন্তু কার্যকর:",
+    "steps": [
+      {
+        "step": "01",
+        "title": "প্রয়োজন অনুধাবন",
+        "title": "Understanding Needs",
+        "description": "আমরা আপনার চ্যালেঞ্জ ও লক্ষ্যগুলো গভীরভাবে শুনে চিহ্নিত করি।"
+      },
+      {
+        "step": "02",
+        "title": "কৌশল নির্ধারণ",
+        "description": "আপনার প্রয়োজন অনুযায়ী আমরা ডেটা-ড্রিভেন এবং উদ্ভাবনী পরিকল্পনা তৈরি করি।"
+      },
+      {
+        "step": "03",
+        "title": "স্বচ্ছ সম্পর্ক",
+        "description": "আমরা বিশ্বাস ও পারস্পরিক সহযোগিতার ভিত্তিতে উন্মুক্ত যোগাযোগ বজায় রাখি।"
+      },
+      {
+        "step": "04",
+        "title": "একত্রে সাফল্য অর্জন",
+        "description": "আপনার ব্র্যান্ডের পরিধি বাড়াতে এবং নিখুঁত ফলাফল আনতে আমরা নিরবচ্ছিন্নভাবে কাজ করি।"
+      }
+    ]
+  },
+
+   Footer: {
+      about_desc: "ইনফো পিআর একটি শীর্ষস্থানীয় ডিজিটাল পিআর ও প্রেস রিলিজ পোর্টাল যা ব্যবসাপ্রতিষ্ঠানকে বিশ্বব্যাপী মিডিয়া চ্যানেলের সাথে সংযুক্ত করে।",
+      quick_links_title: "দ্রুত লিংক",
+      links: {
+        home: "হোম",
+        press_releases: "প্রেস রিলিজ",
+        pr_insights: "পিআর ইনসাইটস",
+        tech_pr: "টেক পিআর",
+        business: "বিজনেস"
+      },
+      company_title: "কোম্পানি",
+      company_links: {
+        about: "আমাদের সম্পর্কে",
+        contact: "যোগাযোগ",
+        privacy: "প্রাইভেসি পলিসি",
+        terms: "শর্তাবলী"
+      },
+      contact_title: "যোগাযোগ করুন",
+      submit_btn: "প্রেস রিলিজ জমা দিন",
+      rights_reserved: "ইনফো পিআর। সর্বস্বত্ব সংরক্ষিত।",
+      footer_tagline: "ডিজিটাল মিডিয়া ও পিআর এর জন্য তৈরি"
     }
   }
 };

@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
-// লোগো ডাটা (ক্যাটাগরি সহ)
+// লোগো ডাটা (ক্যাটাগরি কি সহ)
 const clientsData = [
   { id: 1, name: "Asian Post", category: "Media", logo: "/asian-post.jpg" },
   { id: 2, name: "Facebook", category: "Tech", logo: "/facebook.png" },
@@ -20,9 +23,10 @@ const clientsData = [
   { id: 12, name: "Akij Air", category: "Corporate", logo: "/akij.jpg" },
 ];
 
-const categories = ["All", "Tech", "Corporate", "Media", "Education"];
+const categoryKeys = ["All", "Tech", "Corporate", "Media", "Education"];
 
 export default function AboutClient() {
+  const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredClients =
@@ -60,33 +64,35 @@ export default function AboutClient() {
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#a4223a]/10 dark:bg-[#a4223a]/20 border border-[#a4223a]/20 text-[#a4223a] dark:text-red-400 text-xs sm:text-sm font-semibold tracking-wide">
             <ShieldCheck className="w-4 h-4" />
-            <span>Trusted Partners & Clients</span>
+            <span>{t("AboutClient.badge")}</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-            Trusted by <span className="text-[#a4223a]">Industry Leaders</span> Worldwide
+            {t("AboutClient.headline_part1")}{" "}
+            <span className="text-[#a4223a]">{t("AboutClient.headline_highlight")}</span>{" "}
+            {t("AboutClient.headline_part2")}
           </h2>
 
           <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">
-            As a leading PR agency in BD, <strong className="text-gray-900 dark:text-white">Info PR</strong> proudly delivers strategic coverage across diverse sectors—from global tech giants and news networks to top corporate conglomerates.
+            {t("AboutClient.description")}
           </p>
         </motion.div>
 
         {/* CATEGORY FILTER BUTTONS */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
-          {categories.map((cat) => (
+          {categoryKeys.map((catKey) => (
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
+              key={catKey}
+              onClick={() => setActiveCategory(catKey)}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-colors duration-300 cursor-pointer ${
-                activeCategory === cat
+                activeCategory === catKey
                   ? "bg-[#a4223a] text-white shadow-md shadow-[#a4223a]/25"
                   : "bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-[#a4223a]/40"
               }`}
             >
-              {cat}
+              {t(`AboutClient.categories.${catKey}`)}
             </motion.button>
           ))}
         </div>
@@ -109,9 +115,11 @@ export default function AboutClient() {
                 className="group relative bg-white dark:bg-gray-800/90 rounded-2xl p-4 border border-gray-100 dark:border-gray-700/60 shadow-2xs hover:shadow-xl hover:border-[#a4223a]/30 transition-shadow duration-300 flex items-center justify-center min-h-[100px]"
               >
                 {/* Logo Image */}
-                <img
+                <Image
                   src={client.logo}
                   alt={client.name}
+                  width={120}
+                  height={60}
                   className="max-h-16 w-auto object-contain filter grayscale group-hover:grayscale-0 opacity-75 group-hover:opacity-100 transition-all duration-300"
                 />
 
@@ -124,7 +132,7 @@ export default function AboutClient() {
 
                 {/* Micro Category Tag (Top Right) */}
                 <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded-md bg-gray-100 dark:bg-gray-700 text-[9px] font-semibold text-gray-500 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                  {client.category}
+                  {t(`AboutClient.categories.${client.category}`)}
                 </span>
               </motion.div>
             ))}
@@ -151,23 +159,26 @@ export default function AboutClient() {
             {/* CTA Content */}
             <div className="space-y-2 max-w-2xl">
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Reach Out to Us
+                {t("AboutClient.cta_title")}
               </h3>
               <p className="text-white/80 text-sm sm:text-base font-medium">
-                Your brand could be next on this list—backed by our strong media network and senior PR expertise.
+                {t("AboutClient.cta_description")}
               </p>
             </div>
 
             {/* CTA Button with Framer Motion Hover/Tap */}
-            <motion.a
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-[#a4223a] font-bold text-sm px-8 py-4 rounded-full shadow-lg transition-colors duration-300 shrink-0 group"
             >
-              <span>CONTACT US</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </motion.a>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-[#a4223a] font-bold text-sm px-8 py-4 rounded-full shadow-lg transition-colors duration-300 shrink-0 group"
+              >
+                <span>{t("AboutClient.cta_btn")}</span>
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </motion.div>
 
           </div>
         </div>

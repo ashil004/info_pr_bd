@@ -7,18 +7,18 @@ import { useLanguage } from '@/app/context/LanguageContext';
 export default function Hero() {
   const { t } = useLanguage();
 
-  // Container variants for staggered entrance
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.12, // প্রতিটি চাইল্ড এলিমেন্টের ডিলে
+        staggerChildren: 0.12, 
       },
     },
   };
 
-  // Item variants for text & buttons
+  
   const itemVariants = {
     hidden: { opacity: 0, y: 25 },
     visible: {
@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Content Column with Staggered Motion */}
+          
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -41,7 +41,7 @@ export default function Hero() {
             className="lg:col-span-7 space-y-6 text-center lg:text-left z-10 relative"
           >
             
-            {/* Agency Badge */}
+           
             <motion.div variants={itemVariants}>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold shadow-inner" style={{ color: '#a4223a' }}>
                 <span className="w-2.5 h-2.5 rounded-full animate-pulse" style={{ backgroundColor: '#a4223a' }}></span>
@@ -49,18 +49,18 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* Main Headline */}
+           
             <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-slate-950">
               {t('Hero.headline_part1')} <br className="hidden sm:inline" />
               {t('Hero.headline_part2')} <span style={{ color: '#a4223a' }}>{t('Hero.headline_highlight')}</span>
             </motion.h1>
 
-            {/* Subtitle / Description */}
+            
             <motion.p variants={itemVariants} className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
               {t('Hero.description')}
             </motion.p>
 
-            {/* Action Buttons */}
+           
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 pt-3">
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -80,7 +80,7 @@ export default function Hero() {
               </motion.button>
             </motion.div>
 
-            {/* Key Trust Metrics */}
+            
             <motion.div variants={itemVariants} className="pt-8 border-t border-slate-200 flex items-center justify-center lg:justify-start gap-6 text-slate-600 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-slate-900 text-base">14+</span> {t('Hero.metric_years')}
@@ -97,11 +97,11 @@ export default function Hero() {
 
           </motion.div>
 
-          {/* Right Image Column with Motion */}
+        
           <div className="lg:col-span-5 relative lg:block">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
-              {/* Main Image with Smooth Zoom & Slide */}
+              
               <motion.img 
                 initial={{ opacity: 0, scale: 0.9, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -115,7 +115,7 @@ export default function Hero() {
                 }}
               />
 
-              {/* Decorative Animated Background Glow */}
+              
               <motion.div 
                 animate={{ 
                   scale: [1, 1.2, 1],

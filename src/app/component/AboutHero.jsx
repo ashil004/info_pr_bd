@@ -1,40 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { CheckCircle2, Sparkles, ArrowRight, Loader2 } from "lucide-react";
+import { CheckCircle2, Sparkles, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
-// Lottie dynamic import
-const Lottie = dynamic(() => import("lottie-react"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center w-full h-full text-gray-400 gap-2">
-      <Loader2 className="w-5 h-5 animate-spin text-[#a4223a]" />
-      <span className="text-sm">Loading animation...</span>
-    </div>
-  ),
-});
-
-// Services List (TypeScript annotation সরানো হয়েছে)
-const SERVICES = [
-  "Press Conference",
-  "International PR",
-  "Digital PR",
-  "Crisis Management",
-  "Brand Launch",
-  "Content Consultancy",
-];
-
-// Motion Variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.12,
-    },
+    transition: { staggerChildren: 0.12 },
   },
 };
 
@@ -48,37 +24,22 @@ const itemVariants = {
 };
 
 export default function AboutHero() {
-  const [teamAnimation, setTeamAnimation] = useState(null);
+  const { t } = useLanguage();
 
-  useEffect(() => {
-    const controller = new AbortController();
-
-    fetch("/team.json", { signal: controller.signal })
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch animation data");
-        return res.json();
-      })
-      .then((data) => setTeamAnimation(data))
-      .catch((err) => {
-        if (err.name !== "AbortError") {
-          console.error("Error loading animation:", err);
-        }
-      });
-
-    return () => controller.abort();
-  }, []);
+  
+  const servicesList = t("AboutHero.services") || [];
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-12 lg:py-20">
       
-      {/* Background Glow */}
+     
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#a4223a]/10 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Left Content */}
+          
           <motion.div
             className="lg:col-span-7 space-y-6 text-left"
             variants={containerVariants}
@@ -88,7 +49,7 @@ export default function AboutHero() {
             <motion.div variants={itemVariants}>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#a4223a]/10 dark:bg-[#a4223a]/20 border border-[#a4223a]/20 text-[#a4223a] dark:text-red-400 text-xs sm:text-sm font-semibold tracking-wide">
                 <Sparkles className="w-4 h-4 animate-pulse" />
-                <span>About Info PR</span>
+                <span>{t("AboutHero.badge")}</span>
               </div>
             </motion.div>
 
@@ -96,9 +57,9 @@ export default function AboutHero() {
               variants={itemVariants}
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white leading-[1.2] tracking-tight"
             >
-              Connecting Your Brand with <br className="hidden sm:inline" />
+              {t("AboutHero.headline_part1")} <br className="hidden sm:inline" />
               <span className="bg-gradient-to-r from-[#a4223a] to-red-600 bg-clip-text text-transparent">
-                Nationwide Media Reach
+                {t("AboutHero.headline_highlight")}
               </span>
             </motion.h1>
 
@@ -106,28 +67,29 @@ export default function AboutHero() {
               variants={itemVariants}
               className="text-gray-600 dark:text-gray-300 text-base sm:text-lg leading-relaxed"
             >
-              At <strong className="text-gray-900 dark:text-white font-semibold">Info PR</strong>, we bridge the gap between your brand and high-authority journalism. We empower organizations across Bangladesh and internationally with strategic public relations, high-impact media coverage, and digital visibility.
+              {t("AboutHero.description")}
             </motion.p>
 
             <motion.div variants={itemVariants} className="pt-2 space-y-3">
               <p className="text-xs font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500">
-                Specialized Solutions We Offer:
+                {t("AboutHero.solutions_title")}
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-                {SERVICES.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-2 p-2.5 rounded-xl bg-white dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700/60 shadow-xs hover:border-[#a4223a]/40 hover:shadow-md transition-all group cursor-default"
-                  >
-                    <CheckCircle2 className="w-4 h-4 text-[#a4223a] shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 truncate">
-                      {item}
-                    </span>
-                  </motion.div>
-                ))}
+                {Array.isArray(servicesList) &&
+                  servicesList.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex items-center gap-2 p-2.5 rounded-xl bg-white dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700/60 shadow-xs hover:border-[#a4223a]/40 hover:shadow-md transition-all group cursor-default"
+                    >
+                      <CheckCircle2 className="w-4 h-4 text-[#a4223a] shrink-0 group-hover:scale-110 transition-transform" />
+                      <span className="text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-200 truncate">
+                        {item}
+                      </span>
+                    </motion.div>
+                  ))}
               </div>
             </motion.div>
 
@@ -136,7 +98,7 @@ export default function AboutHero() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-[#a4223a] hover:bg-[#851b2e] text-white text-sm font-bold px-6 py-3.5 rounded-full shadow-lg shadow-[#a4223a]/25 transition-all hover:gap-3 active:scale-95"
               >
-                <span>Get Free Consultation</span>
+                <span>{t("AboutHero.btn_consultation")}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
@@ -144,31 +106,29 @@ export default function AboutHero() {
                 href="/submit-pr"
                 className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 text-sm font-semibold px-6 py-3.5 rounded-full transition-all active:scale-95"
               >
-                <span>Submit Press Release</span>
+                <span>{t("AboutHero.btn_submit_pr")}</span>
               </Link>
             </motion.div>
           </motion.div>
 
-          {/* Right Visual / Lottie Animation */}
+          
           <motion.div
             className="lg:col-span-5 flex justify-center"
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="relative w-full max-w-lg aspect-square bg-gradient-to-tr from-[#a4223a]/10 via-red-500/5 to-transparent rounded-3xl p-4 sm:p-8 border border-gray-100 dark:border-gray-800 shadow-xl backdrop-blur-xs flex items-center justify-center">
-              {teamAnimation ? (
-                <Lottie
-                  animationData={teamAnimation}
-                  loop={true}
-                  className="w-full h-full object-contain"
-                />
-              ) : (
-                <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <Loader2 className="w-4 h-4 animate-spin text-[#a4223a]" />
-                  <span>Loading animation...</span>
-                </div>
-              )}
+            <div className="relative w-full max-w-lg aspect-square bg-gradient-to-tr from-[#a4223a]/10 via-red-500/5 to-transparent rounded-3xl p-3 sm:p-4 border border-gray-100 dark:border-gray-800 shadow-xl backdrop-blur-xs flex items-center justify-center overflow-hidden group">
+              
+              <Image
+                src="/About_Team.jpeg"
+                alt={t("AboutHero.img_alt")}
+                width={600}
+                height={600}
+                priority
+                className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+              />
+
             </div>
           </motion.div>
 
