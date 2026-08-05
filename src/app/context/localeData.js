@@ -8,7 +8,7 @@ export const translations = {
       about_how_we_work: "How We Work",
       about_concept: "Our Concept",
       about_management: "Top Management",
-      
+
       services: "Services",
       srv_bangla_newspapers: "Bangla Newspapers",
       srv_english_newspapers: "English Newspapers",
@@ -42,15 +42,15 @@ export const translations = {
       heading_highlight: "Right Audience",
       description_1: "InfoPR is a senior-led public relations and communication agency. We specialize in high-impact media relations, crisis management, and digital PR strategies that build trust and elevate brand reputation on both local and global stages.",
       description_2: "Our associate-driven model ensures every project gets direct strategic insight from experienced industry practitioners, delivering measurable impact and long-term credibility.",
-      
-      
+
+
       feature_1_title: "14+ Years Experience",
       feature_1_desc: "Over a decade of strategic PR execution across diverse industries.",
       feature_2_title: "Media Network",
       feature_2_desc: "Direct access to top national, international, and online portals.",
       feature_3_title: "Crisis Management",
       feature_3_desc: "Proactive communication solutions to safeguard your brand value.",
-      
+
       btn_text: "Learn More About Us"
     },
 
@@ -67,7 +67,7 @@ export const translations = {
       title_part1: "Why Choose Our PR Firm in",
       title_highlight: "Bangladesh?",
       subtitle: "Before selecting a PR agency, it's important to know how strategic experts can elevate your brand. Here is why industry leaders trust us:",
-      
+
       card1_title: "Experienced PR Professionals",
       card1_desc: "Our team has skilled professionals with years of proven PR experience. We create powerful stories, manage brand image, and deliver impactful results.",
 
@@ -86,7 +86,7 @@ export const translations = {
       title_part1: "What Makes InfoPR a Top PR",
       title_highlight: "Agency in Bangladesh?",
       subtitle: "InfoPR stands out because of our proven expertise, consistent results, and professional approach. Here is what makes us the preferred PR partner:",
-      
+
       card1_title: "14+ Years of Experience",
       card1_desc: "Our PR company in Bangladesh has managed numerous campaigns across various industries over the past decade. We bring strategies, deep knowledge, and reliable expertise to handle press activities.",
 
@@ -219,7 +219,7 @@ export const translations = {
       ]
     },
     // about sub-page who-we-are
-   WhoWeAre: {
+    WhoWeAre: {
       badge: "Get To Know Us",
       title_part1: "Bridging the Gap Between",
       title_highlight: "Success & Value",
@@ -264,7 +264,82 @@ export const translations = {
         }
       ]
     },
-   Footer: {
+    // about sub-page concept
+    Concept: {
+      badge: "About Our Philosophy",
+      title: "Our",
+      title_highlight: "Concept",
+      description_1: "We believe advertising alone is not enough to build a strong brand. In today's fast and competitive world, businesses need the right mix of tools like PR, media, branding, and digital tactics. With that, they can connect with people to promote and release press.",
+      description_2: "Plus, our philosophy is to send every message in a clear, meaningful, and impactful way. We also bring creativity, planning, and experience together to design campaigns.",
+      description_3_start: "By blending ideas and methods, we help brands grow, build trust, and stay ahead of the competition. With",
+      description_3_end: ", your brand voice is heard, valued, and noticed."
+    },
+    // about sub-page management
+ 
+    ManagementTree: {
+      badge: "Organizational Structure",
+      title_main: "Info PR",
+      title_highlight: "Top Management",
+      description:
+        "At Info PR, we believe strong leadership drives innovation and excellence. Our top management team brings together a wealth of experience, vision, and dedication to shape the future of strategic communications and public relations.",
+      close: "Close",
+      nodes: {
+        ceo: {
+          title: "CEO",
+          category: "Executive Leadership",
+          members: [
+            {
+              name: "John Doe",
+              role: "Chief Executive Officer",
+              email: "ceo@infopr.com",
+              image: "/team/ceo.jpg",
+            },
+          ],
+        },
+        founder_ceo: {
+          title: "Founder & CEO",
+          category: "Executive Leadership",
+          members: [],
+        },
+        director: {
+          title: "Director",
+          category: "Executive Leadership",
+          members: [],
+        },
+        manager: {
+          title: "Manager",
+          category: "Management",
+          members: [],
+        },
+        it_section: {
+          title: "IT Section",
+          category: "Technology",
+          members: [],
+        },
+        design: {
+          title: "Design",
+          category: "Creative",
+          members: [],
+        },
+        software_dev: {
+          title: "Software Development",
+          category: "Engineering",
+          members: [],
+        },
+        marketing: {
+          title: "Marketing",
+          category: "Growth & Communications",
+          members: [
+            {
+              name: "Jane Smith",
+              role: "Marketing Manager",
+              image: "/team/marketing_manager.jpg",
+            }
+          ],
+        },
+      },
+    },
+    Footer: {
       about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
       quick_links_title: "Quick Links",
       links: {
@@ -310,7 +385,7 @@ export const translations = {
       contact: "যোগাযোগ",
       submitPR: "সাবমিট PR",
     },
-   
+
     Hero: {
       badge: "২০১০ সাল থেকে বিশ্বস্ত পিআর ও মিডিয়া এজেন্সি",
       headline_part1: "স্ট্র্যাটেজিক পিআর দিয়ে",
@@ -324,22 +399,22 @@ export const translations = {
       metric_reach: "মিডিয়া রিচ",
       img_alt: "প্রফেশনাল পিআর টিম অফিসে কাজ করছে"
     },
-    
+
     About: {
       badge: "আমাদের সম্পর্কে",
       heading_part1: "আমরা ব্র্যান্ডের গল্প পৌঁছে দেই সঠিক",
       heading_highlight: "দর্শকের কাছে",
       description_1: "ইনফোপিআর হলো একটি শীর্ষস্থানীয় পাবলিক রিলেশনস এবং ব্র্যান্ড কমিউনিকেশন এজেন্সি। আমরা প্রফেশনাল মিডিয়া রিলেশনস, ক্রাইসিস ম্যানেজমেন্ট এবং ডিজিটাল পিআর স্ট্র্যাটেজির মাধ্যমে দেশীয় ও আন্তর্জাতিক পরিমণ্ডলে ব্র্যান্ডের গ্রহণযোগ্যতা তৈরি করি।",
       description_2: "আমাদের অভিজ্ঞ টিমের প্রত্যক্ষ দিকনির্দেশনায় প্রতিটি প্রজেক্ট সফলভাবে পরিচালিত হয়, যা ব্র্যান্ডকে দীর্ঘমেয়াদী সাফল্য ও আস্থা প্রদান করে।",
-      
-      
+
+
       feature_1_title: "১৪+ বছরের অভিজ্ঞতা",
       feature_1_desc: "বিভিন্ন শিল্পে সফল পিআর ক্যাম্পেইন পরিচালনার এক যুগেরও বেশি অভিজ্ঞতা।",
       feature_2_title: "বিশাল মিডিয়া নেটওয়ার্ক",
       feature_2_desc: "শীর্ষস্থানীয় জাতীয়, আন্তর্জাতিক এবং অনলাইন নিউজ পোর্টালে সরাসরি অ্যাক্সেস।",
       feature_3_title: "ক্রাইসিস ম্যানেজমেন্ট",
       feature_3_desc: "আপনার ব্র্যান্ড রেপুটেশন সুরক্ষায় দ্রুত ও কার্যকরী যোগাযোগ ব্যবস্থা।",
-      
+
       btn_text: "আমাদের সম্পর্কে আরও জানুন"
     },
 
@@ -356,7 +431,7 @@ export const translations = {
       title_part1: "কেন বেছে নেবেন আমাদের",
       title_highlight: "পিআর এজেন্সি?",
       subtitle: "একটি পিআর এজেন্সি নির্বাচনের আগে জানা প্রয়োজন কেন অভিজ্ঞ বিশেষজ্ঞরা আপনার ব্র্যান্ডের জন্য সেরা। যে কারণে শীর্ষ ব্র্যান্ডগুলো আমাদের ওপর আস্থা রাখে:",
-      
+
       card1_title: "অভিজ্ঞ পিআর প্রফেশনালস",
       card1_desc: "আমাদের টিমে রয়েছেন বছরের পর বছর সফল পিআর পরিচালনার অভিজ্ঞতাসম্পন্ন দক্ষ পেশাদার, যারা আপনার ব্র্যান্ডের গল্পকে সঠিক উপায়ে তুলে ধরেন।",
 
@@ -375,7 +450,7 @@ export const translations = {
       title_part1: "কেন ইনফোপিআর বাংলাদেশের শীর্ষ",
       title_highlight: "পিআর এজেন্সি?",
       subtitle: "ইনফোপিআর আলাদা তার প্রমাণিত অভিজ্ঞতা, ধারাবাহিক ফলাফল এবং পেশাদার দৃষ্টিভঙ্গির জন্য। যেসব কারণে শীর্ষ ব্র্যান্ডগুলো আমাদের বেছে নেয়:",
-      
+
       card1_title: "১৪+ বছরের অভিজ্ঞতা",
       card1_desc: "বিগত এক দশক ধরে আমরা দেশের বিভিন্ন ইন্ডাস্ট্রির বহু সফল পিআর ক্যাম্পেইন পরিচালনা করেছি। আমাদের রয়েছে প্রেস এবং মিডিয়া অ্যাক্টিভিটি সামলানোর বাস্তবভিত্তিক জ্ঞান ও দক্ষতা।",
 
@@ -529,36 +604,106 @@ export const translations = {
 
     // Bangla About sub page how we work 
     "HowWeWork": {
-    "badge": "আওয়ার প্রসেস",
-    "title_part1": "যেভাবে আমরা",
-    "title_highlight": "কাজ করি",
-    "subtitle": "আপনার ব্র্যান্ডের পিআর কার্যক্রম পরিচালনা এবং টার্গেটেড অডিয়েন্সের কাছে পৌঁছানোর জন্য আমাদের প্রক্রিয়া অত্যন্ত সহজ কিন্তু কার্যকর:",
-    "steps": [
-      {
-        "step": "01",
-        "title": "প্রয়োজন অনুধাবন",
-        "title": "Understanding Needs",
-        "description": "আমরা আপনার চ্যালেঞ্জ ও লক্ষ্যগুলো গভীরভাবে শুনে চিহ্নিত করি।"
+      "badge": "আওয়ার প্রসেস",
+      "title_part1": "যেভাবে আমরা",
+      "title_highlight": "কাজ করি",
+      "subtitle": "আপনার ব্র্যান্ডের পিআর কার্যক্রম পরিচালনা এবং টার্গেটেড অডিয়েন্সের কাছে পৌঁছানোর জন্য আমাদের প্রক্রিয়া অত্যন্ত সহজ কিন্তু কার্যকর:",
+      "steps": [
+        {
+          "step": "01",
+          "title": "প্রয়োজন অনুধাবন",
+          "title": "Understanding Needs",
+          "description": "আমরা আপনার চ্যালেঞ্জ ও লক্ষ্যগুলো গভীরভাবে শুনে চিহ্নিত করি।"
+        },
+        {
+          "step": "02",
+          "title": "কৌশল নির্ধারণ",
+          "description": "আপনার প্রয়োজন অনুযায়ী আমরা ডেটা-ড্রিভেন এবং উদ্ভাবনী পরিকল্পনা তৈরি করি।"
+        },
+        {
+          "step": "03",
+          "title": "স্বচ্ছ সম্পর্ক",
+          "description": "আমরা বিশ্বাস ও পারস্পরিক সহযোগিতার ভিত্তিতে উন্মুক্ত যোগাযোগ বজায় রাখি।"
+        },
+        {
+          "step": "04",
+          "title": "একত্রে সাফল্য অর্জন",
+          "description": "আপনার ব্র্যান্ডের পরিধি বাড়াতে এবং নিখুঁত ফলাফল আনতে আমরা নিরবচ্ছিন্নভাবে কাজ করি।"
+        }
+      ]
+    },
+    // Bangla About sub page concept
+    Concept: {
+      badge: "আমাদের দর্শন",
+      title: "আমাদের",
+      title_highlight: "কনসেপ্ট",
+      description_1: "আমরা বিশ্বাস করি একটি শক্তিশালী ব্র্যান্ড তৈরির জন্য শুধু বিজ্ঞাপনই যথেষ্ট নয়। আজকের দ্রুত ও প্রতিযোগিতামূলক বিশ্বে ব্যবসার প্রয়োজন পিআর, মিডিয়া, ব্র্যান্ডিং এবং ডিজিটাল কৌশলের সঠিক মিশ্রণ। যার মাধ্যমে তারা সাধারণ মানুষের সাথে যুক্ত হতে এবং প্রেস রিলিজ প্রচার করতে পারে।",
+      description_2: "এছাড়াও, আমাদের দর্শন হলো প্রতিটি বার্তা স্পষ্টভাবে, অর্থপূর্ণভাবে এবং প্রভাবশালী উপায়ে পৌঁছে দেওয়া। আমরা প্রচার অভিযান ডিজাইনে নতুনত্ব, পরিকল্পনা এবং অভিজ্ঞতার সমন্বয় ঘটাই।",
+      description_3_start: "ধারণা ও পদ্ধতির সঠিক মিশ্রণে, আমরা ব্র্যান্ডের প্রবৃদ্ধি, বিশ্বাসযোগ্যতা তৈরি এবং প্রতিযোগিতায় এগিয়ে থাকতে সাহায্য করি।",
+      description_3_end: "-এর সাথে আপনার ব্র্যান্ডের বার্তা পৌঁছাবে সঠিক মানুষের কাছে।"
+    },
+    // Bangla About sub page management
+  ManagementTree: {
+      badge: "শীর্ষ ব্যবস্থাপনা",
+      title_main: "Info PR",
+      title_highlight: "Top Management",
+      description:
+        "Info PR-এ আমরা বিশ্বাস করি সুদৃঢ় নেতৃত্বই উদ্ভাবন ও শ্রেষ্ঠত্বকে ত্বরান্বিত করে। স্ট্র্যাটেজিক কমিউনিকেশন এবং পাবলিক রিলেশনসের ভবিষ্যৎ গড়তে আমাদের শীর্ষ ব্যবস্থাপনা টিম তাদের অভিজ্ঞতা, দূরদৃষ্টি ও নিষ্ঠাকে একত্র করেছে।",
+      close: "বন্ধ করুন",
+      nodes: {
+        ceo: {
+          title: "CEO",
+          category: "Executive Leadership",
+          members: [
+            {
+              name: "John Doe",
+              role: "Chief Executive Officer",
+              email: "ceo@infopr.com",
+              image: "/team/ceo.jpg",
+            },
+          ],
+        },
+        founder_ceo: {
+          title: "Founder and CEO",
+          category: "Executive Leadership",
+          members: [],
+        },
+        director: {
+          title: "Director",
+          category: "Executive Leadership",
+          members: [],
+        },
+        manager: {
+          title: "Manager",
+          category: "Management",
+          members: [],
+        },
+        it_section: {
+          title: "IT Section",
+          category: "Technology",
+          members: [],
+        },
+        design: {
+          title: "Design",
+          category: "Creative",
+          members: [],
+        },
+        software_dev: {
+          title: "Software Development",
+          category: "Engineering",
+          members: [],
+        },
+        marketing: {
+          title: "Marketing",
+          category: "Growth & Communications",
+          members: [],
+        },
       },
-      {
-        "step": "02",
-        "title": "কৌশল নির্ধারণ",
-        "description": "আপনার প্রয়োজন অনুযায়ী আমরা ডেটা-ড্রিভেন এবং উদ্ভাবনী পরিকল্পনা তৈরি করি।"
-      },
-      {
-        "step": "03",
-        "title": "স্বচ্ছ সম্পর্ক",
-        "description": "আমরা বিশ্বাস ও পারস্পরিক সহযোগিতার ভিত্তিতে উন্মুক্ত যোগাযোগ বজায় রাখি।"
-      },
-      {
-        "step": "04",
-        "title": "একত্রে সাফল্য অর্জন",
-        "description": "আপনার ব্র্যান্ডের পরিধি বাড়াতে এবং নিখুঁত ফলাফল আনতে আমরা নিরবচ্ছিন্নভাবে কাজ করি।"
-      }
-    ]
-  },
+    },
+   
+  
 
-   Footer: {
+    Footer: {
       about_desc: "ইনফো পিআর একটি শীর্ষস্থানীয় ডিজিটাল পিআর ও প্রেস রিলিজ পোর্টাল যা ব্যবসাপ্রতিষ্ঠানকে বিশ্বব্যাপী মিডিয়া চ্যানেলের সাথে সংযুক্ত করে।",
       quick_links_title: "দ্রুত লিংক",
       links: {
