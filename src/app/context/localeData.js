@@ -277,68 +277,75 @@ export const translations = {
     // about sub-page management
  
     ManagementTree: {
-      badge: "Organizational Structure",
-      title_main: "Info PR",
-      title_highlight: "Top Management",
-      description:
-        "At Info PR, we believe strong leadership drives innovation and excellence. Our top management team brings together a wealth of experience, vision, and dedication to shape the future of strategic communications and public relations.",
-      close: "Close",
-      nodes: {
-        ceo: {
-          title: "CEO",
-          category: "Executive Leadership",
-          members: [
-            {
-              name: "John Doe",
-              role: "Chief Executive Officer",
-              email: "ceo@infopr.com",
-              image: "/team/ceo.jpg",
-            },
-          ],
+  badge: "Organizational Structure",
+  title_main: "Info PR",
+  title_highlight: "Team Structure",
+  description:
+    "At Info PR, we believe strong leadership drives innovation and excellence. Our dedicated team structure is committed to delivering the best strategic communications and public relations outcomes for our clients.",
+  close: "Close",
+  nodes: {
+    ceo: {
+      title: "CEO",
+      category: "Executive Leadership",
+      members: [
+        {
+          name: "John Doe",
+          role: "Chief Executive Officer",
+          email: "ceo@infopr.com",
+          image: "/team/ceo.jpg",
         },
-        founder_ceo: {
-          title: "Founder & CEO",
-          category: "Executive Leadership",
-          members: [],
-        },
-        director: {
-          title: "Director",
-          category: "Executive Leadership",
-          members: [],
-        },
-        manager: {
-          title: "Manager",
-          category: "Management",
-          members: [],
-        },
-        it_section: {
-          title: "IT Section",
-          category: "Technology",
-          members: [],
-        },
-        design: {
-          title: "Design",
-          category: "Creative",
-          members: [],
-        },
-        software_dev: {
-          title: "Software Development",
-          category: "Engineering",
-          members: [],
-        },
-        marketing: {
-          title: "Marketing",
-          category: "Growth & Communications",
-          members: [
-            {
-              name: "Jane Smith",
-              role: "Marketing Manager",
-              image: "/team/marketing_manager.jpg",
-            }
-          ],
-        },
-      },
+      ],
     },
+    news_reporter: {
+      title: "News & Reporter",
+      category: "PR & Media",
+      members: [
+        {
+          name: "Tanvir Ahmed",
+          role: "Senior Journalist",
+          email: "reporter@infopr.com",
+          image: "/team/news.jpg",
+        },
+      ],
+    },
+    design_creative: {
+      title: "Design & Creative",
+      category: "Creative Team",
+      members: [
+        {
+          name: "Sakib Hasan",
+          role: "Lead UI/UX Designer",
+          email: "design@infopr.com",
+          image: "/team/design.jpg",
+        },
+      ],
+    },
+    it_development: {
+      title: "IT & Development",
+      category: "Engineering",
+      members: [
+        {
+          name: "Md. Ashik Paramanik",
+          role: "Full Stack Developer",
+          email: "ashik@infopr.com",
+          image: "/team/dev.jpg",
+        },
+      ],
+    },
+    digital_marketing: {
+      title: "Digital Marketing",
+      category: "Growth & Communications",
+      members: [
+        {
+          name: "Jane Smith",
+          role: "Marketing Manager",
+          email: "jane@infopr.com",
+          image: "/team/marketing.jpg",
+        },
+      ],
+    },
+  },
+},
     Footer: {
       about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
       quick_links_title: "Quick Links",
@@ -644,62 +651,75 @@ export const translations = {
     },
     // Bangla About sub page management
   ManagementTree: {
-      badge: "শীর্ষ ব্যবস্থাপনা",
-      title_main: "Info PR",
-      title_highlight: "Top Management",
-      description:
-        "Info PR-এ আমরা বিশ্বাস করি সুদৃঢ় নেতৃত্বই উদ্ভাবন ও শ্রেষ্ঠত্বকে ত্বরান্বিত করে। স্ট্র্যাটেজিক কমিউনিকেশন এবং পাবলিক রিলেশনসের ভবিষ্যৎ গড়তে আমাদের শীর্ষ ব্যবস্থাপনা টিম তাদের অভিজ্ঞতা, দূরদৃষ্টি ও নিষ্ঠাকে একত্র করেছে।",
-      close: "বন্ধ করুন",
-      nodes: {
-        ceo: {
-          title: "CEO",
-          category: "Executive Leadership",
-          members: [
-            {
-              name: "John Doe",
-              role: "Chief Executive Officer",
-              email: "ceo@infopr.com",
-              image: "/team/ceo.jpg",
-            },
-          ],
+  badge: "সাংগঠনিক কাঠামো",
+  title_main: "ইনফো পিআর",
+  title_highlight: "টিম স্ট্রাকচার",
+  description:
+    "ইনফো পিআর-এ আমরা বিশ্বাস করি যে সঠিক নেতৃত্বই উদ্ভাবন এবং শ্রেষ্ঠত্বকে চালিত করে। আমাদের দক্ষ টিম স্ট্রাকচার ক্লায়েন্টদের কৌশলগত যোগাযোগ এবং জনসংযোগের ক্ষেত্রে সেরা আউটপুট দিতে প্রতিশ্রুতিবদ্ধ।",
+  close: "বন্ধ করুন",
+  nodes: {
+    ceo: {
+      title: "CEO",
+      category: "Executive Leadership",
+      members: [
+        {
+          name: "জন ডো",
+          role: "Chief Executive Officer",
+          email: "ceo@infopr.com",
+          image: "/team/ceo.jpg",
         },
-        founder_ceo: {
-          title: "Founder and CEO",
-          category: "Executive Leadership",
-          members: [],
-        },
-        director: {
-          title: "Director",
-          category: "Executive Leadership",
-          members: [],
-        },
-        manager: {
-          title: "Manager",
-          category: "Management",
-          members: [],
-        },
-        it_section: {
-          title: "IT Section",
-          category: "Technology",
-          members: [],
-        },
-        design: {
-          title: "Design",
-          category: "Creative",
-          members: [],
-        },
-        software_dev: {
-          title: "Software Development",
-          category: "Engineering",
-          members: [],
-        },
-        marketing: {
-          title: "Marketing",
-          category: "Growth & Communications",
-          members: [],
-        },
-      },
+      ],
     },
+    news_reporter: {
+      title: "News & Reporter",
+      category: "PR & Media",
+      members: [
+        {
+          name: "তানভীর আহমেদ",
+          role: "Senior Journalist",
+          email: "reporter@infopr.com",
+          image: "/team/news.jpg",
+        },
+      ],
+    },
+    design_creative: {
+      title: "Design & Creative",
+      category: "Creative Team",
+      members: [
+        {
+          name: "সাকিব হাসান",
+          role: "Lead UI/UX Designer",
+          email: "design@infopr.com",
+          image: "/team/design.jpg",
+        },
+      ],
+    },
+    it_development: {
+      title: "IT & Development",
+      category: "Engineering",
+      members: [
+        {
+          name: "মোঃ আশিক পারমানিক",
+          role: "Full Stack Developer",
+          email: "ashik@infopr.com",
+          image: "/team/dev.jpg",
+        },
+      ],
+    },
+    digital_marketing: {
+      title: "Digital Marketing",
+      category: "Growth & Communications",
+      members: [
+        {
+          name: "জান্নাতুল ফেরদৌস",
+          role: "Marketing Manager",
+          email: "jane@infopr.com",
+          image: "/team/marketing.jpg",
+        },
+      ],
+    },
+  },
+},
    
   
 
