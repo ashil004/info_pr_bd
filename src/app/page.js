@@ -3,7 +3,6 @@ import ClientLogos from "./component/ClientLogos";
 import DiverseIndustries from "./component/DiverseIndustries";
 import Hero from "./component/Hero";
 import NewsPlatformsClickable from "./component/NewsPlatformsClickable";
-import NewsPlatformsMarquee from "./component/NewsPlatformsMarquee";
 import Services from "./component/Services";
 import TopPRAgency from "./component/TopPRAgency";
 import WhyChooseUs from "./component/WhyChooseUs";
@@ -12,21 +11,14 @@ import WhyChooseUs from "./component/WhyChooseUs";
 export default function Home() {
   return (
     <div>
-
       <Hero></Hero>
       <About></About>
-      {/* <NewsPlatformsMarquee></NewsPlatformsMarquee> */}
       <NewsPlatformsClickable></NewsPlatformsClickable>
       <WhyChooseUs></WhyChooseUs>
       <TopPRAgency></TopPRAgency>
-
       <Services></Services>
-
       <DiverseIndustries></DiverseIndustries>
       <ClientLogos></ClientLogos>
-
-     
-      
     </div>
   );
 }
