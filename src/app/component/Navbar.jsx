@@ -78,15 +78,52 @@ export default function Navbar() {
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
               aria-haspopup="true"
             >
-              <span>{t('Header.services')}</span>
+              {/* <span>{t('Header.services')}</span> */}
+              <Link href="/services" className="focus:outline-none">{t('Header.services')}</Link>
               <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
             </button>
             <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 py-2 z-50">
-              <Link href="/services/bangla-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">{t('Header.srv_bangla_newspapers')}</Link>
-              <Link href="/services/english-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">{t('Header.srv_english_newspapers')}</Link>
-              <Link href="/services/online-bangla" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">{t('Header.srv_online_bangla')}</Link>
-              <Link href="/services/online-english" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">{t('Header.srv_online_english')}</Link>
-              <Link href="/services/tv-channels" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">{t('Header.srv_tv_channels')}</Link>
+              <Link
+                href="/services/press-conference"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_press_conference')}
+              </Link>
+
+              <Link
+                href="/services/digital-pr"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_digital_pr')}
+              </Link>
+
+              <Link
+                href="/services/content-consultancy"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_content_consultancy')}
+              </Link>
+
+              <Link
+                href="/services/crisis-management"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_crisis_management')}
+              </Link>
+
+              <Link
+                href="/services/brand-launch"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_brand_launch')}
+              </Link>
+
+              <Link
+                href="/services/sample-coverage"
+                className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
+              >
+                {t('Header.srv_sample_coverage')}
+              </Link>
             </div>
           </div>
 

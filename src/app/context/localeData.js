@@ -10,11 +10,12 @@ export const translations = {
       about_management: "Top Management",
 
       services: "Services",
-      srv_bangla_newspapers: "Bangla Newspapers",
-      srv_english_newspapers: "English Newspapers",
-      srv_online_bangla: "Online Bangla News Portals",
-      srv_online_english: "Online English News Portals",
-      srv_tv_channels: "TV Channels",
+      "srv_press_conference": "Press Conference",
+      "srv_digital_pr": "Digital PR",
+      "srv_content_consultancy": "Content Consultancy",
+      "srv_crisis_management": "Crisis Management",
+      "srv_brand_launch": "Brand Launch",
+      "srv_sample_coverage": "Sample Coverage",
 
       pressReleases: "Press Releases",
       blog: "Blog",
@@ -275,77 +276,77 @@ export const translations = {
       description_3_end: ", your brand voice is heard, valued, and noticed."
     },
     // about sub-page management
- 
+
     ManagementTree: {
-  badge: "Organizational Structure",
-  title_main: "Info PR",
-  title_highlight: "Team Structure",
-  description:
-    "At Info PR, we believe strong leadership drives innovation and excellence. Our dedicated team structure is committed to delivering the best strategic communications and public relations outcomes for our clients.",
-  close: "Close",
-  nodes: {
-    ceo: {
-      title: "CEO",
-      category: "Executive Leadership",
-      members: [
-        {
-          name: "John Doe",
-          role: "Chief Executive Officer",
-          email: "ceo@infopr.com",
-          image: "/team/ceo.jpg",
+      badge: "Organizational Structure",
+      title_main: "Info PR",
+      title_highlight: "Team Structure",
+      description:
+        "At Info PR, we believe strong leadership drives innovation and excellence. Our dedicated team structure is committed to delivering the best strategic communications and public relations outcomes for our clients.",
+      close: "Close",
+      nodes: {
+        ceo: {
+          title: "CEO",
+          category: "Executive Leadership",
+          members: [
+            {
+              name: "John Doe",
+              role: "Chief Executive Officer",
+              email: "ceo@infopr.com",
+              image: "/team/ceo.jpg",
+            },
+          ],
         },
-      ],
-    },
-    news_reporter: {
-      title: "News & Reporter",
-      category: "PR & Media",
-      members: [
-        {
-          name: "Tanvir Ahmed",
-          role: "Senior Journalist",
-          email: "reporter@infopr.com",
-          image: "/team/news.jpg",
+        news_reporter: {
+          title: "News & Reporter",
+          category: "PR & Media",
+          members: [
+            {
+              name: "Tanvir Ahmed",
+              role: "Senior Journalist",
+              email: "reporter@infopr.com",
+              image: "/team/news.jpg",
+            },
+          ],
         },
-      ],
-    },
-    design_creative: {
-      title: "Design & Creative",
-      category: "Creative Team",
-      members: [
-        {
-          name: "Sakib Hasan",
-          role: "Lead UI/UX Designer",
-          email: "design@infopr.com",
-          image: "/team/design.jpg",
+        design_creative: {
+          title: "Design & Creative",
+          category: "Creative Team",
+          members: [
+            {
+              name: "Sakib Hasan",
+              role: "Lead UI/UX Designer",
+              email: "design@infopr.com",
+              image: "/team/design.jpg",
+            },
+          ],
         },
-      ],
-    },
-    it_development: {
-      title: "IT & Development",
-      category: "Engineering",
-      members: [
-        {
-          name: "Md. Ashik Paramanik",
-          role: "Full Stack Developer",
-          email: "ashik@infopr.com",
-          image: "/team/dev.jpg",
+        it_development: {
+          title: "IT & Development",
+          category: "Engineering",
+          members: [
+            {
+              name: "Md. Ashik Paramanik",
+              role: "Full Stack Developer",
+              email: "ashik@infopr.com",
+              image: "/team/dev.jpg",
+            },
+          ],
         },
-      ],
-    },
-    digital_marketing: {
-      title: "Digital Marketing",
-      category: "Growth & Communications",
-      members: [
-        {
-          name: "Jane Smith",
-          role: "Marketing Manager",
-          email: "jane@infopr.com",
-          image: "/team/marketing.jpg",
+        digital_marketing: {
+          title: "Digital Marketing",
+          category: "Growth & Communications",
+          members: [
+            {
+              name: "Jane Smith",
+              role: "Marketing Manager",
+              email: "jane@infopr.com",
+              image: "/team/marketing.jpg",
+            },
+          ],
         },
-      ],
+      },
     },
-  },
-},
     Footer: {
       about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
       quick_links_title: "Quick Links",
@@ -380,12 +381,13 @@ export const translations = {
       about_concept: "আমাদের কনসেপ্ট",
       about_management: "শীর্ষ ব্যবস্থাপনা",
 
-      services: "সার্ভিসেস",
-      srv_bangla_newspapers: "বাংলা সংবাদপত্র",
-      srv_english_newspapers: "ইংরেজি সংবাদপত্র",
-      srv_online_bangla: "অনলাইন বাংলা নিউজ পোর্টাল",
-      srv_online_english: "অনলাইন ইংরেজি নিউজ পোর্টাল",
-      srv_tv_channels: "টিভি চ্যানেলসমূহ",
+      "services": "সার্ভিসেস",
+"srv_press_conference": "প্রেস কনফারেন্স",
+"srv_digital_pr": "ডিজিটাল পিআর",
+"srv_content_consultancy": "কনটেন্ট কনসালটেন্সি",
+"srv_crisis_management": "ক্রাইসিস ম্যানেজমেন্ট",
+"srv_brand_launch": "ব্র্যান্ড লঞ্চ",
+"srv_sample_coverage": "স্যাম্পল কভারেজ",
 
       pressReleases: "প্রেস রিলিজ",
       blog: "ব্লগ",
@@ -650,78 +652,78 @@ export const translations = {
       description_3_end: "-এর সাথে আপনার ব্র্যান্ডের বার্তা পৌঁছাবে সঠিক মানুষের কাছে।"
     },
     // Bangla About sub page management
-  ManagementTree: {
-  badge: "সাংগঠনিক কাঠামো",
-  title_main: "ইনফো পিআর",
-  title_highlight: "টিম স্ট্রাকচার",
-  description:
-    "ইনফো পিআর-এ আমরা বিশ্বাস করি যে সঠিক নেতৃত্বই উদ্ভাবন এবং শ্রেষ্ঠত্বকে চালিত করে। আমাদের দক্ষ টিম স্ট্রাকচার ক্লায়েন্টদের কৌশলগত যোগাযোগ এবং জনসংযোগের ক্ষেত্রে সেরা আউটপুট দিতে প্রতিশ্রুতিবদ্ধ।",
-  close: "বন্ধ করুন",
-  nodes: {
-    ceo: {
-      title: "CEO",
-      category: "Executive Leadership",
-      members: [
-        {
-          name: "জন ডো",
-          role: "Chief Executive Officer",
-          email: "ceo@infopr.com",
-          image: "/team/ceo.jpg",
+    ManagementTree: {
+      badge: "সাংগঠনিক কাঠামো",
+      title_main: "ইনফো পিআর",
+      title_highlight: "টিম স্ট্রাকচার",
+      description:
+        "ইনফো পিআর-এ আমরা বিশ্বাস করি যে সঠিক নেতৃত্বই উদ্ভাবন এবং শ্রেষ্ঠত্বকে চালিত করে। আমাদের দক্ষ টিম স্ট্রাকচার ক্লায়েন্টদের কৌশলগত যোগাযোগ এবং জনসংযোগের ক্ষেত্রে সেরা আউটপুট দিতে প্রতিশ্রুতিবদ্ধ।",
+      close: "বন্ধ করুন",
+      nodes: {
+        ceo: {
+          title: "CEO",
+          category: "Executive Leadership",
+          members: [
+            {
+              name: "জন ডো",
+              role: "Chief Executive Officer",
+              email: "ceo@infopr.com",
+              image: "/team/ceo.jpg",
+            },
+          ],
         },
-      ],
-    },
-    news_reporter: {
-      title: "News & Reporter",
-      category: "PR & Media",
-      members: [
-        {
-          name: "তানভীর আহমেদ",
-          role: "Senior Journalist",
-          email: "reporter@infopr.com",
-          image: "/team/news.jpg",
+        news_reporter: {
+          title: "News & Reporter",
+          category: "PR & Media",
+          members: [
+            {
+              name: "তানভীর আহমেদ",
+              role: "Senior Journalist",
+              email: "reporter@infopr.com",
+              image: "/team/news.jpg",
+            },
+          ],
         },
-      ],
-    },
-    design_creative: {
-      title: "Design & Creative",
-      category: "Creative Team",
-      members: [
-        {
-          name: "সাকিব হাসান",
-          role: "Lead UI/UX Designer",
-          email: "design@infopr.com",
-          image: "/team/design.jpg",
+        design_creative: {
+          title: "Design & Creative",
+          category: "Creative Team",
+          members: [
+            {
+              name: "সাকিব হাসান",
+              role: "Lead UI/UX Designer",
+              email: "design@infopr.com",
+              image: "/team/design.jpg",
+            },
+          ],
         },
-      ],
-    },
-    it_development: {
-      title: "IT & Development",
-      category: "Engineering",
-      members: [
-        {
-          name: "মোঃ আশিক পারমানিক",
-          role: "Full Stack Developer",
-          email: "ashik@infopr.com",
-          image: "/team/dev.jpg",
+        it_development: {
+          title: "IT & Development",
+          category: "Engineering",
+          members: [
+            {
+              name: "মোঃ আশিক পারমানিক",
+              role: "Full Stack Developer",
+              email: "ashik@infopr.com",
+              image: "/team/dev.jpg",
+            },
+          ],
         },
-      ],
-    },
-    digital_marketing: {
-      title: "Digital Marketing",
-      category: "Growth & Communications",
-      members: [
-        {
-          name: "জান্নাতুল ফেরদৌস",
-          role: "Marketing Manager",
-          email: "jane@infopr.com",
-          image: "/team/marketing.jpg",
+        digital_marketing: {
+          title: "Digital Marketing",
+          category: "Growth & Communications",
+          members: [
+            {
+              name: "জান্নাতুল ফেরদৌস",
+              role: "Marketing Manager",
+              email: "jane@infopr.com",
+              image: "/team/marketing.jpg",
+            },
+          ],
         },
-      ],
+      },
     },
-  },
-},
-   
-  
+
+
 
     Footer: {
       about_desc: "ইনফো পিআর একটি শীর্ষস্থানীয় ডিজিটাল পিআর ও প্রেস রিলিজ পোর্টাল যা ব্যবসাপ্রতিষ্ঠানকে বিশ্বব্যাপী মিডিয়া চ্যানেলের সাথে সংযুক্ত করে।",
