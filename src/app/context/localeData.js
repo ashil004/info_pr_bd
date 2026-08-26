@@ -11,7 +11,7 @@ export const translations = {
 
       services: "Services",
       "srv_press_conference": "Press Conference",
-      "srv_digital_pr": "Digital PR",
+      "srv_digital_pr": "Digital Public Relation",
       "srv_content_consultancy": "Content Consultancy",
       "srv_crisis_management": "Crisis Management",
       "srv_brand_launch": "Brand Launch",

@@ -91,7 +91,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="/services/digital-pr"
+                href="/services/digital-public-relations"
                 className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
               >
                 {t('Header.srv_digital_pr')}
@@ -118,12 +118,12 @@ export default function Navbar() {
                 {t('Header.srv_brand_launch')}
               </Link>
 
-              <Link
+              {/* <Link
                 href="/services/sample-coverage"
                 className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors"
               >
                 {t('Header.srv_sample_coverage')}
-              </Link>
+              </Link> */}
             </div>
           </div>
 
