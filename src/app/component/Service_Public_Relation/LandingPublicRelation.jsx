@@ -229,20 +229,8 @@ export default function LandingPublicRelation() {
                       </div>
                     </div>
 
-                    {/* Bottom Action */}
-                    <div className="pt-6 border-t border-slate-100 flex items-center justify-between relative z-10">
-                      <span className="text-xs font-medium text-slate-400">
-                        Hover adjacent tiles to explore more
-                      </span>
-
-                      <a
-                        href="#contact"
-                        className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-white bg-[#a4223a] hover:bg-[#801326] px-5 py-2.5 rounded-xl transition-all shadow-md shadow-red-950/10"
-                      >
-                        <span>Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                    </div>
+                    
+                    
                   </motion.div>
                 )}
               </motion.div>
@@ -333,20 +321,8 @@ export default function LandingPublicRelation() {
                           ))}
                         </div>
 
-                        {/* Card Bottom Stats & CTA */}
-                        <div className="mt-4 pt-3 flex items-center justify-between border-t border-slate-100 text-xs">
-                          <span className="font-extrabold text-[#a4223a] bg-red-50 px-2.5 py-1 rounded-md text-[11px]">
-                            {item.metric}
-                          </span>
-
-                          <a
-                            href="#contact"
-                            className="inline-flex items-center gap-1.5 font-black text-xs text-white bg-[#a4223a] px-3.5 py-1.5 rounded-lg shadow-sm"
-                          >
-                            <span>Learn More</span>
-                            <ArrowRight className="w-3 h-3" />
-                          </a>
-                        </div>
+                  
+                        
 
                       </div>
                     </motion.div>

@@ -17,9 +17,6 @@ export default function DigitalPR() {
         <WhoWeWorkWith></WhoWeWorkWith>
         <LandingPublicRelation></LandingPublicRelation>
         <ServiceFqa></ServiceFqa>
-
-        
-
     </div>
   )
 }
