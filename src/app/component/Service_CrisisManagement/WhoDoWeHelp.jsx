@@ -54,7 +54,7 @@ export default function WhoDoWeHelp() {
   return (
     <section className="py-20 sm:py-28 bg-slate-950 text-white overflow-hidden relative border-t border-slate-900">
       {/* Background Subtle Accent Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-red-950/20 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#a4223a]/15 blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -66,13 +66,13 @@ export default function WhoDoWeHelp() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16 sm:mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/50 text-[#e63946] border border-[#e63946]/30 text-xs font-black uppercase tracking-widest mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-[#e63946]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#a4223a]/20 text-[#a4223a] border border-[#a4223a]/30 text-xs font-black uppercase tracking-widest mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#a4223a]" />
             <span>Target Clienteles</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            Who Do We Help with <span className="text-[#e63946]">Crisis Management</span> in BD?
+            Who Do We Help with <span className="text-[#a4223a]">Crisis Management</span> in BD?
           </h2>
 
           <p className="mt-4 text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -92,7 +92,7 @@ export default function WhoDoWeHelp() {
                 initial={false}
                 onMouseEnter={() => setExpandedIndex(index)}
                 className={`transition-colors duration-300 border-b border-slate-800/80 pb-6 pt-2 ${
-                  isOpen ? "border-[#e63946]" : "hover:border-slate-700"
+                  isOpen ? "border-[#a4223a]" : "hover:border-slate-700"
                 }`}
               >
                 {/* Header Row */}
@@ -103,7 +103,7 @@ export default function WhoDoWeHelp() {
                   <div className="flex items-center gap-4 sm:gap-8">
                     {/* Number Indicator */}
                     <span className={`text-sm sm:text-base font-mono font-bold transition-colors duration-300 ${
-                      isOpen ? "text-[#e63946]" : "text-slate-600 group-hover:text-slate-400"
+                      isOpen ? "text-[#a4223a]" : "text-slate-600 group-hover:text-slate-400"
                     }`}>
                       /{item.id}
                     </span>
@@ -111,7 +111,7 @@ export default function WhoDoWeHelp() {
                     {/* Icon & Title */}
                     <div className="flex items-center gap-3 sm:gap-4">
                       <div className={`p-2.5 rounded-lg transition-all duration-300 ${
-                        isOpen ? "bg-[#e63946] text-white" : "bg-slate-900 text-slate-400 group-hover:text-slate-200"
+                        isOpen ? "bg-[#a4223a] text-white" : "bg-slate-900 text-slate-400 group-hover:text-slate-200"
                       }`}>
                         <Icon className="w-5 h-5" />
                       </div>
@@ -127,13 +127,13 @@ export default function WhoDoWeHelp() {
                   {/* Right Action Badge & Icon */}
                   <div className="flex items-center gap-4">
                     <span className={`hidden md:inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider transition-colors duration-300 ${
-                      isOpen ? "bg-red-950/60 text-[#e63946] border border-[#e63946]/30" : "bg-slate-900 text-slate-500"
+                      isOpen ? "bg-[#a4223a]/20 text-[#a4223a] border border-[#a4223a]/30" : "bg-slate-900 text-slate-500"
                     }`}>
                       {item.badge}
                     </span>
 
                     <div className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? "border-[#e63946] bg-[#e63946] text-white" : "border-slate-800 text-slate-500 group-hover:border-slate-600 group-hover:text-slate-300"
+                      isOpen ? "border-[#a4223a] bg-[#a4223a] text-white" : "border-slate-800 text-slate-500 group-hover:border-slate-600 group-hover:text-slate-300"
                     }`}>
                       {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                     </div>
@@ -156,7 +156,7 @@ export default function WhoDoWeHelp() {
                         </p>
                         
                         <div className="md:col-span-2 flex justify-start md:justify-end">
-                          <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase text-[#e63946] tracking-wider cursor-pointer group/link">
+                          <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase text-[#a4223a] tracking-wider cursor-pointer group/link">
                             <span>Strategic Defense</span>
                             <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                           </div>

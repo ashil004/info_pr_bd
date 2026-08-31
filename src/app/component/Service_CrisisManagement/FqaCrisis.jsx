@@ -46,13 +46,13 @@ export default function FqaCrisis() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 text-[#e63946] text-xs font-black uppercase tracking-wider mb-4 border border-red-100">
-            <Sparkles className="w-3.5 h-3.5 text-[#e63946]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#a4223a]/10 text-[#a4223a] text-xs font-black uppercase tracking-wider mb-4 border border-[#a4223a]/20">
+            <Sparkles className="w-3.5 h-3.5 text-[#a4223a]" />
             <span>Got Questions?</span>
           </div>
 
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            FAQs About Reputation and <span className="text-[#e63946]">Crisis Management</span>
+            FAQs About Reputation and <span className="text-[#a4223a]">Crisis Management</span>
           </h2>
 
           <p className="mt-3 text-slate-600 text-xs sm:text-base leading-relaxed">
@@ -74,7 +74,7 @@ export default function FqaCrisis() {
                 transition={{ duration: 0.3, delay: index * 0.08 }}
                 className={`rounded-2xl transition-all duration-300 border ${
                   isOpen
-                    ? "bg-slate-50 border-[#e63946]/30 shadow-xs"
+                    ? "bg-slate-50 border-[#a4223a]/30 shadow-xs"
                     : "bg-white border-slate-200/80 hover:border-slate-300"
                 }`}
               >
@@ -86,8 +86,8 @@ export default function FqaCrisis() {
                     <div
                       className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300 ${
                         isOpen
-                          ? "bg-[#e63946] text-white"
-                          : "bg-red-50 text-[#e63946] group-hover:bg-red-100"
+                          ? "bg-[#a4223a] text-white"
+                          : "bg-[#a4223a]/10 text-[#a4223a] group-hover:bg-[#a4223a]/20"
                       }`}
                     >
                       <HelpCircle className="w-4 h-4" />
@@ -95,7 +95,7 @@ export default function FqaCrisis() {
 
                     <h3
                       className={`text-base sm:text-lg font-black transition-colors ${
-                        isOpen ? "text-[#e63946]" : "text-slate-900 group-hover:text-[#e63946]"
+                        isOpen ? "text-[#a4223a]" : "text-slate-900 group-hover:text-[#a4223a]"
                       }`}
                     >
                       {faq.question}
@@ -104,7 +104,7 @@ export default function FqaCrisis() {
 
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0 ${
-                      isOpen ? "rotate-180 text-[#e63946]" : "text-slate-400 group-hover:text-slate-600"
+                      isOpen ? "rotate-180 text-[#a4223a]" : "text-slate-400 group-hover:text-slate-600"
                     }`}
                   >
                     <ChevronDown className="w-5 h-5" />

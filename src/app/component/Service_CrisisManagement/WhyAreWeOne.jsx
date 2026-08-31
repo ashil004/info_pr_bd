@@ -80,13 +80,13 @@ export default function WhyAreWeOne() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mb-16 sm:mb-20"
         >
-          <div className="inline-flex items-center gap-2 text-[#e63946] text-xs font-black uppercase tracking-widest mb-3">
-            <Sparkles className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 text-[#a4223a] text-xs font-black uppercase tracking-widest mb-3">
+            <Sparkles className="w-4 h-4 text-[#a4223a]" />
             <span>Competitive Advantage</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-            Why Are We One of the <span className="text-[#e63946]">Best Reputation Management</span> Companies in BD?
+            Why Are We One of the <span className="text-[#a4223a]">Best Reputation Management</span> Companies in BD?
           </h2>
 
           <p className="mt-4 text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -115,21 +115,21 @@ export default function WhyAreWeOne() {
                   {/* Top Stats & Icon */}
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <span className="text-4xl sm:text-5xl font-black group-hover:text-[#e63946] transition-colors duration-300 font-mono">
+                      <span className="text-4xl sm:text-5xl font-black group-hover:text-[#a4223a] transition-colors duration-300 font-mono">
                         {item.highlight}
                       </span>
-                      <span className="block text-xs font-black uppercase tracking-widest text-[#e63946] mt-1">
+                      <span className="block text-xs font-black uppercase tracking-widest text-[#a4223a] mt-1">
                         {item.subTag}
                       </span>
                     </div>
 
-                    <div className="w-12 h-12 rounded-xl text-slate-500 group-hover:text-[#e63946] flex items-center justify-center transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-xl text-slate-500 group-hover:text-[#a4223a] flex items-center justify-center transition-colors duration-300">
                       <Icon className="w-6 h-6" />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl sm:text-2xl font-black group-hover:text-[#e63946] transition-colors duration-300 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black group-hover:text-[#a4223a] transition-colors duration-300 mb-3">
                     {item.title}
                   </h3>
 
@@ -141,7 +141,7 @@ export default function WhyAreWeOne() {
 
                 {/* Bottom Status Line */}
                 <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-900/60 flex items-center gap-2 text-xs font-bold text-slate-400">
-                  <CheckCircle2 className="w-4 h-4 text-[#e63946]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#a4223a]" />
                   <span>Verified Agency Standard</span>
                 </div>
               </motion.div>

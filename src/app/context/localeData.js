@@ -1,27 +1,37 @@
 export const translations = {
   en: {
-    Header: {
-      home: "Home",
-      about: "About",
-      about_mission: "Our Mission",
-      about_who_we_are: "Who We Are",
-      about_how_we_work: "How We Work",
-      about_concept: "Our Concept",
-      about_management: "Top Management",
+   Header: {
+  home: "Home",
+  about: "About",
+  about_mission: "Our Mission",
+  about_who_we_are: "Who We Are",
+  about_how_we_work: "How We Work",
+  about_concept: "Our Concept",
+  about_management: "Top Management",
 
-      services: "Services",
-      "srv_press_conference": "Press Conference",
-      "srv_digital_pr": "Digital Public Relation",
-      "srv_content_consultancy": "Content Consultancy",
-      "srv_crisis_management": "Crisis Management",
-      "srv_brand_launch": "Brand Launch",
-      "srv_sample_coverage": "Sample Coverage",
+  services: "Services",
+  srv_press_conference: "Press Conference",
+  srv_digital_pr: "Digital Public Relation",
+  srv_content_consultancy: "Content Consultancy",
+  srv_crisis_management: "Crisis Management",
+  srv_brand_launch: "Brand Launch",
+  srv_sample_coverage: "Sample Coverage",
 
-      pressReleases: "Press Releases",
-      blog: "Blog",
-      contact: "Contact",
-      submitPR: "Submit PR",
-    },
+  // --- NEWLY ADDED ---
+  featuredOn: "Featured On",
+  srv_bangla_newspapers: "Bangla Newspapers",
+  srv_english_newspapers: "English Newspapers",
+  srv_online_bangla: "Online Bangla News Portals",
+  srv_online_english: "Online English News Portals",
+  srv_tv_channels: "TV Channels",
+
+  clientList: "Client List",
+
+  pressReleases: "Press Releases",
+  blog: "Blog",
+  contact: "Contact",
+  submitPR: "Submit PR",
+},
 
     Hero: {
       badge: "Trusted PR & Media Agency Since 2010",
@@ -372,28 +382,38 @@ export const translations = {
   },
 
   bn: {
-    Header: {
-      home: "হোম",
-      about: "আমাদের সম্পর্কে",
-      about_mission: "আমাদের লক্ষ্য",
-      about_who_we_are: "আমরা কে",
-      about_how_we_work: "আমরা যেভাবে কাজ করি",
-      about_concept: "আমাদের কনসেপ্ট",
-      about_management: "শীর্ষ ব্যবস্থাপনা",
+   Header: {
+  home: "হোম",
+  about: "আমাদের সম্পর্কে",
+  about_mission: "আমাদের লক্ষ্য",
+  about_who_we_are: "আমরা কে",
+  about_how_we_work: "আমরা যেভাবে কাজ করি",
+  about_concept: "আমাদের কনসেপ্ট",
+  about_management: "শীর্ষ ব্যবস্থাপনা",
 
-      "services": "সার্ভিসেস",
-"srv_press_conference": "প্রেস কনফারেন্স",
-"srv_digital_pr": "ডিজিটাল পিআর",
-"srv_content_consultancy": "কনটেন্ট কনসালটেন্সি",
-"srv_crisis_management": "ক্রাইসিস ম্যানেজমেন্ট",
-"srv_brand_launch": "ব্র্যান্ড লঞ্চ",
-"srv_sample_coverage": "স্যাম্পল কভারেজ",
+  services: "সার্ভিসেস",
+  srv_press_conference: "প্রেস কনফারেন্স",
+  srv_digital_pr: "ডিজিটাল পিআর",
+  srv_content_consultancy: "কনটেন্ট কনসালটেন্সি",
+  srv_crisis_management: "ক্রাইসিস ম্যানেজমেন্ট",
+  srv_brand_launch: "ব্র্যান্ড লঞ্চ",
+  srv_sample_coverage: "স্যাম্পল কভারেজ",
 
-      pressReleases: "প্রেস রিলিজ",
-      blog: "ব্লগ",
-      contact: "যোগাযোগ",
-      submitPR: "সাবমিট PR",
-    },
+  // --- নতুন যুক্ত করা হয়েছে ---
+  featuredOn: "ফিচার্ড অন",
+  srv_bangla_newspapers: "বাংলা পত্রিকা",
+  srv_english_newspapers: "ইংরেজি পত্রিকা",
+  srv_online_bangla: "অনলাইন বাংলা নিউজ পোর্টাল",
+  srv_online_english: "অনলাইন ইংরেজি নিউজ পোর্টাল",
+  srv_tv_channels: "টিভি চ্যানেল",
+
+  clientList: "ক্লায়েন্ট লিস্ট",
+
+  pressReleases: "প্রেস রিলিজ",
+  blog: "ব্লগ",
+  contact: "যোগাযোগ",
+  submitPR: "সাবমিট PR",
+},
 
     Hero: {
       badge: "২০১০ সাল থেকে বিশ্বস্ত পিআর ও মিডিয়া এজেন্সি",
