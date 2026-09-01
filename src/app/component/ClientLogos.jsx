@@ -7,7 +7,7 @@ import { useLanguage } from '@/app/context/LanguageContext';
 export default function ClientLogos() {
   const { t } = useLanguage();
 
-  // আপনার লোগো ইমেজের ফাইল পাথগুলো এখানে লিস্ট করুন
+  
   const logos = [
     { name: "Asian Post", src: "/asian-post.jpg" },
     { name: "Facebook", src: "/facebook.png" },

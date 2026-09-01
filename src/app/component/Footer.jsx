@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
 
             <Link
-              href="/submit-pr"
+              href="/contact"
               className="inline-flex items-center gap-1.5 bg-[#a4223a] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#851b2e] transition shadow-sm"
             >
               <Send size={12} />

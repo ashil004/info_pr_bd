@@ -143,7 +143,7 @@ export default function Navbar() {
           <LanguageSelect lang={lang} onChange={handleLanguageChange} />
 
           <Link
-            href="/submit-pr"
+            href="/contact"
             className="hidden sm:flex items-center gap-1.5 bg-[#a4223a] hover:bg-[#851b2e] text-white text-xs font-bold px-4 py-2 rounded-full transition-all shadow-sm active:scale-95"
           >
             <Send size={12} />
@@ -257,7 +257,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/submit-pr"
+            href="/contact"
             onClick={() => setMobileMenuOpen(false)}
             className="flex sm:hidden items-center justify-center gap-1.5 bg-[#a4223a] text-white text-xs font-bold px-4 py-2.5 rounded-full transition w-full mt-3 active:scale-98"
           >
