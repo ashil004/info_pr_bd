@@ -1,37 +1,37 @@
 export const translations = {
   en: {
-   Header: {
-  home: "Home",
-  about: "About",
-  about_mission: "Our Mission",
-  about_who_we_are: "Who We Are",
-  about_how_we_work: "How We Work",
-  about_concept: "Our Concept",
-  about_management: "Top Management",
+    Header: {
+      home: "Home",
+      about: "About",
+      about_mission: "Our Mission",
+      about_who_we_are: "Who We Are",
+      about_how_we_work: "How We Work",
+      about_concept: "Our Concept",
+      about_management: "Top Management",
 
-  services: "Services",
-  srv_press_conference: "Press Conference",
-  srv_digital_pr: "Digital Public Relation",
-  srv_content_consultancy: "Content Consultancy",
-  srv_crisis_management: "Crisis Management",
-  srv_brand_launch: "Brand Launch",
-  srv_sample_coverage: "Sample Coverage",
+      services: "Services",
+      srv_press_conference: "Press Conference",
+      srv_digital_pr: "Digital Public Relation",
+      srv_content_consultancy: "Content Consultancy",
+      srv_crisis_management: "Crisis Management",
+      srv_brand_launch: "Brand Launch",
+      srv_sample_coverage: "Sample Coverage",
 
-  // --- NEWLY ADDED ---
-  featuredOn: "Featured On",
-  srv_bangla_newspapers: "Bangla Newspapers",
-  srv_english_newspapers: "English Newspapers",
-  srv_online_bangla: "Online Bangla News Portals",
-  srv_online_english: "Online English News Portals",
-  srv_tv_channels: "TV Channels",
+      // --- NEWLY ADDED ---
+      featuredOn: "Featured On",
+      srv_bangla_newspapers: "Bangla Newspapers",
+      srv_english_newspapers: "English Newspapers",
+      srv_online_bangla: "Online Bangla News Portals",
+      srv_online_english: "Online English News Portals",
+      srv_tv_channels: "TV Channels",
 
-  clientList: "Client List",
+      clientList: "Client List",
 
-  pressReleases: "Press Releases",
-  blog: "Blog",
-  contact: "Contact",
-  submitPR: "Submit PR",
-},
+      pressReleases: "Press Releases",
+      blog: "Blog",
+      contact: "Contact",
+      submitPR: "Submit PR",
+    },
 
     Hero: {
       badge: "Trusted PR & Media Agency Since 2010",
@@ -70,7 +70,9 @@ export const translations = {
       title_part1: "Get Featured on Bangladesh's",
       title_highlight: "Top News Platforms",
       subtitle: "Click on any news platform to explore their official portal. We help your brand get published across all major media outlets.",
-      visit_site: "Visit Portal"
+      visit_site: "Visit Portal",
+      view_all: "View All Media",
+
     },
 
     WhyChooseUs: {
@@ -357,6 +359,16 @@ export const translations = {
         },
       },
     },
+    //  Featured On Page
+    FeaturedHero: {
+      badge: "Media Coverage & Network",
+      title_part1: "Amplifying Your Brand Across",
+      title_highlight: "Top News Networks",
+      subtitle: "Explore our extensive press publishing network. We connect your story with Bangladesh’s leading print newspapers, digital news portals, and major television networks.",
+      stat_print: "Print Newspapers",
+      stat_online: "Online Portals",
+      stat_tv: "TV Channels",
+    },
     Footer: {
       about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
       quick_links_title: "Quick Links",
@@ -382,38 +394,38 @@ export const translations = {
   },
 
   bn: {
-   Header: {
-  home: "হোম",
-  about: "আমাদের সম্পর্কে",
-  about_mission: "আমাদের লক্ষ্য",
-  about_who_we_are: "আমরা কে",
-  about_how_we_work: "আমরা যেভাবে কাজ করি",
-  about_concept: "আমাদের কনসেপ্ট",
-  about_management: "শীর্ষ ব্যবস্থাপনা",
+    Header: {
+      home: "হোম",
+      about: "আমাদের সম্পর্কে",
+      about_mission: "আমাদের লক্ষ্য",
+      about_who_we_are: "আমরা কে",
+      about_how_we_work: "আমরা যেভাবে কাজ করি",
+      about_concept: "আমাদের কনসেপ্ট",
+      about_management: "শীর্ষ ব্যবস্থাপনা",
 
-  services: "সার্ভিসেস",
-  srv_press_conference: "প্রেস কনফারেন্স",
-  srv_digital_pr: "ডিজিটাল পিআর",
-  srv_content_consultancy: "কনটেন্ট কনসালটেন্সি",
-  srv_crisis_management: "ক্রাইসিস ম্যানেজমেন্ট",
-  srv_brand_launch: "ব্র্যান্ড লঞ্চ",
-  srv_sample_coverage: "স্যাম্পল কভারেজ",
+      services: "সার্ভিসেস",
+      srv_press_conference: "প্রেস কনফারেন্স",
+      srv_digital_pr: "ডিজিটাল পিআর",
+      srv_content_consultancy: "কনটেন্ট কনসালটেন্সি",
+      srv_crisis_management: "ক্রাইসিস ম্যানেজমেন্ট",
+      srv_brand_launch: "ব্র্যান্ড লঞ্চ",
+      srv_sample_coverage: "স্যাম্পল কভারেজ",
 
-  // --- নতুন যুক্ত করা হয়েছে ---
-  featuredOn: "ফিচার্ড অন",
-  srv_bangla_newspapers: "বাংলা পত্রিকা",
-  srv_english_newspapers: "ইংরেজি পত্রিকা",
-  srv_online_bangla: "অনলাইন বাংলা নিউজ পোর্টাল",
-  srv_online_english: "অনলাইন ইংরেজি নিউজ পোর্টাল",
-  srv_tv_channels: "টিভি চ্যানেল",
+      // --- নতুন যুক্ত করা হয়েছে ---
+      featuredOn: "ফিচার্ড অন",
+      srv_bangla_newspapers: "বাংলা পত্রিকা",
+      srv_english_newspapers: "ইংরেজি পত্রিকা",
+      srv_online_bangla: "অনলাইন বাংলা নিউজ পোর্টাল",
+      srv_online_english: "অনলাইন ইংরেজি নিউজ পোর্টাল",
+      srv_tv_channels: "টিভি চ্যানেল",
 
-  clientList: "ক্লায়েন্ট লিস্ট",
+      clientList: "ক্লায়েন্ট লিস্ট",
 
-  pressReleases: "প্রেস রিলিজ",
-  blog: "ব্লগ",
-  contact: "যোগাযোগ",
-  submitPR: "সাবমিট PR",
-},
+      pressReleases: "প্রেস রিলিজ",
+      blog: "ব্লগ",
+      contact: "যোগাযোগ",
+      submitPR: "সাবমিট PR",
+    },
 
     Hero: {
       badge: "২০১০ সাল থেকে বিশ্বস্ত পিআর ও মিডিয়া এজেন্সি",
@@ -452,7 +464,8 @@ export const translations = {
       title_part1: "দেশের শীর্ষস্থানীয়",
       title_highlight: "পত্রিকা ও সংবাদ মাধ্যমে কভারেজ",
       subtitle: "সরাসরি অফিসিয়াল পোর্টাল দেখতে যেকোনো সংবাদ মাধ্যমের লোগোতে ক্লিক করুন। আমরা আপনার ব্র্যান্ডকে এসব সেরা প্ল্যাটফর্মে তুলে ধরি।",
-      visit_site: "ওয়েবসাইট দেখুন"
+      visit_site: "ওয়েবসাইট দেখুন",
+      view_all: "সব মিডিয়া দেখুন",
     },
 
     WhyChooseUs: {
@@ -742,7 +755,16 @@ export const translations = {
         },
       },
     },
-
+    // Bangla Featured On Page
+    FeaturedHero: {
+      badge: "মিডিয়া কভারেজ এবং নেটওয়ার্ক",
+      title_part1: "শীর্ষস্থানীয় সংবাদ মাধ্যমে",
+      title_highlight: "আপনার ব্র্যান্ডের বিস্তার",
+      subtitle: "আমাদের বিশাল প্রেস পাবলিশিং নেটওয়ার্ক এক্সপ্লোর করুন। আপনার গল্প বা সংবাদ পৌঁছে দিচ্ছি দেশের শীর্ষস্থানীয় প্রিন্ট পত্রিকা, অনলাইন নিউজ পোর্টাল এবং টিভি চ্যানেলে।",
+      stat_print: "প্রিন্ট পত্রিকা",
+      stat_online: "অনলাইন পোর্টাল",
+      stat_tv: "টিভি চ্যানেল",
+    },
 
 
     Footer: {

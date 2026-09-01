@@ -98,29 +98,31 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* FEATURED ON DROPDOWN */}
+          {/* FEATURED ON DROPDOWN (UPDATED WITH MAIN ROUTE LINK) */}
           <div className="relative group">
             <button
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
               aria-haspopup="true"
             >
-              <span className="focus:outline-none">{t('Header.featuredOn') || 'Featured On'}</span>
+              <Link href="/featured-on" className="focus:outline-none">
+                {t('Header.featuredOn') || 'Featured On'}
+              </Link>
               <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
             </button>
             <div className="absolute left-0 top-full hidden group-hover:block w-60 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 py-2 z-50">
-              <Link href="/services/bangla-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+              <Link href="/featured-on/bangla-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_bangla_newspapers') || 'Bangla Newspapers'}
               </Link>
-              <Link href="/services/english-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+              <Link href="/featured-on/english-newspapers" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_english_newspapers') || 'English Newspapers'}
               </Link>
-              <Link href="/services/online-bangla" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+              <Link href="/featured-on/online-bangla" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_online_bangla') || 'Online Bangla News Portals'}
               </Link>
-              <Link href="/services/online-english" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+              <Link href="/featured-on/online-english" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_online_english') || 'Online English News Portals'}
               </Link>
-              <Link href="/services/tv-channels" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+              <Link href="/featured-on/tv-channels" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_tv_channels') || 'TV Channels'}
               </Link>
             </div>
@@ -210,22 +212,31 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* MOBILE FEATURED ON */}
+          {/* MOBILE FEATURED ON (UPDATED) */}
           <div>
-            <button
-              onClick={() => toggleDropdown('featured')}
-              className="flex items-center justify-between w-full text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a] py-1"
-            >
-              <span>{t('Header.featuredOn') || 'Featured On'}</span>
-              <ChevronDown size={16} className={`transition-transform duration-200 ${openDropdown === 'featured' ? 'rotate-180' : ''}`} />
-            </button>
-            {openDropdown === 'featured' && (
+            <div className="flex items-center justify-between w-full py-1">
+              <Link
+                href="/featured-on"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a]"
+              >
+                {t('Header.featuredOn') || 'Featured On'}
+              </Link>
+              <button
+                onClick={() => toggleDropdown('featured-on')}
+                className="p-1 text-gray-800 dark:text-gray-200 hover:text-[#a4223a]"
+                aria-label="Toggle Featured On Submenu"
+              >
+                <ChevronDown size={16} className={`transition-transform duration-200 ${openDropdown === 'featured-on' ? 'rotate-180' : ''}`} />
+              </button>
+            </div>
+            {openDropdown === 'featured-on' && (
               <div className="pl-4 pt-2 space-y-2 text-xs font-medium text-gray-600 dark:text-gray-400">
-                <Link href="/services/bangla-newspapers" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_bangla_newspapers') || 'Bangla Newspapers'}</Link>
-                <Link href="/services/english-newspapers" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_english_newspapers') || 'English Newspapers'}</Link>
-                <Link href="/services/online-bangla" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_online_bangla') || 'Online Bangla News Portals'}</Link>
-                <Link href="/services/online-english" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_online_english') || 'Online English News Portals'}</Link>
-                <Link href="/services/tv-channels" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_tv_channels') || 'TV Channels'}</Link>
+                <Link href="/featured-on/bangla-newspapers" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_bangla_newspapers') || 'Bangla Newspapers'}</Link>
+                <Link href="/featured-on/english-newspapers" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_english_newspapers') || 'English Newspapers'}</Link>
+                <Link href="/featured-on/online-bangla" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_online_bangla') || 'Online Bangla News Portals'}</Link>
+                <Link href="/featured-on/online-english" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_online_english') || 'Online English News Portals'}</Link>
+                <Link href="/featured-on/tv-channels" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_tv_channels') || 'TV Channels'}</Link>
               </div>
             )}
           </div>

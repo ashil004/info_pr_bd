@@ -1,14 +1,14 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/app/context/LanguageContext';
 
 export default function NewsPlatformsClickable() {
   const { t } = useLanguage();
 
-  
   const newsPlatforms = [
     {
       name: "Prothom Alo",
@@ -85,7 +85,7 @@ export default function NewsPlatformsClickable() {
     <section className="py-16 lg:py-24 bg-white text-slate-800 border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        
+        {/* HEADER SECTION */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <div 
             className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-50 border border-red-100 shadow-sm" 
@@ -104,7 +104,7 @@ export default function NewsPlatformsClickable() {
           </p>
         </div>
 
-        
+        {/* PLATFORMS GRID */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -123,14 +123,12 @@ export default function NewsPlatformsClickable() {
               whileTap={{ scale: 0.98 }}
               className="group relative flex flex-col items-center justify-center p-6 bg-slate-50/70 border border-slate-200/80 rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-red-950/5 hover:border-red-200/80 cursor-pointer overflow-hidden"
             >
-              
               <div 
                 className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-red-50 text-[#a4223a] opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 shadow-sm"
               >
                 <ExternalLink size={14} />
               </div>
 
-              
               <div className="h-24 w-full flex items-center justify-center">
                 <img
                   src={platform.src}
@@ -139,7 +137,6 @@ export default function NewsPlatformsClickable() {
                 />
               </div>
 
-              {/* Bottom Label & Hover Action Indicator */}
               <div className="mt-2 text-center">
                 <span className="block text-xs font-semibold text-slate-700 group-hover:text-[#a4223a] transition-colors">
                   {platform.name}
@@ -152,6 +149,17 @@ export default function NewsPlatformsClickable() {
             </motion.a>
           ))}
         </motion.div>
+
+        {/* VIEW ALL BUTTON */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/featured-on"
+            className="inline-flex items-center gap-2 bg-[#a4223a] hover:bg-[#851b2e] text-white font-semibold text-sm px-7 py-3 rounded-full transition-all shadow-md hover:shadow-lg active:scale-95 group"
+          >
+            <span>{t('MediaPlatforms.view_all') || 'View All Media'}</span>
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
 
       </div>
     </section>
