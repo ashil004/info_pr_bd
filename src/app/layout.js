@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import { LanguageProvider } from "./context/LanguageContext";
+import { Analytics } from "@vercel/analytics/react"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,20 +26,18 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      
-        <body className="min-h-full flex flex-col">
-          <LanguageProvider>
-
-             <Navbar></Navbar>
+      <body className="min-h-full flex flex-col">
+        <LanguageProvider>
+          <Navbar></Navbar>
           <main>
-            
             {children}
-            
           </main>
           <Footer></Footer>
-          </LanguageProvider>
-        </body>
-      
+        </LanguageProvider>
+
+        
+        <Analytics />
+      </body>
     </html>
   );
 }
