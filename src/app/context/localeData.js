@@ -17,7 +17,6 @@ export const translations = {
       srv_brand_launch: "Brand Launch",
       srv_sample_coverage: "Sample Coverage",
 
-      // --- NEWLY ADDED ---
       featuredOn: "Featured On",
       srv_bangla_newspapers: "Bangla Newspapers",
       srv_english_newspapers: "English Newspapers",
@@ -54,7 +53,6 @@ export const translations = {
       description_1: "InfoPR is a senior-led public relations and communication agency. We specialize in high-impact media relations, crisis management, and digital PR strategies that build trust and elevate brand reputation on both local and global stages.",
       description_2: "Our associate-driven model ensures every project gets direct strategic insight from experienced industry practitioners, delivering measurable impact and long-term credibility.",
 
-
       feature_1_title: "14+ Years Experience",
       feature_1_desc: "Over a decade of strategic PR execution across diverse industries.",
       feature_2_title: "Media Network",
@@ -72,7 +70,6 @@ export const translations = {
       subtitle: "Click on any news platform to explore their official portal. We help your brand get published across all major media outlets.",
       visit_site: "Visit Portal",
       view_all: "View All Media",
-
     },
 
     WhyChooseUs: {
@@ -138,6 +135,7 @@ export const translations = {
       s6_title: "Brand Launch",
       s6_desc: "Our team organizes and helps brands make stunning launches to create excitement and awareness. We ensure your brand is presented successfully to establish a lasting influence in the market."
     },
+
     Industries: {
       badge: "Industries We Serve",
       title_part1: "PR Solutions for Diverse",
@@ -163,8 +161,6 @@ export const translations = {
       title_highlight: "PR Expertise",
       subtitle: "From global corporations to fast-growing local businesses, Times PR is trusted by top brands across industries to manage reputation and long-term success."
     },
-
-    //  about pages
 
     AboutHero: {
       badge: "About Info PR",
@@ -202,7 +198,7 @@ export const translations = {
       cta_description: "Your brand could be next on this list—backed by our strong media network and senior PR expertise.",
       cta_btn: "CONTACT US"
     },
-    // about sub-page mission 
+
     Mission: {
       badge: "Our Driving Force",
       headline_main: "Our",
@@ -231,7 +227,7 @@ export const translations = {
         }
       ]
     },
-    // about sub-page who-we-are
+
     WhoWeAre: {
       badge: "Get To Know Us",
       title_part1: "Bridging the Gap Between",
@@ -248,7 +244,7 @@ export const translations = {
       ],
       img_alt: "Info PR Team Collaboration"
     },
-    // About Sub Page how we work
+
     HowWeWork: {
       badge: "OUR PROCESS",
       title_part1: "How We",
@@ -277,7 +273,7 @@ export const translations = {
         }
       ]
     },
-    // about sub-page concept
+
     Concept: {
       badge: "About Our Philosophy",
       title: "Our",
@@ -287,25 +283,47 @@ export const translations = {
       description_3_start: "By blending ideas and methods, we help brands grow, build trust, and stay ahead of the competition. With",
       description_3_end: ", your brand voice is heard, valued, and noticed."
     },
-    // about sub-page management
 
     ManagementTree: {
-      badge: "Organizational Structure",
+      badge: "Executive Leadership",
       title_main: "Info PR",
       title_highlight: "Team Structure",
-      description:
-        "At Info PR, we believe strong leadership drives innovation and excellence. Our dedicated team structure is committed to delivering the best strategic communications and public relations outcomes for our clients.",
+      description: "At Info PR, we believe strong leadership drives innovation and excellence. Our dedicated team structure is committed to delivering the best strategic communications and public relations outcomes for our clients.",
       close: "Close",
       nodes: {
         ceo: {
-          title: "CEO",
+          title: "Founder & CEO",
           category: "Executive Leadership",
           members: [
             {
-              name: "John Doe",
-              role: "Chief Executive Officer",
+              name: "Md Asraful Alam",
+              role: "Founder & CEO",
               email: "ceo@infopr.com",
-              image: "/team/ceo.jpg",
+              image: "/ceo.jpeg",
+            },
+          ],
+        },
+        co_chairman: {
+          title: "Co-Chairman",
+          category: "Board of Directors",
+          members: [
+            {
+              name: "Md. Jahangir Alam",
+              role: "Co-Chairman",
+              email: "cochairman@infopr.com",
+              image: "/co-chairman.jpeg",
+            },
+          ],
+        },
+        head_of_it: {
+          title: "Head of IT",
+          category: "IT & Development",
+          members: [
+            {
+              name: "Md. Ashik Paramanik",
+              role: "Head of IT",
+              email: "ashik@infopr.com",
+              image: "/Ashik_Pramanik.jpg",
             },
           ],
         },
@@ -333,18 +351,6 @@ export const translations = {
             },
           ],
         },
-        it_development: {
-          title: "IT & Development",
-          category: "Engineering",
-          members: [
-            {
-              name: "Md. Ashik Paramanik",
-              role: "Full Stack Developer",
-              email: "ashik@infopr.com",
-              image: "/team/dev.jpg",
-            },
-          ],
-        },
         digital_marketing: {
           title: "Digital Marketing",
           category: "Growth & Communications",
@@ -359,7 +365,7 @@ export const translations = {
         },
       },
     },
-    //  Featured On Page
+
     FeaturedHero: {
       badge: "Media Coverage & Network",
       title_part1: "Amplifying Your Brand Across",
@@ -369,6 +375,7 @@ export const translations = {
       stat_online: "Online Portals",
       stat_tv: "TV Channels",
     },
+
     Footer: {
       about_desc: "INFOPR is a premier digital PR and press release portal connecting businesses with media channels globally.",
       quick_links_title: "Quick Links",
@@ -411,7 +418,6 @@ export const translations = {
       srv_brand_launch: "ব্র্যান্ড লঞ্চ",
       srv_sample_coverage: "স্যাম্পল কভারেজ",
 
-      // --- নতুন যুক্ত করা হয়েছে ---
       featuredOn: "ফিচার্ড অন",
       srv_bangla_newspapers: "বাংলা পত্রিকা",
       srv_english_newspapers: "ইংরেজি পত্রিকা",
@@ -447,7 +453,6 @@ export const translations = {
       heading_highlight: "দর্শকের কাছে",
       description_1: "ইনফোপিআর হলো একটি শীর্ষস্থানীয় পাবলিক রিলেশনস এবং ব্র্যান্ড কমিউনিকেশন এজেন্সি। আমরা প্রফেশনাল মিডিয়া রিলেশনস, ক্রাইসিস ম্যানেজমেন্ট এবং ডিজিটাল পিআর স্ট্র্যাটেজির মাধ্যমে দেশীয় ও আন্তর্জাতিক পরিমণ্ডলে ব্র্যান্ডের গ্রহণযোগ্যতা তৈরি করি।",
       description_2: "আমাদের অভিজ্ঞ টিমের প্রত্যক্ষ দিকনির্দেশনায় প্রতিটি প্রজেক্ট সফলভাবে পরিচালিত হয়, যা ব্র্যান্ডকে দীর্ঘমেয়াদী সাফল্য ও আস্থা প্রদান করে।",
-
 
       feature_1_title: "১৪+ বছরের অভিজ্ঞতা",
       feature_1_desc: "বিভিন্ন শিল্পে সফল পিআর ক্যাম্পেইন পরিচালনার এক যুগেরও বেশি অভিজ্ঞতা।",
@@ -550,6 +555,7 @@ export const translations = {
       i4_title: "আন্তর্জাতিক সংস্থা",
       i4_desc: "বাংলাদেশে কর্মরত আন্তর্জাতিক সংস্থাসমূহের জন্য গ্লোবাল স্ট্যান্ডার্ড পিআর সার্ভিস প্রদান করি, যা আন্তর্জাতিক নিয়মকানুন বজায় রেখে সর্বোচ্চ ফলাফল এনে দেয়।"
     },
+
     ClientLogos: {
       badge: "আমাদের ক্লায়েন্টসমূহ",
       title_part1: "যাদের সাথে আমরা কাজ করেছি সেই বিখ্যাত",
@@ -557,7 +563,6 @@ export const translations = {
       subtitle: "গ্লোবাল মাল্টিন্যাশনাল কোম্পানি থেকে শুরু করে দেশের শীর্ষস্থানীয় ব্র্যান্ডগুলোর ডিজিটাল ও পিআর পার্টনার হিসেবে আমরা সফলতার সাথে কাজ করে যাচ্ছি।"
     },
 
-    // Bangla about pages
     AboutHero: {
       badge: "ইনফো পিআর সম্পর্কে",
       headline_part1: "আপনার ব্র্যান্ডকে যুক্ত করুন",
@@ -595,7 +600,6 @@ export const translations = {
       cta_btn: "যোগাযোগ করুন"
     },
 
-    // Bangla about sub-page mission
     Mission: {
       badge: "আমাদের মূল চালিকাশক্তি",
       headline_main: "আমাদের",
@@ -625,8 +629,6 @@ export const translations = {
       ]
     },
 
-    //  Bangla about sub-page who we are 
-
     WhoWeAre: {
       badge: "আমাদের জানুন",
       title_part1: "সাফল্য ও ব্র্যান্ড ভ্যালুর সংযোগস্থলে",
@@ -644,37 +646,35 @@ export const translations = {
       img_alt: "ইনফো পিআর টিমের যৌথ কাজ"
     },
 
-    // Bangla About sub page how we work 
-    "HowWeWork": {
-      "badge": "আওয়ার প্রসেস",
-      "title_part1": "যেভাবে আমরা",
-      "title_highlight": "কাজ করি",
-      "subtitle": "আপনার ব্র্যান্ডের পিআর কার্যক্রম পরিচালনা এবং টার্গেটেড অডিয়েন্সের কাছে পৌঁছানোর জন্য আমাদের প্রক্রিয়া অত্যন্ত সহজ কিন্তু কার্যকর:",
-      "steps": [
+    HowWeWork: {
+      badge: "আওয়ার প্রসেস",
+      title_part1: "যেভাবে আমরা",
+      title_highlight: "কাজ করি",
+      subtitle: "আপনার ব্র্যান্ডের পিআর কার্যক্রম পরিচালনা এবং টার্গেটেড অডিয়েন্সের কাছে পৌঁছানোর জন্য আমাদের প্রক্রিয়া অত্যন্ত সহজ কিন্তু কার্যকর:",
+      steps: [
         {
-          "step": "01",
-          "title": "প্রয়োজন অনুধাবন",
-          "title": "Understanding Needs",
-          "description": "আমরা আপনার চ্যালেঞ্জ ও লক্ষ্যগুলো গভীরভাবে শুনে চিহ্নিত করি।"
+          step: "01",
+          title: "প্রয়োজন অনুধাবন",
+          description: "আমরা আপনার চ্যালেঞ্জ ও লক্ষ্যগুলো গভীরভাবে শুনে চিহ্নিত করি।"
         },
         {
-          "step": "02",
-          "title": "কৌশল নির্ধারণ",
-          "description": "আপনার প্রয়োজন অনুযায়ী আমরা ডেটা-ড্রিভেন এবং উদ্ভাবনী পরিকল্পনা তৈরি করি।"
+          step: "02",
+          title: "কৌশল নির্ধারণ",
+          description: "আপনার প্রয়োজন অনুযায়ী আমরা ডেটা-ড্রিভেন এবং উদ্ভাবনী পরিকল্পনা তৈরি করি।"
         },
         {
-          "step": "03",
-          "title": "স্বচ্ছ সম্পর্ক",
-          "description": "আমরা বিশ্বাস ও পারস্পরিক সহযোগিতার ভিত্তিতে উন্মুক্ত যোগাযোগ বজায় রাখি।"
+          step: "03",
+          title: "স্বচ্ছ সম্পর্ক",
+          description: "আমরা বিশ্বাস ও পারস্পরিক সহযোগিতার ভিত্তিতে উন্মুক্ত যোগাযোগ বজায় রাখি।"
         },
         {
-          "step": "04",
-          "title": "একত্রে সাফল্য অর্জন",
-          "description": "আপনার ব্র্যান্ডের পরিধি বাড়াতে এবং নিখুঁত ফলাফল আনতে আমরা নিরবচ্ছিন্নভাবে কাজ করি।"
+          step: "04",
+          title: "একত্রে সাফল্য অর্জন",
+          description: "আপনার ব্র্যান্ডের পরিধি বাড়াতে এবং নিখুঁত ফলাফল আনতে আমরা নিরবচ্ছিন্নভাবে কাজ করি।"
         }
       ]
     },
-    // Bangla About sub page concept
+
     Concept: {
       badge: "আমাদের দর্শন",
       title: "আমাদের",
@@ -684,70 +684,81 @@ export const translations = {
       description_3_start: "ধারণা ও পদ্ধতির সঠিক মিশ্রণে, আমরা ব্র্যান্ডের প্রবৃদ্ধি, বিশ্বাসযোগ্যতা তৈরি এবং প্রতিযোগিতায় এগিয়ে থাকতে সাহায্য করি।",
       description_3_end: "-এর সাথে আপনার ব্র্যান্ডের বার্তা পৌঁছাবে সঠিক মানুষের কাছে।"
     },
-    // Bangla About sub page management
+
     ManagementTree: {
       badge: "সাংগঠনিক কাঠামো",
       title_main: "ইনফো পিআর",
       title_highlight: "টিম স্ট্রাকচার",
-      description:
-        "ইনফো পিআর-এ আমরা বিশ্বাস করি যে সঠিক নেতৃত্বই উদ্ভাবন এবং শ্রেষ্ঠত্বকে চালিত করে। আমাদের দক্ষ টিম স্ট্রাকচার ক্লায়েন্টদের কৌশলগত যোগাযোগ এবং জনসংযোগের ক্ষেত্রে সেরা আউটপুট দিতে প্রতিশ্রুতিবদ্ধ।",
+      description: "ইনফো পিআর-এ আমরা বিশ্বাস করি যে সঠিক নেতৃত্বই উদ্ভাবন এবং শ্রেষ্ঠত্বকে চালিত করে। আমাদের দক্ষ টিম স্ট্রাকচার ক্লায়েন্টদের কৌশলগত যোগাযোগ এবং জনসংযোগের ক্ষেত্রে সেরা আউটপুট দিতে প্রতিশ্রুতিবদ্ধ।",
       close: "বন্ধ করুন",
       nodes: {
         ceo: {
-          title: "CEO",
-          category: "Executive Leadership",
+          title: "প্রতিষ্ঠাতা ও সিইও",
+          category: "নির্বাহী নেতৃত্ব",
           members: [
             {
-              name: "জন ডো",
-              role: "Chief Executive Officer",
+              name: "মোঃ আশরাফুল আলম",
+              role: "প্রতিষ্ঠাতা ও সিইও",
               email: "ceo@infopr.com",
-              image: "/team/ceo.jpg",
+              image: "/ceo.jpeg",
+            },
+          ],
+        },
+        co_chairman: {
+          title: "সহ-চেয়ারম্যান",
+          category: "পরিচালনা পর্ষদ",
+          members: [
+            {
+              name: "মোঃ জাহাঙ্গীর আলম",
+              role: "সহ-চেয়ারম্যান",
+              email: "cochairman@infopr.com",
+              image: "/co-chairman.jpeg",
+            },
+          ],
+        },
+        head_of_it: {
+          title: "হেড অব আইটি",
+          category: "আইটি ও সফটওয়্যার বিভাগ",
+          members: [
+            {
+              name: "মোঃ আশিক প্রামাণিক",
+              role: "হেড অব আইটি",
+              email: "ashik@infopr.com",
+              image: "/Ashik_Pramanik.jpg",
             },
           ],
         },
         news_reporter: {
-          title: "News & Reporter",
-          category: "PR & Media",
+          title: "সংবাদ ও রিপোর্ট",
+          category: "পিআর ও মিডিয়া",
           members: [
             {
               name: "তানভীর আহমেদ",
-              role: "Senior Journalist",
+              role: "সিনিয়র সাংবাদিক",
               email: "reporter@infopr.com",
               image: "/team/news.jpg",
             },
           ],
         },
         design_creative: {
-          title: "Design & Creative",
-          category: "Creative Team",
+          title: "ডিজাইন ও ক্রিয়েটিভ",
+          category: "ক্রিয়েটিভ টিম",
           members: [
             {
               name: "সাকিব হাসান",
-              role: "Lead UI/UX Designer",
+              role: "লিড ইউআই/ইউএক্স ডিজাইনার",
               email: "design@infopr.com",
               image: "/team/design.jpg",
             },
           ],
         },
-        it_development: {
-          title: "IT & Development",
-          category: "Engineering",
-          members: [
-            {
-              name: "মোঃ আশিক পারমানিক",
-              role: "Full Stack Developer",
-              email: "ashik@infopr.com",
-              image: "/team/dev.jpg",
-            },
-          ],
-        },
         digital_marketing: {
-          title: "Digital Marketing",
-          category: "Growth & Communications",
+          title: "ডিজিটাল মার্কেটিং",
+          category: "গ্রোথ ও কমিউনিকেশন",
           members: [
             {
               name: "জান্নাতুল ফেরদৌস",
-              role: "Marketing Manager",
+              role: "মার্কেটিং ম্যানেজার",
               email: "jane@infopr.com",
               image: "/team/marketing.jpg",
             },
@@ -755,7 +766,7 @@ export const translations = {
         },
       },
     },
-    // Bangla Featured On Page
+
     FeaturedHero: {
       badge: "মিডিয়া কভারেজ এবং নেটওয়ার্ক",
       title_part1: "শীর্ষস্থানীয় সংবাদ মাধ্যমে",
@@ -765,7 +776,6 @@ export const translations = {
       stat_online: "অনলাইন পোর্টাল",
       stat_tv: "টিভি চ্যানেল",
     },
-
 
     Footer: {
       about_desc: "ইনফো পিআর একটি শীর্ষস্থানীয় ডিজিটাল পিআর ও প্রেস রিলিজ পোর্টাল যা ব্যবসাপ্রতিষ্ঠানকে বিশ্বব্যাপী মিডিয়া চ্যানেলের সাথে সংযুক্ত করে।",
