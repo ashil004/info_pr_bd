@@ -20,7 +20,6 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Future API integration for backend submission
     setSubmitted(true);
   };
 

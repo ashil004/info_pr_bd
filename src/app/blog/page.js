@@ -8,10 +8,10 @@ export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Categories
+  
   const categories = ["All", "PR Strategy", "Digital Marketing", "Media Relations", "Branding"];
 
-  // 4 Published Blog Posts
+  
   const posts = [
     {
       id: 1,

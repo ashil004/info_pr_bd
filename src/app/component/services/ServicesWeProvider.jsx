@@ -9,10 +9,12 @@ import {
   FileText, 
   ShieldAlert, 
   Rocket, 
-  Sparkles 
+  Sparkles,
+  Headphones,
+  Calendar
 } from "lucide-react";
 
-// সার্ভিসগুলোর ডাইনামিক ডেটা
+// সার্ভিসগুলোর ডাইনামিক ডেটা (IT Support এবং Event Management যোগ করা হয়েছে)
 const servicesData = [
   {
     id: "press-conference",
@@ -58,6 +60,24 @@ const servicesData = [
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
     icon: Rocket,
     features: ["Launch Events", "Influencer PR", "Mass Distribution"]
+  },
+  {
+    id: "it-support",
+    title: "IT Support & Services",
+    category: "Tech Infrastructure",
+    description: "Reliable, round-the-clock technical support, infrastructure management, and digital security for seamless business operations.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop",
+    icon: Headphones,
+    features: ["24/7 Helpdesk", "System Security", "Cloud Solutions"]
+  },
+  {
+    id: "event-management",
+    title: "Event Management",
+    category: "Corporate Events",
+    description: "End-to-end management for corporate events, product launches, brand activations, and large-scale summits.",
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop",
+    icon: Calendar,
+    features: ["Event Planning", "Audio & Visual", "Guest Coordination"]
   }
 ];
 
@@ -95,7 +115,7 @@ export default function ServicesWeProvider() {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal"
           >
-            Explore our tailored public relations and media communication services designed to position your brand at the forefront of the market.
+            Explore our tailored public relations, IT solutions, and media event services designed to position your brand at the forefront of the market.
           </motion.p>
         </div>
 

@@ -16,7 +16,13 @@ import {
   ArrowRight,
   Target,
   Megaphone,
-  TrendingUp
+  TrendingUp,
+  Code2,
+  Palette,
+  Bug,
+  Server,
+  Headphones,
+  Database
 } from "lucide-react";
 
 
@@ -113,6 +119,48 @@ const servicesCategoryData = [
     ]
   },
   {
+    id: "software-development",
+    title: "Software Development",
+    icon: Code2,
+    subtitle: "Custom Web, Mobile App & Enterprise Solutions",
+    subServices: [
+      "Custom Web Application Development",
+      "Mobile App Development (iOS & Android)",
+      "Enterprise Software Solutions",
+      "API Development & Integration",
+      "E-Commerce Platform Development",
+      "Legacy System Modernization & Upgrades"
+    ]
+  },
+  {
+    id: "graphic-design",
+    title: "Graphic Design",
+    icon: Palette,
+    subtitle: "Creative Branding, UI/UX & Visual Assets",
+    subServices: [
+      "Brand Identity & Logo Design",
+      "UI/UX Design for Web & Mobile",
+      "Social Media Graphics & Banners",
+      "Marketing Collateral (Brochures, Flyers)",
+      "Infographics & Motion Graphics",
+      "Print & Packaging Design"
+    ]
+  },
+  {
+    id: "it-support-services",
+    title: "IT Support & Technical Services",
+    icon: Headphones,
+    subtitle: "Comprehensive IT Infrastructure & Security Support",
+    subServices: [
+      "Bug Hunting & Code Security Audits",
+      "Hosting & Server Support (Cloud & VPS)",
+      "Database Management & Optimization Support",
+      "Call Center & Customer Support Infrastructure",
+      "24/7 Technical Helpdesk Assistance",
+      "System Monitoring & Disaster Recovery"
+    ]
+  },
+  {
     id: "logistics-support",
     title: "On-Ground Logistics & Activation Support",
     icon: Layers,
@@ -186,11 +234,9 @@ export default function FindOurServices() {
   return (
     <section className="w-full bg-slate-50 text-slate-900 py-16 md:py-24 relative overflow-hidden border-b border-slate-200">
       
-      
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#a4223a]/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#a4223a]/10 border border-[#a4223a]/20 text-[#a4223a] text-xs sm:text-sm font-bold">
@@ -207,7 +253,6 @@ export default function FindOurServices() {
           </p>
         </div>
 
-        
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12 max-w-6xl mx-auto">
           {servicesCategoryData.map((cat) => {
             const IconComponent = cat.icon;
@@ -230,7 +275,6 @@ export default function FindOurServices() {
           })}
         </div>
 
-          
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}

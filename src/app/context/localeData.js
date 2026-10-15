@@ -23,6 +23,8 @@ export const translations = {
       srv_online_bangla: "Online Bangla News Portals",
       srv_online_english: "Online English News Portals",
       srv_tv_channels: "TV Channels",
+     srv_it_support : "IT Support",
+     srv_event_management : "Event Management",
 
       clientList: "Client List",
 
@@ -320,7 +322,7 @@ export const translations = {
           category: "IT & Development",
           members: [
             {
-              name: "Md. Ashik Paramanik",
+              name: "Md Ashik Paramanik",
               role: "Head of IT",
               email: "ashik@infopr.com",
               image: "/Ashik_Pramanik.jpg",
@@ -424,6 +426,8 @@ export const translations = {
       srv_online_bangla: "অনলাইন বাংলা নিউজ পোর্টাল",
       srv_online_english: "অনলাইন ইংরেজি নিউজ পোর্টাল",
       srv_tv_channels: "টিভি চ্যানেল",
+      srv_it_support : "আইটি সাপোর্ট",
+      srv_event_management : "ইভেন্ট ম্যানেজমেন্ট",
 
       clientList: "ক্লায়েন্ট লিস্ট",
 

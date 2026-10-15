@@ -70,7 +70,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* SERVICES DROPDOWN */}
+          {/* SERVICES DROPDOWN (UPDATED WITH IT SUPPORT & EVENT MANAGEMENT) */}
           <div className="relative group">
             <button
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
@@ -95,10 +95,16 @@ export default function Navbar() {
               <Link href="/services/brand-launch" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
                 {t('Header.srv_brand_launch')}
               </Link>
+              <Link href="/services/it-support" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+                {t('Header.srv_it_support') || 'IT Support'}
+              </Link>
+              <Link href="/services/event-management" className="block px-4 py-2 text-xs hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#a4223a] transition-colors">
+                {t('Header.srv_event_management') || 'Event Management'}
+              </Link>
             </div>
           </div>
 
-          {/* FEATURED ON DROPDOWN (UPDATED WITH MAIN ROUTE LINK) */}
+          {/* FEATURED ON DROPDOWN */}
           <div className="relative group">
             <button
               className="flex items-center gap-1 hover:text-[#a4223a] py-2 transition-colors focus:outline-none"
@@ -192,7 +198,7 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* MOBILE SERVICES */}
+          {/* MOBILE SERVICES (UPDATED) */}
           <div>
             <button
               onClick={() => toggleDropdown('services')}
@@ -208,11 +214,13 @@ export default function Navbar() {
                 <Link href="/services/content-consultancy" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_content_consultancy')}</Link>
                 <Link href="/services/crisis-management" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_crisis_management')}</Link>
                 <Link href="/services/brand-launch" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_brand_launch')}</Link>
+                <Link href="/services/it-support" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_it_support') || 'IT Support'}</Link>
+                <Link href="/services/event-management" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#a4223a]">{t('Header.srv_event_management') || 'Event Management'}</Link>
               </div>
             )}
           </div>
 
-          {/* MOBILE FEATURED ON (UPDATED) */}
+          {/* MOBILE FEATURED ON */}
           <div>
             <div className="flex items-center justify-between w-full py-1">
               <Link
