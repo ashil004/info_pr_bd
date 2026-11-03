@@ -17,74 +17,33 @@ export default function BanglaNewspapers() {
     }
   };
 
-  // Complete List of Bangla News Portals in English
+  // Top & Most Popular Bangla News Portals
   const banglaNewspapers = [
     { name: "Prothom Alo", url: "https://www.prothomalo.com" },
+    { name: "Ittefaq", url: "https://www.ittefaq.com.bd" },
+    { name: "Naya Diganta", url: "https://www.dailynayadiganta.com" },
+    { name: "Daily Amader Desh", url: "https://dailyamardesh.com" },
+    { name: "Dainik Azadi", url: "https://dainikazadi.net" },
+    { name: "Star News BD", url: "https://starnews.com.bd/" },
     { name: "bdnews24", url: "https://bdnews24.com" },
-    { name: "banglanews24", url: "https://www.banglanews24.com" },
+    { name: "Bangla Tribune", url: "https://www.banglatribune.com" },
     { name: "Dhaka Post", url: "https://www.dhakapost.com" },
     { name: "Jago News 24", url: "https://www.jagonews24.com" },
-    { name: "Risingbd", url: "https://www.risingbd.com" },
+    { name: "banglanews24", url: "https://www.banglanews24.com" },
     { name: "Kaler Kantho", url: "https://www.kalerkantho.com" },
     { name: "Jugantor", url: "https://www.jugantor.com" },
-    { name: "Ittefaq", url: "https://www.ittefaq.com.bd" },
     { name: "Bangladesh Pratidin", url: "https://www.bd-pratidin.com" },
     { name: "Samakal", url: "https://samakal.com" },
-    { name: "Bangla Tribune", url: "https://www.banglatribune.com" },
-    { name: "Barta24", url: "https://barta24.com" },
     { name: "Manab Zamin", url: "https://mzamin.com" },
-    { name: "Naya Diganta", url: "https://www.dailynayadiganta.com" },
-    { name: "Daily Inqilab", url: "https://www.dailyinqilab.com" },
-    { name: "Jaijaidin", url: "https://www.jaijaidinnews.com" },
-    { name: "Daily Janakantha", url: "https://www.dailyjanakantha.com" },
-    { name: "Daily Amader Shomoy", url: "https://www.ainews24.com" },
-    { name: "Desh Rupantor", url: "https://www.deshrupantor.com" },
-    { name: "Daily Sangbad", url: "https://thedailysangbad.com" },
-    { name: "Manobkantha", url: "https://www.manobkantha.com.bd" },
-    { name: "Bhorer Kagoj", url: "https://www.bhorerkagoj.com" },
+    { name: "Asia Post", url: "https://www.asia-post.com/" },
+    { name: "NPB News", url: "https://npbnews.com/" },
     { name: "UNB News", url: "https://unb.com.bd" },
-    { name: "BSS News", url: "https://www.bssnews.net" },
-    { name: "Bonik Barta", url: "https://bonikbarta.net" },
-    { name: "ShareBiz", url: "https://sharebiz.net" },
-    { name: "Poriborton", url: "https://www.poriborton.news" },
-    { name: "Janaswar", url: "https://janaswar.com" },
-    { name: "Priyo.com", url: "https://www.priyo.com" },
-    { name: "Bangladesh Journal", url: "https://www.bgdjournal.com" },
-    { name: "Press Bangla News", url: "https://pressbanglanews.com" },
-    { name: "Naya Bangla", url: "https://nayabangla.com" },
-    { name: "Daily Sangram", url: "https://dailysangram.com" },
-    { name: "Alokitobangladesh", url: "https://www.alokitobangladesh.com" },
+    { name: "The Daily Star", url: "https://www.thedailystar.net" },
+    { name: "Dhaka Tribune", url: "https://www.dhakatribune.com" },
+    { name: "The Business Standard", url: "https://www.tbsnews.net" },
     { name: "Somoy News", url: "https://www.somoynews.tv" },
     { name: "Jamuna News", url: "https://www.jamuna.tv" },
-    { name: "Ekattor News", url: "https://ekattor.tv" },
-    { name: "Independent News", url: "https://www.independent24.com" },
-    { name: "Channel 24", url: "https://www.channel24bd.tv" },
-    { name: "DBC News", url: "https://dbcnews.tv" },
-    { name: "NEWS24 BD", url: "https://www.news24bd.tv" },
-    { name: "ATN News", url: "https://atnnewstv.com" },
-    { name: "Ekhon TV", url: "https://www.ekhontv.com" },
-    { name: "Channel i Online", url: "https://www.channelionline.com" },
-    { name: "NTV Online", url: "https://www.ntvbd.com" },
-    { name: "RTV Online", url: "https://www.rtvonline.com" },
-    { name: "Banglavision", url: "https://www.bvnews24.com" },
-    { name: "TechShohor", url: "https://techshohor.com" },
-    { name: "DigiBangla", url: "https://digibangla.tech" },
-    { name: "TechZoom", url: "https://techzoom.tv" },
-    { name: "AgriNews24", url: "https://agrinews24.com" },
-    { name: "SportsMail24", url: "https://sportsmail24.com" },
-    { name: "BD Crime News", url: "https://bdcrimenews24.com" },
-    { name: "Dainik Azadi", url: "https://dainikazadi.net" },
-    { name: "Dainik Purbokon", url: "https://dainikpurbokon.net" },
-    { name: "Dainik Karatoa", url: "https://www.karatoa.com.bd" },
-    { name: "Sylhet View 24", url: "https://www.sylhetview24.net" },
-    { name: "Gramer Kagoj", url: "https://gramerkagoj.com" },
-    { name: "Khulna News", url: "https://khulnanews.com" },
-    { name: "Dainik Purvanchal", url: "https://purbanchal.com" },
-    { name: "Coxsbazar News", url: "https://www.cbn24.com" },
-    { name: "Asia Post", url: "https://www.asia-post.com/" },
-    { name: "Times Today BD", url: "https://timestodaybd.com/" },
-    { name: "NPB News", url: "https://npbnews.com/" },
-    { name: "Star News BD", url: "https://starnews.com.bd/" }
+    { name: "Channel 24", url: "https://www.channel24bd.tv" }
   ];
 
   // Filtering based on search query
@@ -104,7 +63,7 @@ export default function BanglaNewspapers() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-rose-100/80 text-rose-800 mb-4 border border-rose-200/60"
           >
-            <Newspaper size={14} /> All Online Portals in One Place
+            <Newspaper size={14} /> Top Verified Portals
           </motion.span>
 
           <motion.h1 
@@ -122,7 +81,7 @@ export default function BanglaNewspapers() {
             transition={{ delay: 0.2 }}
             className="mt-3 text-sm sm:text-base text-slate-600 max-w-xl mx-auto"
           >
-            Access live news websites directly with a single click.
+            Access top verified news websites directly with a single click.
           </motion.p>
 
           {/* Search Box */}
