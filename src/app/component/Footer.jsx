@@ -39,10 +39,10 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-xs font-medium">
               <li><Link href="/" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.home")}</Link></li>
-              <li><Link href="/press-releases" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.press_releases")}</Link></li>
-              <li><Link href="/pr-insights" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.pr_insights")}</Link></li>
-              <li><Link href="/tech-pr" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.tech_pr")}</Link></li>
-              <li><Link href="/business" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.business")}</Link></li>
+              <li><Link href="/services/press-conference" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.press_releases")}</Link></li>
+              <li><Link href="/services/content-consultancy" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.pr_insights")}</Link></li>
+              <li><Link href="/services/it-support" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.tech_pr")}</Link></li>
+              <li><Link href="/services/digital-public-relations" className="hover:text-[#a4223a] transition-colors">{t("Footer.links.business")}</Link></li>
             </ul>
           </div>
 
@@ -54,8 +54,8 @@ export default function Footer() {
             <ul className="space-y-2 text-xs font-medium">
               <li><Link href="/about" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.about")}</Link></li>
               <li><Link href="/contact" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.contact")}</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.privacy")}</Link></li>
-              <li><Link href="/terms" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.terms")}</Link></li>
+              <li><Link href="/services" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.privacy")}</Link></li>
+              <li><Link href="/about/management" className="hover:text-[#a4223a] transition-colors">{t("Footer.company_links.terms")}</Link></li>
             </ul>
           </div>
 

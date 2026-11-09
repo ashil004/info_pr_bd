@@ -135,9 +135,9 @@ export default function Navbar() {
           </div>
 
           {/* CLIENT LIST LINK */}
-          <Link href="/client-list" className="hover:text-[#a4223a] transition-colors">
+          {/* <Link href="/client-list" className="hover:text-[#a4223a] transition-colors">
             {t('Header.clientList') || 'Client List'}
-          </Link>
+          </Link> */}
 
           <Link href="/press-releases" className="hover:text-[#a4223a] transition-colors">{t('Header.pressReleases')}</Link>
           <Link href="/blog" className="hover:text-[#a4223a] transition-colors">{t('Header.blog')}</Link>
@@ -250,9 +250,9 @@ export default function Navbar() {
           </div>
 
           {/* MOBILE CLIENT LIST */}
-          <Link href="/client-list" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a]">
+          {/* <Link href="/client-list" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a]">
             {t('Header.clientList') || 'Client List'}
-          </Link>
+          </Link> */}
 
           <Link href="/press-releases" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-[#a4223a]">
             {t('Header.pressReleases')}
