@@ -16,8 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Info PR",
-  description: "Info PR Bangladesh",
+  title: {
+    default: "Info PR Bangladesh",
+    template: "%s | Info PR Bangladesh",
+  },
+  description: "Your trusted corporate public relations and media partner in Bangladesh.",
+  icons: {
+    icon: '/logo.jpeg', 
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -25,17 +31,17 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 font-sans selection:bg-rose-500 selection:text-white">
         <LanguageProvider>
-          <Navbar></Navbar>
-          <main>
+          <Navbar />
+          <main className="flex-grow">
             {children}
           </main>
-          <Footer></Footer>
+          <Footer />
         </LanguageProvider>
 
-        
         <Analytics />
       </body>
     </html>

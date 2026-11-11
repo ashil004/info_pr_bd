@@ -1,55 +1,31 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, ExternalLink, Newspaper } from 'lucide-react';
+import { ExternalLink, Newspaper } from 'lucide-react';
 
 export default function BanglaNewspapers() {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  // Function to load logo via Google Favicon API
-  const getLogoUrl = (websiteUrl) => {
-    try {
-      const domain = new URL(websiteUrl).hostname;
-      return `https://www.google.com/s2/favicons?domain=${domain}&sz=256`;
-    } catch {
-      return '';
-    }
-  };
-
-  // Top & Most Popular Bangla News Portals
+  // Top & Most Popular Bangla News Portals (Using Local Asset Paths)
   const banglaNewspapers = [
-    { name: "Prothom Alo", url: "https://www.prothomalo.com" },
-    { name: "Ittefaq", url: "https://www.ittefaq.com.bd" },
-    { name: "Naya Diganta", url: "https://www.dailynayadiganta.com" },
-    { name: "Daily Amader Desh", url: "https://dailyamardesh.com" },
-    { name: "Dainik Azadi", url: "https://dainikazadi.net" },
-    { name: "Star News BD", url: "https://starnews.com.bd/" },
-    { name: "bdnews24", url: "https://bdnews24.com" },
-    { name: "Bangla Tribune", url: "https://www.banglatribune.com" },
-    { name: "Dhaka Post", url: "https://www.dhakapost.com" },
-    { name: "Jago News 24", url: "https://www.jagonews24.com" },
-    { name: "banglanews24", url: "https://www.banglanews24.com" },
-    { name: "Kaler Kantho", url: "https://www.kalerkantho.com" },
-    { name: "Jugantor", url: "https://www.jugantor.com" },
-    { name: "Bangladesh Pratidin", url: "https://www.bd-pratidin.com" },
-    { name: "Samakal", url: "https://samakal.com" },
-    { name: "Manab Zamin", url: "https://mzamin.com" },
-    { name: "Asia Post", url: "https://www.asia-post.com/" },
-    { name: "NPB News", url: "https://npbnews.com/" },
-    { name: "UNB News", url: "https://unb.com.bd" },
-    { name: "The Daily Star", url: "https://www.thedailystar.net" },
-    { name: "Dhaka Tribune", url: "https://www.dhakatribune.com" },
-    { name: "The Business Standard", url: "https://www.tbsnews.net" },
-    { name: "Somoy News", url: "https://www.somoynews.tv" },
-    { name: "Jamuna News", url: "https://www.jamuna.tv" },
-    { name: "Channel 24", url: "https://www.channel24bd.tv" }
+    { name: "Prothom Alo (প্রথম আলো)", src: "/news_paper/Daily-Prothom-Alo-Logo.png", url: "https://www.prothomalo.com", type: "জাতীয় দৈনিক (শীর্ষ)" },
+    { name: "Bangladesh Pratidin (বাংলাদেশ প্রতিদিন)", src: "/news_paper/Daily-Bangladesh-Pratidin-Logo.png", url: "https://www.bd-pratidin.com", type: "জাতীয় দৈনিক (শীর্ষ প্রচলন)" },
+    { name: "Daily Amar Desh (আমার দেশ)", src: "/news_paper/Daily-Amar-Desh-Logo.png", url: "https://dailyamardesh.com", type: "জাতীয় দৈনিক" },
+    { name: "Jugantor (যুগান্তর)", src: "/news_paper/Daily-Jugantor-Logo.png", url: "https://www.jugantor.com", type: "জাতীয় দৈনিক" },
+    { name: "Kaler Kantho (কালের কণ্ঠ)", src: "/news_paper/Daily-Kaler-Kantho-Logo.png", url: "https://www.kalerkantho.com", type: "জাতীয় দৈনিক" },
+    { name: "Ittefaq (ইত্তেফাক)", src: "/news_paper/Daily-Ittefaq-Logo.png", url: "https://www.ittefaq.com.bd", type: "জাতীয় দৈনিক (ঐতিহ্যবাহী)" },
+    { name: "Samakal (সমকাল)", src: "/news_paper/Daily-Samakal-Logo.png", url: "https://samakal.com", type: "জাতীয় দৈনিক" },
+    { name: "Ajker Patrika (আজকের পত্রিকা)", src: "/news_paper/Daily-Ajker-Patrika-Logo.png", url: "https://www.ajkerpatrika.com", type: "জাতীয় দৈনিক" },
+    { name: "Alokito Bangladesh (আলোকিত বাংলাদেশ)", src: "/news_paper/Daily-Alokito-Bangladesh-Logo.png", url: "https://www.alokitobangladesh.com", type: "জাতীয় দৈনিক" },
+    { name: "Amader Shomoy (আমাদের সময়)", src: "/news_paper/Daily-Amader-Shomoy-Logo.png", url: "https://www.dainikamadershomoy.com", type: "জাতীয় দৈনিক" },
+    { name: "Bhorer Kagoj (ভোরের কাগজ)", src: "/news_paper/Daily-Bhorer-Kagoj-Logo.png", url: "https://www.bhorerkagoj.com", type: "জাতীয় দৈনিক" },
+    { name: "Bonik Barta (বণিক বার্তা)", src: "/news_paper/Daily-Bonik-Barta-Logo.png", url: "https://bonikbarta.net", type: "বিজনেস দৈনিক" },
+    { name: "Khoborer Kagoj (খবরের কাগজ)", src: "/news_paper/Daily-Khoborer-Kagoj-Logo.png", url: "https://www.khoborerkagoj.com", type: "জাতীয় দৈনিক" },
+    { name: "Manabkantha (মানবকণ্ঠ)", src: "/news_paper/Daily-Manabkantha-Logo.png", url: "https://www.manobkantha.com.bd", type: "জাতীয় দৈনিক" },
+    { name: "Manabzamin (মানবজমিন)", src: "/news_paper/Daily-Manabzamin-Logo.png", url: "https://mzamin.com", type: "জাতীয় দৈনিক (ট্যাবলয়েড)" },
+    { name: "Pratidiner Bangladesh (প্রতিদিনের বাংলাদেশ)", src: "/news_paper/Daily-Pratidiner-Bangladesh-Logo.png", url: "https://www.protidinerbangladesh.com", type: "জাতীয় দৈনিক" },
+    { name: "Share Biz (শেয়ার বিজ)", src: "/news_paper/Daily-Share-Biz-Logo.png", url: "https://sharebiz.net", type: "অর্থনৈতিক দৈনিক" },
+    { name: "Daily Inqilab (ইনকিলাব)", src: "/news_paper/Daily-Inqilab-Logo.png", url: "https://www.dailyinqilab.com", type: "জাতীয় দৈনিক" },
   ];
-
-  // Filtering based on search query
-  const filteredNewspapers = banglaNewspapers.filter(paper =>
-    paper.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
 
   return (
     <div className="w-full bg-slate-50 min-h-screen">
@@ -72,7 +48,7 @@ export default function BanglaNewspapers() {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight"
           >
-            Popular <span className="text-rose-700">Bangla News Portals</span>
+            Popular <span className="text-rose-700">Bangla Newspapers</span>
           </motion.h1>
 
           <motion.p 
@@ -81,27 +57,8 @@ export default function BanglaNewspapers() {
             transition={{ delay: 0.2 }}
             className="mt-3 text-sm sm:text-base text-slate-600 max-w-xl mx-auto"
           >
-            Access top verified news websites directly with a single click.
+            Access top verified newspaper websites directly with a single click.
           </motion.p>
-
-          {/* Search Box */}
-          <motion.div 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mt-8 max-w-md mx-auto relative"
-          >
-            <div className="relative flex items-center">
-              <Search className="absolute left-4 text-slate-400" size={18} />
-              <input
-                type="text"
-                placeholder="Search newspaper name..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-slate-200 shadow-sm text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-600 transition-all"
-              />
-            </div>
-          </motion.div>
 
         </div>
       </section>
@@ -109,49 +66,42 @@ export default function BanglaNewspapers() {
       {/* Grid Display */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-          {filteredNewspapers.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {banglaNewspapers.map((item, index) => (
             <motion.a
               key={index}
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -6, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group flex flex-col justify-between bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-rose-200 transition-all duration-300"
+              className="group relative flex flex-col justify-between p-5 bg-white border border-slate-200/90 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/10 hover:border-rose-300 cursor-pointer overflow-hidden"
             >
-              {/* Logo Area */}
-              <div className="h-28 w-full p-4 flex items-center justify-center bg-white border-b border-slate-100 relative">
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-slate-400 group-hover:text-rose-700 transition-opacity">
-                  <ExternalLink size={12} />
-                </div>
+              <div className="absolute top-3 right-3 p-1.5 rounded-full bg-slate-100 text-slate-400 group-hover:bg-rose-50 group-hover:text-rose-700 transition-colors z-10">
+                <ExternalLink size={14} />
+              </div>
+
+              {/* High Quality Large Image Container (w-64 h-64) */}
+              <div className="h-72 w-full flex items-center justify-center my-1 p-2 bg-slate-50/70 rounded-xl group-hover:bg-slate-100/60 transition-colors">
                 <img
-                  src={getLogoUrl(item.url)}
+                  src={item.src}
                   alt={item.name}
                   loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-64 h-64 object-contain brightness-110 contrast-125 saturate-110 group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
                 />
               </div>
 
-              {/* Title */}
-              <div className="py-3 px-3 bg-slate-50/50 text-center border-t border-slate-100">
-                <h3 className="text-xs font-semibold text-slate-800 group-hover:text-rose-700 transition-colors truncate">
+              <div className="pt-3 border-t border-slate-100 text-center">
+                <span className="inline-block px-2.5 py-0.5 mb-1.5 text-[10px] font-semibold text-rose-700 bg-rose-50 rounded-full">
+                  {item.type}
+                </span>
+                <h3 className="text-xs font-bold text-slate-800 group-hover:text-rose-700 transition-colors leading-snug truncate">
                   {item.name}
                 </h3>
               </div>
             </motion.a>
           ))}
         </div>
-
-        {/* Empty Search Result State */}
-        {filteredNewspapers.length === 0 && (
-          <div className="text-center py-16 text-slate-400 text-sm">
-            No news portals found matching your search.
-          </div>
-        )}
 
       </main>
 

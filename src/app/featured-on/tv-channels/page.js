@@ -1,62 +1,150 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, ExternalLink, Tv } from 'lucide-react';
+import { ExternalLink, Tv } from 'lucide-react';
 
 export default function TvChannels() {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  // Function to load logo via Google Favicon API
-  const getLogoUrl = (websiteUrl) => {
-    try {
-      const domain = new URL(websiteUrl).hostname;
-      return `https://www.google.com/s2/favicons?domain=${domain}&sz=256`;
-    } catch {
-      return '';
-    }
-  };
-
-  // Complete List of Popular Television Channels in Bangladesh
   const tvChannels = [
-    { name: "Somoy TV", url: "https://www.somoynews.tv" },
-    { name: "Jamuna TV", url: "https://www.jamuna.tv" },
-    { name: "Ekattor TV", url: "https://ekattor.tv" },
-    { name: "Channel 24", url: "https://www.channel24bd.tv" },
-    { name: "Independent TV", url: "https://www.independent24.com" },
-    { name: "DBC News", url: "https://dbcnews.tv" },
-    { name: "NEWS24", url: "https://www.news24bd.tv" },
-    { name: "ATN News", url: "https://atnnewstv.com" },
-    { name: "Ekhon TV", url: "https://www.ekhontv.com" },
-    { name: "BTV News", url: "https://btv.gov.bd" },
-    { name: "Channel i", url: "https://www.channelionline.com" },
-    { name: "NTV", url: "https://www.ntvbd.com" },
-    { name: "RTV", url: "https://www.rtvonline.com" },
-    { name: "Banglavision", url: "https://www.bvnews24.com" },
-    { name: "ATN Bangla", url: "https://atnbangla.tv" },
-    { name: "Desh TV", url: "https://www.desh.tv" },
-    { name: "Ekushey TV", url: "https://www.ekushey-tv.com" },
-    { name: "Maasranga TV", url: "https://maasranga.tv" },
-    { name: "GTV (Gazi TV)", url: "https://www.gazitv.com" },
-    { name: "Boishakhi TV", url: "https://boishakhionline.com" },
-    { name: "Asian TV", url: "https://asiantvbd.com" },
-    { name: "SA TV", url: "https://satv.com.bd" },
-    { name: "Mohona TV", url: "https://mohonatv.com" },
-    { name: "My TV", url: "https://mytvbd.tv" },
-    { name: "Bijoy TV", url: "https://bijoytv.media" },
-    { name: "Channel 9", url: "https://channel9bd.tv" },
-    { name: "Ananda TV", url: "https://anandatv.tv" },
-    { name: "Global TV", url: "https://globaltvbd.com" },
-    { name: "Citizen TV", url: "https://citizentvbd.com" },
-    { name: "Nexus TV", url: "https://nexustelevision.com" },
-    { name: "T Sports", url: "https://tsports.com" },
-    { name: "Duronto TV", url: "https://duronto.tv" }
+    {
+      name: "Jamuna TV",
+      src: "/Tv_Channel/Jamuna-TV-Logo.png",
+      url: "https://www.jamuna.tv/",
+      type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    { 
+      name: "Somoy TV",
+      src: "/Tv_Channel/Somoy-TV-Logo.png",
+      url: "https://www.somoynews.tv/",
+      type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    {
+      name: "DBC TV",
+      src: "/Tv_Channel/DBC-Logo.png",
+      url: "https://www.dbctv.com",
+      type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    {
+       name: "Ekattor TV",
+       src: "/Tv_Channel/Ekattor-TV-Logo.png",
+       url: "https://ekattor.tv",
+       type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    {
+      name: "ATN Bangla",
+      src: "/Tv_Channel/ATN-Bangla-Logo.png",
+      url: "https://atnbangla.tv",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Independent TV",
+      src: "/Tv_Channel/Independent-TV-Logo.png",
+      url: "https://www.independent.tv",
+      type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    {
+      name: "Bangladesh Television (BTV)",
+      src: "/Tv_Channel/Bangladesh-Television-BTV-Logo.png",
+      url: "https://btv.gov.bd",
+      type: "জাতীয় সরকারি চ্যানেল"
+    },
+    {
+      name: "Banglavision",
+      src: "/Tv_Channel/Banglavision-TV-Logo.png",
+      url: "https://www.bvnews24.com",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Boishakhi TV",
+      src: "/Tv_Channel/Boishakhi_TV-Logo.png",
+      url: "https://www.boishakhitv.com",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Channel 24",
+      src: "/Tv_Channel/Channel-24-Logo.png",
+      url: "https://www.channel24bd.tv",
+      type: "২৪/৭ নিউজ ও ইনফো"
+    },
+    {
+      name: "Channel i",
+      src: "/Tv_Channel/Channel-i-Logo.png",
+      url: "https://www.channelionline.com",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Rtv",
+      src: "/Tv_Channel/Rtv-Logo.png",
+      url: "https://dbcnews.tv",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Maasranga TV",
+      src: "/Tv_Channel/Maasranga-Television-Logo.png",
+      url: "https://www.maasranga.tv",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Desh TV",
+      src: "/Tv_Channel/Desh-TV-Logo.png",
+      url: "https://www.desh.tv",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Ekushey TV",
+      src: "/Tv_Channel/Ekushey-TV-Logo.png",
+      url: "https://ekushey.tv",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "News24",
+      src: "/Tv_Channel/News-24-TV-Logo.png",
+      url: "https://www.news24.com.bd",
+      type: "২৪/৭ নিউজ চ্যানেল"
+    },
+    {
+      name: "My TV",
+      src: "/Tv_Channel/My-TV-Logo.png",
+      url: "https://mytvbd.tv/",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Mohona TV",
+      src: "/Tv_Channel/Mohona-TV-Logo.png",
+      url: "https://www.mohonatv.com",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "SA TV",
+      src: "/Tv_Channel/SA-TV-Logo.png",
+      url: "https://www.satv.tv/",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "NTV",
+      src: "/Tv_Channel/NTv-Logo.png",
+      url: "https://www.ntvbd.tv/",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Ekhon TV",
+      src: "/Tv_Channel/Ekhon-TV-Logo.png",
+      url: "https://www.ekhontv.com/",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "GTV",
+      src: "/Tv_Channel/GTV-Logo.png",
+      url: "https://www.gtvbd.tv/",
+      type: "সংবাদ ও বিনোদন"
+    },
+    {
+      name: "Star News",
+      src: "/Tv_Channel/Star-News-TV-Logo.png",
+      url: "https://www.starnews.tv/",
+      type: "সংবাদ ও বিনোদন"
+    }
   ];
-
-  // Filtering based on search query
-  const filteredChannels = tvChannels.filter(channel =>
-    channel.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
 
   return (
     <div className="w-full bg-slate-50 min-h-screen">
@@ -91,74 +179,48 @@ export default function TvChannels() {
             Watch and stream news, entertainment, and sports from popular television channels directly.
           </motion.p>
 
-          {/* Search Box */}
-          <motion.div 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mt-8 max-w-md mx-auto relative"
-          >
-            <div className="relative flex items-center">
-              <Search className="absolute left-4 text-slate-400" size={18} />
-              <input
-                type="text"
-                placeholder="Search TV channel name..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-slate-200 shadow-sm text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-600 transition-all"
-              />
-            </div>
-          </motion.div>
-
         </div>
       </section>
 
       {/* Grid Display */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
-          {filteredChannels.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {tvChannels.map((item, index) => (
             <motion.a
               key={index}
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -6, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group flex flex-col justify-between bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-rose-200 transition-all duration-300"
+              className="group relative flex flex-col justify-between p-5 bg-white border border-slate-200/90 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/10 hover:border-rose-300 cursor-pointer overflow-hidden"
             >
-              {/* Logo Area */}
-              <div className="h-28 w-full p-4 flex items-center justify-center bg-white border-b border-slate-100 relative">
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-slate-400 group-hover:text-rose-700 transition-opacity">
-                  <ExternalLink size={12} />
-                </div>
+              <div className="absolute top-3 right-3 p-1.5 rounded-full bg-slate-100 text-slate-400 group-hover:bg-rose-50 group-hover:text-rose-700 transition-colors z-10">
+                <ExternalLink size={14} />
+              </div>
+
+              {/* High Quality Large Image Container (w-64 h-64) */}
+              <div className="h-72 w-full flex items-center justify-center my-1 p-2 bg-slate-50/70 rounded-xl group-hover:bg-slate-100/60 transition-colors">
                 <img
-                  src={getLogoUrl(item.url)}
+                  src={item.src}
                   alt={item.name}
                   loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-64 h-64 object-contain brightness-110 contrast-125 saturate-110 group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
                 />
               </div>
 
-              {/* Title */}
-              <div className="py-3 px-3 bg-slate-50/50 text-center border-t border-slate-100">
-                <h3 className="text-xs font-semibold text-slate-800 group-hover:text-rose-700 transition-colors truncate">
+              <div className="pt-3 border-t border-slate-100 text-center">
+                <span className="inline-block px-2.5 py-0.5 mb-1.5 text-[10px] font-semibold text-rose-700 bg-rose-50 rounded-full">
+                  {item.type}
+                </span>
+                <h3 className="text-xs font-bold text-slate-800 group-hover:text-rose-700 transition-colors leading-snug truncate">
                   {item.name}
                 </h3>
               </div>
             </motion.a>
           ))}
         </div>
-
-        {/* Empty Search Result State */}
-        {filteredChannels.length === 0 && (
-          <div className="text-center py-16 text-slate-400 text-sm">
-            No TV channels found matching your search.
-          </div>
-        )}
 
       </main>
 

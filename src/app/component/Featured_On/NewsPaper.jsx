@@ -5,93 +5,195 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Newspaper, Globe, Tv, BookOpen } from 'lucide-react';
 
 export default function NewsPaper() {
-  const [activeTab, setActiveTab] = useState('daily_newspaper');
-
-  // Website domain theke sorasori logo/icon load korar function (Google CDN)
-  const getLogoUrl = (websiteUrl) => {
-    try {
-      const domain = new URL(websiteUrl).hostname;
-      return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-    } catch {
-      return '';
-    }
-  };
+  const [activeTab, setActiveTab] = useState('tv');
 
   const mediaCategories = {
-    // ১. শুধুমাত্র দৈনিক প্রিন্ট পত্রিকা (Online Portals excluded)
     daily_newspaper: [
-      { name: "Bangladesh Pratidin (বাংলাদেশ প্রতিদিন)", url: "https://www.bd-pratidin.com", type: "জাতীয় দৈনিক (শীর্ষ প্রচলন)" },
-      { name: "Prothom Alo (প্রথম আলো)", url: "https://www.prothomalo.com", type: "জাতীয় দৈনিক (শীর্ষ)" },
-      { name: "Daily Amader Desh (আমার দেশ)", url: "https://dailyamardesh.com", type: "জাতীয় দৈনিক" },
-      { name: "Naya Diganta (নয়া দিগন্ত)", url: "https://www.dailynayadiganta.com", type: "জাতীয় দৈনিক" },
-      { name: "Jugantor (যুগান্তর)", url: "https://www.jugantor.com", type: "জাতীয় দৈনিক" },
-      { name: "Kaler Kantho (কালের কণ্ঠ)", url: "https://www.kalerkantho.com", type: "জাতীয় দৈনিক" },
-      { name: "Daily Amader Shomoy (আমাদের সময়)", url: "https://www.ainews24.com", type: "জাতীয় দৈনিক" },
-      { name: "Daily Inqilab (ইনকিলাব)", url: "https://www.dailyinqilab.com", type: "জাতীয় দৈনিক" },
-      { name: "Ittefaq (ইত্তেফাক)", url: "https://www.ittefaq.com.bd", type: "জাতীয় দৈনিক (ঐতিহ্যবাহী)" },
-      { name: "Jaijaidin (যায়যায়দিন)", url: "https://www.jaijaidinnews.com", type: "জাতীয় দৈনিক" },
-      { name: "Daily Janakantha (জনকণ্ঠ)", url: "https://www.dailyjanakantha.com", type: "জাতীয় দৈনিক" },
-      { name: "Samakal (সমকাল)", url: "https://samakal.com", type: "জাতীয় দৈনিক" },
-      { name: "Desh Rupantor (দেশ রূপান্তর)", url: "https://www.deshrupantor.com", type: "জাতীয় দৈনিক" },
-      { name: "Daily Manab Zamin (মানবজমিন)", url: "https://mzamin.com", type: "জাতীয় দৈনিক (ট্যাবলয়েড)" },
-      { name: "Ajker Patrika (আজকের পত্রিকা)", url: "https://www.ajkerpatrika.com", type: "জাতীয় দৈনিক" },
-      { name: "Bonik Barta (বণিক বার্তা)", url: "https://bonikbarta.net", type: "বিজনেস দৈনিক" },
-      { name: "Bhorer Kagoj (ভোরের কাগজ)", url: "https://www.bhorerkagoj.com", type: "জাতীয় দৈনিক" },
-      { name: "Manobkantha (মানবকণ্ঠ)", url: "https://www.manobkantha.com.bd", type: "জাতীয় দৈনিক" },
-      { name: "Dainik Azadi (দৈনিক আজাদী)", url: "https://dainikazadi.net", type: "চট্টগ্রাম আঞ্চলিক দৈনিক" },
-      { name: "Dainik Purbokon (দৈনিক পূর্বকোণ)", url: "https://dainikpurbokon.net", type: "চট্টগ্রাম আঞ্চলিক দৈনিক" }
+      { name: "Prothom Alo (প্রথম আলো)", src: "/news_paper/Daily-Prothom-Alo-Logo.png", url: "https://www.prothomalo.com", type: "জাতীয় দৈনিক (শীর্ষ)" },
+      { name: "Bangladesh Pratidin (বাংলাদেশ প্রতিদিন)", src: "/news_paper/Daily-Bangladesh-Pratidin-Logo.png", url: "https://www.bd-pratidin.com", type: "জাতীয় দৈনিক (শীর্ষ প্রচলন)" },
+      { name: "Daily Amar Desh (আমার দেশ)", src: "/news_paper/Daily-Amar-Desh-Logo.png", url: "https://dailyamardesh.com", type: "জাতীয় দৈনিক" },
+      { name: "Jugantor (যুগান্তর)", src: "/news_paper/Daily-Jugantor-Logo.png", url: "https://www.jugantor.com", type: "জাতীয় দৈনিক" },
+      { name: "Kaler Kantho (কালের কণ্ঠ)", src: "/news_paper/Daily-Kaler-Kantho-Logo.png", url: "https://www.kalerkantho.com", type: "জাতীয় দৈনিক" },
+      { name: "Ittefaq (ইত্তেফাক)", src: "/news_paper/Daily-Ittefaq-Logo.png", url: "https://www.ittefaq.com.bd", type: "জাতীয় দৈনিক (ঐতিহ্যবাহী)" },
+      { name: "Samakal (সমকাল)", src: "/news_paper/Daily-Samakal-Logo.png", url: "https://samakal.com", type: "জাতীয় দৈনিক" },
+      { name: "Ajker Patrika (আজকের পত্রিকা)", src: "/news_paper/Daily-Ajker-Patrika-Logo.png", url: "https://www.ajkerpatrika.com", type: "জাতীয় দৈনিক" },
+      { name: "Alokito Bangladesh (আলোকিত বাংলাদেশ)", src: "/news_paper/Daily-Alokito-Bangladesh-Logo.png", url: "https://www.alokitobangladesh.com", type: "জাতীয় দৈনিক" },
+      { name: "Amader Shomoy (আমাদের সময়)", src: "/news_paper/Daily-Amader-Shomoy-Logo.png", url: "https://www.dainikamadershomoy.com", type: "জাতীয় দৈনিক" },
+      { name: "Bhorer Kagoj (ভোরের কাগজ)", src: "/news_paper/Daily-Bhorer-Kagoj-Logo.png", url: "https://www.bhorerkagoj.com", type: "জাতীয় দৈনিক" },
+      { name: "Bonik Barta (বণিক বার্তা)", src: "/news_paper/Daily-Bonik-Barta-Logo.png", url: "https://bonikbarta.net", type: "বিজনেস দৈনিক" },
+      { name: "Khoborer Kagoj (খবরের কাগজ)", src: "/news_paper/Daily-Khoborer-Kagoj-Logo.png", url: "https://www.khoborerkagoj.com", type: "জাতীয় দৈনিক" },
+      { name: "Manabkantha (মানবকণ্ঠ)", src: "/news_paper/Daily-Manabkantha-Logo.png", url: "https://www.manobkantha.com.bd", type: "জাতীয় দৈনিক" },
+      { name: "Manabzamin (মানবজমিন)", src: "/news_paper/Daily-Manabzamin-Logo.png", url: "https://mzamin.com", type: "জাতীয় দৈনিক (ট্যাবলয়েড)" },
+      { name: "Pratidiner Bangladesh (প্রতিদিনের বাংলাদেশ)", src: "/news_paper/Daily-Pratidiner-Bangladesh-Logo.png", url: "https://www.protidinerbangladesh.com", type: "জাতীয় দৈনিক" },
+      { name: "Share Biz (শেয়ার বিজ)", src: "/news_paper/Daily-Share-Biz-Logo.png", url: "https://sharebiz.net", type: "অর্থনৈতিক দৈনিক" },
+      { name: "Daily Inqilab (ইনকিলাব)", src: "/news_paper/Daily-Inqilab-Logo.png", url: "https://www.dailyinqilab.com", type: "জাতীয় দৈনিক" },
     ],
 
-    // ২. অনলাইন নিউজ পোর্টালসমূহ
     online_portal: [
-      { name: "bdnews24.com (বিডিনিউজ২৪)", url: "https://bdnews24.com", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "Bangla Tribune (বাংলা ট্রিবিউন)", url: "https://www.banglatribune.com", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "Dhaka Post (ঢাকা পোস্ট)", url: "https://www.dhakapost.com", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "Jago News 24 (জাগো নিউজ)", url: "https://www.jagonews24.com", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "Asia Post (এশিয়া পোস্ট)", url: "https://www.asia-post.com/", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "NPB News (এনপিবি নিউজ)", url: "https://npbnews.com/", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "Star News BD (স্টার নিউজ বিডি)", url: "https://starnews.com.bd/", type: "অনলাইন নিউজ পোর্টাল" },
-      { name: "BD Crime News (বিডি ক্রাইম)", url: "https://bdcrimenews24.com", type: "অনলাইন নিউজ পোর্টাল" }
+      { name: "bdnews24.com", src: "/news_paper/Daily-Share-Biz-Logo.png", url: "https://bdnews24.com", type: "অনলাইন নিউজ পোর্টাল" },
+      { name: "Dhaka Tribune", src: "/news_paper/Dhaka-Tribune-Logo.png", url: "https://www.dhakatribune.com", type: "অনলাইন নিউজ পোর্টাল" },
+      { name: "The Daily Star", src: "/news_paper/The-Daily-Star-Logo.png", url: "https://www.thedailystar.net", type: "অনলাইন নিউজ পোর্টাল" },
+      { name: "The Asian Age", src: "/news_paper/The-Asian-Age.png", url: "https://dailyasianage.com/", type: "অনলাইন নিউজ পোর্টাল" },
+      { name: "The Business Standard", src: "/news_paper/Daily-Business-Standard-Logo.png", url: "https://www.tbsnews.net", type: "বিজনেস নিউজ" },
     ],
 
-    // ৩. ইংরেজি দৈনিক
     english: [
-      { name: "The Daily Star (ডেইলি স্টার)", url: "https://www.thedailystar.net", type: "ইংরেজি দৈনিক (শীর্ষ)" },
-      { name: "Dhaka Tribune (ঢাকা ট্রিবিউন)", url: "https://www.dhakatribune.com", type: "ইংরেজি দৈনিক" },
-      { name: "The Business Standard (TBS)", url: "https://www.tbsnews.net", type: "বিজনেস নিউজ (শীর্ষ)" },
-      { name: "New Age (নিউ এজ)", url: "https://www.newagebd.net", type: "ইংরেজি দৈনিক" },
-      { name: "The Financial Express", url: "https://thefinancialexpress.com.bd", type: "ইংরেজি বিজনেস দৈনিক" },
-      { name: "Daily Sun (ডেইলি সান)", url: "https://www.daily-sun.com", type: "ইংরেজি দৈনিক" }
+      { name: "The Daily Star", src: "/news_paper/The-Daily-Star-Logo.png", url: "https://www.thedailystar.net", type: "ইংরেজি দৈনিক (শীর্ষ)" },
+      { name: "Dhaka Tribune", src: "/news_paper/Dhaka-Tribune-Logo.png", url: "https://www.dhakatribune.com", type: "ইংরেজি দৈনিক" },
+      { name: "The Business Standard", src: "/news_paper/Daily-Business-Standard-Logo.png", url: "https://www.tbsnews.net", type: "বিজনেস নিউজ" },
+      { name: "The Financial Express", src: "/news_paper/Daily-Financial-Express-Logo.png", url: "https://thefinancialexpress.com.bd", type: "ইংরেজি বিজনেস দৈনিক" },
     ],
 
-    // ৪. জনপ্রিয় টিভি চ্যানেলসমূহ (Expanded List)
     tv: [
-      { name: "Somoy TV (সময় টিভি)", url: "https://www.somoynews.tv", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "Jamuna TV (যমুনা টিভি)", url: "https://www.jamuna.tv", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "Ekattor TV (একাত্তর টিভি)", url: "https://ekattor.tv", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "Channel 24 (চ্যানেল ২৪)", url: "https://www.channel24bd.tv", type: "২৪/৭ নিউজ ও ইনফো" },
-      { name: "Independent TV (ইন্ডিপেন্ডেন্ট টিভি)", url: "https://www.independent24.com", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "DBC News (ডিবিসি নিউজ)", url: "https://dbcnews.tv", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "Channel i (চ্যানেল আই)", url: "https://www.channelionline.com", type: "সংবাদ ও বিনোদন" },
-      { name: "NTV (এনটিভি)", url: "https://www.ntvbd.com", type: "সংবাদ ও বিনোদন" },
-      { name: "RTV (আরটিভি)", url: "https://www.rtvonline.com", type: "সংবাদ ও বিনোদন" },
-      { name: "Banglavision (বাংলাভিশন)", url: "https://www.bvnews24.com", type: "সংবাদ ও বিনোদন" },
-      { name: "ATN Bangla (এটিএন বাংলা)", url: "https://atnbangla.tv", type: "সংবাদ ও বিনোদন" },
-      { name: "ATN News (এটিএন নিউজ)", url: "https://atnnewstv.com", type: "২৪/৭ নিউজ চ্যানেল" },
-      { name: "Ekushey TV (একুশে টিভি)", url: "https://www.ekushey-tv.com", type: "সংবাদ ও বিনোদন" },
-      { name: "Ekhon TV (এখন টিভি)", url: "https://www.ekhontv.com", type: "২৪/৭ বিজনেস ও নিউজ" },
-      { name: "Desh TV (দেশ টিভি)", url: "https://www.desh.tv", type: "সংবাদ ও বিনোদন" },
-      { name: "Maasranga TV (মাছরাঙা টিভি)", url: "https://maasranga.tv", type: "সংবাদ ও বিনোদন" },
-      { name: "T Sports (টি স্পোর্টস)", url: "https://tsports.com", type: "২৪/৭ স্পোর্টস ও সংবাদ" },
-      { name: "BTV (বাংলাদেশ টেলিভিশন)", url: "https://btv.gov.bd", type: "জাতীয় সরকারি চ্যানেল" }
+      {
+        name: "Jamuna TV",
+        src: "/Tv_Channel/Jamuna-TV-Logo.png",
+        url: "https://www.jamuna.tv/.",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      { 
+        name: "Somoy TV",
+        src: "/Tv_Channel/Somoy-TV-Logo.png",
+        url: "https://www.somoynews.tv/",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      {
+        name: "DBC TV",
+        src: "/Tv_Channel/DBC-Logo.png",
+        url: "https://www.dbctv.com",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+         name: "Ekattor TV",
+         src: "/Tv_Channel/Ekattor-TV-Logo.png",
+         url: "https://ekattor.tv",
+         type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "ATN Bangla",
+        src: "/Tv_Channel/ATN-Bangla-Logo.png",
+        url: "https://atnbangla.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Independent TV",
+        src: "/Tv_Channel/Independent-TV-Logo.png",
+        url: "https://www.independent.tv",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "Bangladesh Television (BTV)",
+        src: "/Tv_Channel/Bangladesh-Television-BTV-Logo.png",
+        url: "https://btv.gov.bd",
+        type: "জাতীয় সরকারি চ্যানেল"
+      },
+      {
+        name: "Banglavision",
+        src: "/Tv_Channel/Banglavision-TV-Logo.png",
+        url: "https://www.bvnews24.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Boishakhi TV",
+        src: "/Tv_Channel/Boishakhi_TV-Logo.png",
+        url: "https://www.boishakhitv.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Channel 24",
+        src: "/Tv_Channel/Channel-24-Logo.png",
+        url: "https://www.channel24bd.tv",
+        type: "২৪/৭ নিউজ ও ইনফো"
+      },
+      {
+        name: "Channel i",
+        src: "/Tv_Channel/Channel-i-Logo.png",
+        url: "https://www.channelionline.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Rtv",
+        src: "/Tv_Channel/Rtv-Logo.png",
+        url: "https://dbcnews.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name:"maasranga tv",
+        src: "/Tv_Channel/Maasranga-Television-Logo.png",
+        url: "https://www.maasranga.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Desh TV",
+        src: "/Tv_Channel/Desh-TV-Logo.png",
+        url: "https://www.desh.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Ekushey TV",
+        src: "/Tv_Channel/Ekushey-TV-Logo.png",
+        url: "https://ekushey.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name:'News24',
+        src: "/Tv_Channel/News-24-TV-Logo.png",
+        url: "https://www.news24.com.bd",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "My Tv",
+        src: "/Tv_Channel/My-TV-Logo.png",
+        url: "https://mytvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Mohona TV",
+        src: "/Tv_Channel/Mohona-TV-Logo.png",
+        url: "https://www.mohonatv.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "SA TV",
+        src: "/Tv_Channel/SA-TV-Logo.png",
+        url: "https://www.satv.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "NTv",
+        src: "/Tv_Channel/NTv-Logo.png",
+        url: "https://www.ntvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "Ekhon TV",
+        src: "/Tv_Channel/Ekhon-TV-Logo.png",
+        url: "https://www.ekhontv.com/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "GTV",
+        src: "/Tv_Channel/GTV-Logo.png",
+        url: "https://www.gtvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "Star News",
+        src: "/Tv_Channel/Star-News-TV-Logo.png",
+        url: "https://www.starnews.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
     ]
   };
 
   const tabs = [
-    { id: 'daily_newspaper', label: 'Bangla Daily Newspaper', icon: <BookOpen size={18} /> },
-    { id: 'online_portal', label: 'Online Portals', icon: <Newspaper size={18} /> },
-    { id: 'english', label: 'English News', icon: <Globe size={18} /> },
     { id: 'tv', label: 'TV Channels', icon: <Tv size={18} /> },
+    { id: 'daily_newspaper', label: 'Newspapers', icon: <BookOpen size={18} /> },
+    { id: 'english', label: 'English News', icon: <Globe size={18} /> },
+    { id: 'online_portal', label: 'Online Portals', icon: <Newspaper size={18} /> },
+    
   ];
 
   return (
@@ -127,7 +229,7 @@ export default function NewsPaper() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           >
             {mediaCategories[activeTab]?.map((item, index) => (
               <motion.a
@@ -135,29 +237,26 @@ export default function NewsPaper() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.02 }}
+                whileHover={{ y: -6, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative flex flex-col justify-between p-5 bg-white border border-slate-200/80 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-red-200 cursor-pointer overflow-hidden"
+                className="group relative flex flex-col justify-between p-5 bg-white border border-slate-200/90 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/10 hover:border-[#a4223a]/40 cursor-pointer overflow-hidden"
               >
-                <div className="absolute top-3 right-3 p-1 rounded-full bg-slate-100 text-slate-400 group-hover:bg-red-50 group-hover:text-[#a4223a] transition-colors">
+                <div className="absolute top-3 right-3 p-1.5 rounded-full bg-slate-100 text-slate-400 group-hover:bg-red-50 group-hover:text-[#a4223a] transition-colors z-10">
                   <ExternalLink size={14} />
                 </div>
 
-                {/* Dynamic CDN Logo */}
-                <div className="h-16 w-full flex items-center justify-center my-2">
+                {/* h-64 w-64 Image Integration */}
+                <div className="h-72 w-full flex items-center justify-center my-1 p-2 bg-slate-50/70 rounded-xl group-hover:bg-slate-100/60 transition-colors">
                   <img
-                    src={getLogoUrl(item.url)}
+                    src={item.src}
                     alt={item.name}
                     loading="lazy"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                    className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="w-48 h-48 object-contain brightness-110 contrast-125 saturate-110 group-hover:scale-105 transition-transform duration-300 drop-shadow-md"
                   />
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 text-center">
-                  <span className="inline-block px-2 py-0.5 mb-1 text-[10px] font-medium text-[#a4223a] bg-red-50 rounded">
+                  <span className="inline-block px-2.5 py-0.5 mb-1.5 text-[10px] font-semibold text-[#a4223a] bg-red-50 rounded-full">
                     {item.type}
                   </span>
                   <h3 className="text-xs font-bold text-slate-800 group-hover:text-[#a4223a] transition-colors leading-snug truncate">

@@ -18,19 +18,19 @@ export default function Footer() {
 
           {/* 1. Brand Info */}
           <div className="space-y-3">
-            <Link href="/" className="inline-block shrink-0">
-              <Image
-                src="/logo.jpg"
-                alt="INFOPRBD Logo"
-                width={180}
-                height={60}
-                className="h-12 sm:h-16 w-auto object-contain brightness-200"
-              />
-            </Link>
-            <p className="text-xs text-gray-400 leading-relaxed pr-2">
-              {t("Footer.about_desc")}
-            </p>
-          </div>
+           <Link href="/" className="inline-block shrink-0">
+           <img
+             src="/logo.jpeg"
+             alt="INFOPRBD Logo"
+             width={180}
+             height={60}
+             className="h-12 sm:h-16 w-auto object-contain"
+    />
+  </Link>
+  <p className="text-xs text-gray-400 leading-relaxed pr-2">
+    {t("Footer.about_desc")}
+  </p>
+</div>
 
           {/* 2. Quick Links */}
           <div>

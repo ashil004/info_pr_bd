@@ -39,11 +39,10 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2 focus:outline-none flex-shrink-0">
-          <img
-            src="/logo.jpg"
-            alt="InfoPR Logo"
-            className="h-16 w-auto object-contain max-h-none shrink-0"
-          />
+           <img
+          src="/logo.jpeg"
+          alt="InfoPR Logo"
+          className="h-14 w-auto object-contain shrink-0"/>
         </Link>
 
         {/* DESKTOP NAVIGATION */}
