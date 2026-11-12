@@ -115,8 +115,8 @@ export default function NewsPaper() {
       },
       {
         name: "Rtv",
-        src: "/Tv_Channel/Rtv-Logo.png",
-        url: "https://dbcnews.tv",
+        src: "/Tv_Channel/Rtv_Logo.png",
+        url: "https://rtvonline.com/",
         type: "সংবাদ ও বিনোদন"
       },
       {
@@ -163,7 +163,7 @@ export default function NewsPaper() {
      },
       {
         name: "NTv",
-        src: "/Tv_Channel/NTv-Logo.png",
+        src: "/Tv_Channel/Ntv_logo.png",
         url: "https://www.ntvbd.tv/",
         type: "সংবাদ ও বিনোদন"
      },
