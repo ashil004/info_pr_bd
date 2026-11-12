@@ -9,15 +9,14 @@ export default function ClientLogos() {
 
   
   const logos = [
-    { name: 'The Daily Star', src: '/news_paper/The-Daily-Star-Logo.png' },
-    { name: 'Prothom Alo', src: '/news_paper/Prothom-Alo-Logo.png' },
-    { name: 'Bangladesh Pratidin', src: '/news_paper/Bangladesh-Pratidin-Logo.png' },
-    { name: 'Kaler Kantho', src: '/news_paper/Kaler-Kantho-Logo.png' },
-    { name: 'Jugantor', src: '/news_paper/Jugantor-Logo.png' },
-    { name: 'Rtv', src: '/Tv_Channel/Rtv_Logo.png' },
-    { name: 'NTv', src: '/Tv_Channel/Ntv_logo.png' },
-    
-  ];
+  { name: 'The Daily Star', src: '/news_paper/The-Daily-Star-Logo.png' },
+  { name: 'Prothom Alo', src: '/news_paper/Prothom-Alo-Logo.png' },
+  { name: 'Bangladesh Pratidin', src: '/news_paper/Bangladesh-Pratidin-Logo.png' },
+  { name: 'Kaler Kantho', src: '/news_paper/Kaler-Kantho-Logo.png' },
+  { name: 'Jugantor', src: '/news_paper/Jugantor-Logo.png' },
+  { name: 'Rtv', src: '/Tv_Channel/Rtv_Logo.png' },
+  { name: 'NTv', src: '/Tv_Channel/Ntv_logo.png' },
+];
 
   
   const duplicatedLogos = [...logos, ...logos];
