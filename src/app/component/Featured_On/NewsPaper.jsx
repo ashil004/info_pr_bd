@@ -46,18 +46,28 @@ export default function NewsPaper() {
 
     tv: [
       {
-        name: "Jamuna TV",
-        src: "/Tv_Channel/Jamuna-TV-Logo.png",
-        url: "https://www.jamuna.tv/.",
-        type: "২৪/৭ নিউজ চ্যানেল"
-
+        name:"TSports",
+        src:"/Tv_Channel/tsports.jpg",
+        url:"https://www.tsports.com.bd/",
+        type:"খেলাধুলা চ্যানেল"
       },
-      { 
-        name: "Somoy TV",
-        src: "/Tv_Channel/Somoy-TV-Logo.png",
-        url: "https://www.somoynews.tv/",
-        type: "২৪/৭ নিউজ চ্যানেল"
-
+      {
+        name: "Channel i",
+        src: "/Tv_Channel/Channel-i-Logo.png",
+        url: "https://www.channelionline.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Deeptho TV",
+        src: "/Tv_Channel/Deepto_tv.png",
+        url: "https://rtvonline.com/",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name:"Rtv",
+        src:"/Tv_Channel/Rtv.png",
+        url:"https://www.rtvonline.com/",
+        type:"সংবাদ ও বিনোদন"
       },
       {
         name: "DBC TV",
@@ -66,12 +76,12 @@ export default function NewsPaper() {
         type: "২৪/৭ নিউজ চ্যানেল"
       },
       {
-         name: "Ekattor TV",
-         src: "/Tv_Channel/Ekattor-TV-Logo.png",
-         url: "https://ekattor.tv",
-         type: "২৪/৭ নিউজ চ্যানেল"
-      },
-      {
+        name: "Star News",
+        src: "/Tv_Channel/Star-News-TV-Logo.png",
+        url: "https://www.starnews.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+     {
         name: "ATN Bangla",
         src: "/Tv_Channel/ATN-Bangla-Logo.png",
         url: "https://atnbangla.tv",
@@ -107,18 +117,8 @@ export default function NewsPaper() {
         url: "https://www.channel24bd.tv",
         type: "২৪/৭ নিউজ ও ইনফো"
       },
-      {
-        name: "Channel i",
-        src: "/Tv_Channel/Channel-i-Logo.png",
-        url: "https://www.channelionline.com",
-        type: "সংবাদ ও বিনোদন"
-      },
-      {
-        name: "Rtv",
-        src: "/Tv_Channel/Rtv_Logo.png",
-        url: "https://rtvonline.com/",
-        type: "সংবাদ ও বিনোদন"
-      },
+      
+      
       {
         name:"maasranga tv",
         src: "/Tv_Channel/Maasranga-Television-Logo.png",
@@ -150,6 +150,28 @@ export default function NewsPaper() {
         type: "সংবাদ ও বিনোদন"
       },
       {
+        name: "Jamuna TV",
+        src: "/Tv_Channel/Jamuna-TV-Logo.png",
+        url: "https://www.jamuna.tv/.",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      { 
+        name: "Somoy TV",
+        src: "/Tv_Channel/Somoy-TV-Logo.png",
+        url: "https://www.somoynews.tv/",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      
+      {
+         name: "Ekattor TV",
+         src: "/Tv_Channel/Ekattor-TV-Logo.png",
+         url: "https://ekattor.tv",
+         type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      
+      {
         name: "Mohona TV",
         src: "/Tv_Channel/Mohona-TV-Logo.png",
         url: "https://www.mohonatv.com",
@@ -179,12 +201,7 @@ export default function NewsPaper() {
         url: "https://www.gtvbd.tv/",
         type: "সংবাদ ও বিনোদন"
      },
-      {
-        name: "Star News",
-        src: "/Tv_Channel/Star-News-TV-Logo.png",
-        url: "https://www.starnews.tv/",
-        type: "সংবাদ ও বিনোদন"
-     },
+      
     ]
   };
 

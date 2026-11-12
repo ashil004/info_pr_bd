@@ -11,14 +11,14 @@ export default function NewsPlatformsClickable() {
 
   const newsPlatforms = [
     {
-      name: "Jamuna TV",
-      src: "/Tv_Channel/Jamuna-TV-Logo.png",
-      url: "https://www.jamuna.tv/",
+     name: "Channel i",
+        src: "/Tv_Channel/Channel-i-Logo.png",
+        url: "https://www.channelionline.com",
     },
     {
-      name: "Somoy TV",
-      src: "/Tv_Channel/Somoy-TV-Logo.png",
-      url: "https://www.somoynews.tv/",
+     name: "Deeptho TV",
+        src: "/Tv_Channel/Deepto_tv.png",
+        url: "https://rtvonline.com/",
     },
     {
       name: "DBC TV",
@@ -26,9 +26,9 @@ export default function NewsPlatformsClickable() {
       url: "https://www.dbctv.com",
     },
     {
-      name: "Ekattor TV",
-      src: "/Tv_Channel/Ekattor-TV-Logo.png",
-      url: "https://ekattor.tv",
+      name:"Rtv",
+        src:"/Tv_Channel/Rtv.png",
+        url:"https://www.rtvonline.com/",
     },
     {
       name: "ATN Bangla",

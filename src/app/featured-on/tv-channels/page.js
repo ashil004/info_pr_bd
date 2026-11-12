@@ -6,145 +6,164 @@ import { ExternalLink, Tv } from 'lucide-react';
 
 export default function TvChannels() {
   const tvChannels = [
-    {
-      name: "Jamuna TV",
-      src: "/Tv_Channel/Jamuna-TV-Logo.png",
-      url: "https://www.jamuna.tv/",
-      type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    { 
-      name: "Somoy TV",
-      src: "/Tv_Channel/Somoy-TV-Logo.png",
-      url: "https://www.somoynews.tv/",
-      type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    {
-      name: "DBC TV",
-      src: "/Tv_Channel/DBC-Logo.png",
-      url: "https://www.dbctv.com",
-      type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    {
-       name: "Ekattor TV",
-       src: "/Tv_Channel/Ekattor-TV-Logo.png",
-       url: "https://ekattor.tv",
-       type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    {
-      name: "ATN Bangla",
-      src: "/Tv_Channel/ATN-Bangla-Logo.png",
-      url: "https://atnbangla.tv",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Independent TV",
-      src: "/Tv_Channel/Independent-TV-Logo.png",
-      url: "https://www.independent.tv",
-      type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    {
-      name: "Bangladesh Television (BTV)",
-      src: "/Tv_Channel/Bangladesh-Television-BTV-Logo.png",
-      url: "https://btv.gov.bd",
-      type: "জাতীয় সরকারি চ্যানেল"
-    },
-    {
-      name: "Banglavision",
-      src: "/Tv_Channel/Banglavision-TV-Logo.png",
-      url: "https://www.bvnews24.com",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Boishakhi TV",
-      src: "/Tv_Channel/Boishakhi_TV-Logo.png",
-      url: "https://www.boishakhitv.com",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Channel 24",
-      src: "/Tv_Channel/Channel-24-Logo.png",
-      url: "https://www.channel24bd.tv",
-      type: "২৪/৭ নিউজ ও ইনফো"
-    },
-    {
-      name: "Channel i",
-      src: "/Tv_Channel/Channel-i-Logo.png",
-      url: "https://www.channelionline.com",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Rtv",
-      src: "/Tv_Channel/Rtv_Logo.png",
-      url: "https://rtvonline.com/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Maasranga TV",
-      src: "/Tv_Channel/Maasranga-Television-Logo.png",
-      url: "https://www.maasranga.tv",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Desh TV",
-      src: "/Tv_Channel/Desh-TV-Logo.png",
-      url: "https://www.desh.tv",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Ekushey TV",
-      src: "/Tv_Channel/Ekushey-TV-Logo.png",
-      url: "https://ekushey.tv",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "News24",
-      src: "/Tv_Channel/News-24-TV-Logo.png",
-      url: "https://www.news24.com.bd",
-      type: "২৪/৭ নিউজ চ্যানেল"
-    },
-    {
-      name: "My TV",
-      src: "/Tv_Channel/My-TV-Logo.png",
-      url: "https://mytvbd.tv/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Mohona TV",
-      src: "/Tv_Channel/Mohona-TV-Logo.png",
-      url: "https://www.mohonatv.com",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "SA TV",
-      src: "/Tv_Channel/SA-TV-Logo.png",
-      url: "https://www.satv.tv/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "NTV",
-      src: "/Tv_Channel/Ntv_logo.png",
-      url: "https://www.ntvbd.tv/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Ekhon TV",
-      src: "/Tv_Channel/Ekhon-TV-Logo.png",
-      url: "https://www.ekhontv.com/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "GTV",
-      src: "/Tv_Channel/GTV-Logo.png",
-      url: "https://www.gtvbd.tv/",
-      type: "সংবাদ ও বিনোদন"
-    },
-    {
-      name: "Star News",
-      src: "/Tv_Channel/Star-News-TV-Logo.png",
-      url: "https://www.starnews.tv/",
-      type: "সংবাদ ও বিনোদন"
-    }
-  ];
+      {
+        name:"TSports",
+        src:"/Tv_Channel/tsports.jpg",
+        url:"https://www.tsports.com.bd/",
+        type:"খেলাধুলা চ্যানেল"
+      },
+      {
+        name: "Channel i",
+        src: "/Tv_Channel/Channel-i-Logo.png",
+        url: "https://www.channelionline.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Deeptho TV",
+        src: "/Tv_Channel/Deepto_tv.png",
+        url: "https://rtvonline.com/",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name:"Rtv",
+        src:"/Tv_Channel/Rtv.png",
+        url:"https://www.rtvonline.com/",
+        type:"সংবাদ ও বিনোদন"
+      },
+      {
+        name: "DBC TV",
+        src: "/Tv_Channel/DBC-Logo.png",
+        url: "https://www.dbctv.com",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "Star News",
+        src: "/Tv_Channel/Star-News-TV-Logo.png",
+        url: "https://www.starnews.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+     {
+        name: "ATN Bangla",
+        src: "/Tv_Channel/ATN-Bangla-Logo.png",
+        url: "https://atnbangla.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Independent TV",
+        src: "/Tv_Channel/Independent-TV-Logo.png",
+        url: "https://www.independent.tv",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "Bangladesh Television (BTV)",
+        src: "/Tv_Channel/Bangladesh-Television-BTV-Logo.png",
+        url: "https://btv.gov.bd",
+        type: "জাতীয় সরকারি চ্যানেল"
+      },
+      {
+        name: "Banglavision",
+        src: "/Tv_Channel/Banglavision-TV-Logo.png",
+        url: "https://www.bvnews24.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Boishakhi TV",
+        src: "/Tv_Channel/Boishakhi_TV-Logo.png",
+        url: "https://www.boishakhitv.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Channel 24",
+        src: "/Tv_Channel/Channel-24-Logo.png",
+        url: "https://www.channel24bd.tv",
+        type: "২৪/৭ নিউজ ও ইনফো"
+      },
+      
+      
+      {
+        name:"maasranga tv",
+        src: "/Tv_Channel/Maasranga-Television-Logo.png",
+        url: "https://www.maasranga.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Desh TV",
+        src: "/Tv_Channel/Desh-TV-Logo.png",
+        url: "https://www.desh.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Ekushey TV",
+        src: "/Tv_Channel/Ekushey-TV-Logo.png",
+        url: "https://ekushey.tv",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name:'News24',
+        src: "/Tv_Channel/News-24-TV-Logo.png",
+        url: "https://www.news24.com.bd",
+        type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      {
+        name: "My Tv",
+        src: "/Tv_Channel/My-TV-Logo.png",
+        url: "https://mytvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "Jamuna TV",
+        src: "/Tv_Channel/Jamuna-TV-Logo.png",
+        url: "https://www.jamuna.tv/.",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      { 
+        name: "Somoy TV",
+        src: "/Tv_Channel/Somoy-TV-Logo.png",
+        url: "https://www.somoynews.tv/",
+        type: "২৪/৭ নিউজ চ্যানেল"
+
+      },
+      
+      {
+         name: "Ekattor TV",
+         src: "/Tv_Channel/Ekattor-TV-Logo.png",
+         url: "https://ekattor.tv",
+         type: "২৪/৭ নিউজ চ্যানেল"
+      },
+      
+      {
+        name: "Mohona TV",
+        src: "/Tv_Channel/Mohona-TV-Logo.png",
+        url: "https://www.mohonatv.com",
+        type: "সংবাদ ও বিনোদন"
+      },
+      {
+        name: "SA TV",
+        src: "/Tv_Channel/SA-TV-Logo.png",
+        url: "https://www.satv.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "NTv",
+        src: "/Tv_Channel/Ntv_logo.png",
+        url: "https://www.ntvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "Ekhon TV",
+        src: "/Tv_Channel/Ekhon-TV-Logo.png",
+        url: "https://www.ekhontv.com/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      {
+        name: "GTV",
+        src: "/Tv_Channel/GTV-Logo.png",
+        url: "https://www.gtvbd.tv/",
+        type: "সংবাদ ও বিনোদন"
+     },
+      
+    ];
 
   return (
     <div className="w-full bg-slate-50 min-h-screen">
