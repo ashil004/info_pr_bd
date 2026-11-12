@@ -7,23 +7,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 
-// লোগো ডাটা (ক্যাটাগরি কি সহ)
+
 const clientsData = [
-  { id: 1, name: "Asian Post", category: "Media", logo: "/asian-post.jpg" },
-  { id: 2, name: "Facebook", category: "Tech", logo: "/facebook.png" },
-  { id: 3, name: "Citygroup", category: "Corporate", logo: "/city-group.jpg" },
-  { id: 4, name: "BASIS", category: "Tech", logo: "/basis.png" },
-  { id: 5, name: "Realme", category: "Tech", logo: "/realme_logo.png" },
-  { id: 6, name: "Tecno", category: "Tech", logo: "/tecno-logo.png" },
-  { id: 7, name: "Rokomari", category: "Corporate", logo: "/rokomari.jpg" },
-  { id: 8, name: "CGTN", category: "Media", logo: "/cgtn.png" },
-  { id: 9, name: "Al Jazeera", category: "Media", logo: "/Al-Jazeera-Logo.png" },
-  { id: 10, name: "British Council", category: "Education", logo: "/british-council-logo.png" },
-  { id: 11, name: "Shyamoli Engineering College", category: "Education", logo: "/Shamoli.jpg" },
-  { id: 12, name: "Akij Air", category: "Corporate", logo: "/akij.jpg" },
+  // Media
+  { id: 1, name: "RTV", category: "Media", logo: "/Tv_Channel/Rtv_Logo.png" },
+  { id: 2, name: "NTV", category: "Media", logo: "/Tv_Channel/Ntv_logo.png" },
+  { id: 3, name: "Channel 24", category: "Media", logo: "/Tv_Channel/Channel-24-Logo.png" },
+  { id: 4, name: "Channel i", category: "Media", logo: "/Tv_Channel/Channel-i-Logo.png" },
+  { id: 5, name: "Prothom Alo", category: "Media", logo: "/news_paper/Daily-Prothom-Alo-Logo.png" },
+  { id: 6, name: "Kaler Kantho", category: "Media", logo: "/news_paper/Daily-Kaler-Kantho-Logo.png" },
+
 ];
 
-const categoryKeys = ["All", "Tech", "Corporate", "Media", "Education"];
+const categoryKeys = ["All", "Media", ];
 
 export default function AboutClient() {
   const { t } = useLanguage();

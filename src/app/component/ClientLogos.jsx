@@ -9,18 +9,13 @@ export default function ClientLogos() {
 
   
   const logos = [
-    { name: "Asian Post", src: "/asian-post.jpg" },
-    { name: "Facebook", src: "/facebook.png" },
-    { name: "Citygroup", src: "/city-group.jpg" },
-    { name: "BASIS", src: "/basis.png" },
-    { name: "Realme", src: "/realme_logo.png" },
-    { name: "Tecno", src: "/tecno-logo.png" },
-    { name: "Rokomari", src: "/rokomari.jpg" },
-    { name: "CGTN", src: "/cgtn.png" },
-    { name: "Al Jazeera", src: "/Al-Jazeera-Logo.png" },
-    { name: "British Council", src: "/british-council-logo.png" },
-    { name: " Shyamoli Engineering College", src: "/Shamoli.jpg" },
-    { name: "Akij Air", src: "/akij.jpg" },
+    { name: 'The Daily Star', src: '/news_paper/The-Daily-Star-Logo.png' },
+    { name: 'Prothom Alo', src: '/news_paper/Prothom-Alo-Logo.png' },
+    { name: 'Bangladesh Pratidin', src: '/news_paper/Bangladesh-Pratidin-Logo.png' },
+    { name: 'Kaler Kantho', src: '/news_paper/Kaler-Kantho-Logo.png' },
+    { name: 'Jugantor', src: '/news_paper/Jugantor-Logo.png' },
+    { name: 'Rtv', src: '/Tv_Channel/Rtv_Logo.png' },
+    { name: 'NTv', src: '/Tv_Channel/Ntv_logo.png' },
     
   ];
 
