@@ -7,21 +7,7 @@ import { Search, ExternalLink, Sparkles, Building2 } from 'lucide-react';
 export default function ClientList() {
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Client Array
-  const logos = [
-    { name: "Asian Post", src: "/asian-post.jpg" },
-    { name: "Facebook", src: "/facebook.png" },
-    { name: "Citygroup", src: "/city-group.jpg" },
-    { name: "BASIS", src: "/basis.png" },
-    { name: "Realme", src: "/realme_logo.png" },
-    { name: "Tecno", src: "/tecno-logo.png" },
-    { name: "Rokomari", src: "/rokomari.jpg" },
-    { name: "CGTN", src: "/cgtn.png" },
-    { name: "Al Jazeera", src: "/Al-Jazeera-Logo.png" },
-    { name: "British Council", src: "/british-council-logo.png" },
-    { name: "Shyamoli Engineering College", src: "/Shamoli.jpg" },
-    { name: "Akij Air", src: "/akij.jpg" },
-  ];
+  
 
   // Search filter
   const filteredClients = logos.filter(client =>
